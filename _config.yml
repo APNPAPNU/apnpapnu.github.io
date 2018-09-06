@@ -1,5 +1,5 @@
 baseurl: ""
-repository: reignofiron/reignofiron.github.io
+repository: apnpapnu/apnpapnu.github.io
 exclude: ['README.md']
 permalink: pretty
 sass:

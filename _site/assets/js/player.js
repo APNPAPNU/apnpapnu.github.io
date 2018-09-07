@@ -39,7 +39,7 @@ founder = [
 ]
 ,
     bungieId = checkParams('bungieId'),
-    exalted = checkParams('Beats By Cayde'),
+    exalted = checkParams('exalted'),
     destinyId = checkParams('destinyId'),
     joined = checkParams('joined'),
     rank = checkParams('rank'),
@@ -69,7 +69,7 @@ founder = [
     $.ajax({
       url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/",
       headers: {
-        "X-API-Key": 47b810e692d64237911c2cbe0d433cfe
+        "X-API-Key": apikey
       },
       success: function(data) {
 				if (data.ErrorStatus === 'Success') {

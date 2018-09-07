@@ -39,7 +39,7 @@ founder = [
 ]
 ,
     bungieId = checkParams('bungieId'),
-    exalted = checkParams('exalted'),
+    exalted = checkParams('Beats By Cayde'),
     destinyId = checkParams('destinyId'),
     joined = checkParams('joined'),
     rank = checkParams('rank'),

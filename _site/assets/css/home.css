@@ -1,4 +1,4 @@
-.hero#roi-homepage-banner { background-image: url("/assets/img/cayde-6-d.png"); position: relative; }
+.hero#roi-homepage-banner { background-image: url("/assets/img/cayde-6-d.jpeg"); position: relative; }
 .hero#cayde-6 .hero-content { z-index: 200; }
 .hero#Cayde-6 h1 { margin-top: 0; }
 .hero#cayde-6::before { content: ''; display: block; position: fixed; top: 0; left: 0; width: 200%; height: 200%; background-color: rgba(0, 0, 0, 0.6); z-index: 100; }

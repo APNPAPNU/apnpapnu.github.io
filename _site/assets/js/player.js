@@ -69,7 +69,7 @@ founder = [
     $.ajax({
       url: "https://www.bungie.net/Platform/Destiny2/4/Account/" + destinyId + "/Character/0/Stats/",
       headers: {
-        "X-API-Key": apiKey
+        "X-API-Key": 47b810e692d64237911c2cbe0d433cfe
       },
       success: function(data) {
 				if (data.ErrorStatus === 'Success') {
@@ -183,7 +183,7 @@ founder = [
     $.ajax({ // get Bungie Profile
       url: "https://www.bungie.net/Platform/User/GetBungieNetUserById/" + bungieId + "/",
       headers: {
-        "X-API-Key": apiKey
+        "X-API-Key": 47b810e692d64237911c2cbe0d433cfe
       },
       success: function(data) {
 				if (data.ErrorStatus === 'Success') {

@@ -32,10 +32,10 @@ revered = [
 	'Sore',
 ],
 exaltedGeneral = [
-	'kuro',
+	'rickypettit12',
 ],
 founder = [
-	'Canis'
+	'apnp_apnu'
 ]
 ,
     bungieId = checkParams('bungieId'),
@@ -67,7 +67,7 @@ founder = [
 
   if (bungieId && destinyId && joined && rank) {
     $.ajax({
-      url: "https://www.bungie.net/Platform/Destiny2/4/Account/" + destinyId + "/Character/0/Stats/",
+      url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/",
       headers: {
         "X-API-Key": 47b810e692d64237911c2cbe0d433cfe
       },

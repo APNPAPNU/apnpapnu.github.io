@@ -41,7 +41,7 @@ form.submit(function(e) {
 
       url: 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/4/' + battle_string + '%23' + battle_num + '/',
       headers: {
-        "X-API-Key": apiKey
+        "X-API-Key": 47b810e692d64237911c2cbe0d433cfe
       },
 
     })
@@ -62,7 +62,7 @@ form.submit(function(e) {
 
           url: "https://www.bungie.net/Platform/Destiny2/4/Account/" + data.Response[0]['membershipId'] + "/Character/0/Stats/",
           headers: {
-            "X-API-Key": apiKey
+            "X-API-Key": 47b810e692d64237911c2cbe0d433cfe
           }
 
         })

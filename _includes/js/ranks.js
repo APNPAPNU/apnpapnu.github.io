@@ -29,8 +29,8 @@ revered = [
 	'Sore',
 ],
 exaltedGeneral = [
-	'kuro',
+	'rickypettit12',
 ],
 founder = [
-	'Canis'
+	'apnp_apnu'
 ]

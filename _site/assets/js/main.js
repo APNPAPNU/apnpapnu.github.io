@@ -1,4 +1,4 @@
-var apiKey = "39424dade4d141af9a0807725a14ed20", // production
+var apiKey "47b810e692d64237911c2cbe0d433cfe", // production
 // apiKey = "6987280b74b24575a4e805277bb5baa6", // local
 roiGroupId = "699392",
 exaltedGroupId = "699392"

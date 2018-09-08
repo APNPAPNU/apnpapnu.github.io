@@ -1,10 +1,8 @@
 baseurl: ""
-repository: apnpApnu/apnpapnu.github.io
+repository: apnpapnu/apnpapnu.github.io
 exclude: ['README.md']
 permalink: pretty
 sass:
     sass_dir: ./assets/css
 plugins:
   - jekyll-redirect-from
-
-theme: jekyll-theme-cayman

@@ -101,7 +101,7 @@ function listMembers(rsp) {
       member
         .attr({
           'class': 'j-row vertical-center-row member',
-          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
+          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined,
           'title': 'See player profile for ' + name,
           'data-joined' : joined.replace(/-/g, ''),
           'data-username': name,
@@ -119,7 +119,7 @@ function listMembers(rsp) {
 			if (rsp[i].exalted) {
 				member.addClass('exalted')
 				.attr({
-					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&exalted=true'
+					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined'
 				})
 				.find('.member-name').find('h3')
 				.html(name + ' &nbsp;<span class="gold" title="Exalted">&epsilon;</span>');

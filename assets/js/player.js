@@ -3,11 +3,10 @@
 $(function() {
 
   var
-    {% include js/ranks.js %},
+    ,
     bungieId = checkParams('bungieId'),
     destinyId = checkParams('destinyId'),
     joined = checkParams('joined'),
-    rank = checkParams('rank'),
     checkName = function(name, list) {
 
       var m = false; // flag

@@ -39,10 +39,8 @@ founder = [
 ]
 ,
     bungieId = checkParams('bungieId'),
-    exalted = checkParams('exalted'),
     destinyId = checkParams('destinyId'),
     joined = checkParams('joined'),
-    rank = checkParams('rank'),
     checkName = function(name, list) {
 
       var m = false; // flag

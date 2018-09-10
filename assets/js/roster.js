@@ -3,7 +3,7 @@
 
 // get list of members and populate roster table
 
-var roster = [];
+var roster 
 
 $.when(
 		$.ajax({

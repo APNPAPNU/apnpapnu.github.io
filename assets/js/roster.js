@@ -7,7 +7,7 @@ var roster = [];
 
 $.when(
 		$.ajax({
-		url: "https://www.bungie.net/platform/GroupV2/" + exaltedGroupId + "/Members/",
+		url: "https://www.bungie.net/platform/GroupV2/699392/Members/",
 		headers: {
 			"X-API-Key": apikey
 		}
@@ -36,7 +36,7 @@ $.when(
 	}),
 
 	$.ajax({
-		url: 'https://www.bungie.net/platform/destiny2/1/profile/4611686018442820791/?components=200',
+		url: 'https://www.bungie.net/platform/destiny2/2/profile/4611686018442820791/?components=200',
 		headers: {
 			'X-API-Key': apiKey
 		}

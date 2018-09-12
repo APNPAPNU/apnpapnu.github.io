@@ -34,7 +34,7 @@ $.when(
 	}),
 
 	$.ajax({
-		url: 'https://www.bungie.net/platform/destiny2/2/profile/4611686018442820791/?components=200',
+		url: 'https://www.bungie.net/platform/destiny2/2/profile/4611686018429000034/?components=200',
 		headers: {
 			'X-API-Key': apiKey
 		}

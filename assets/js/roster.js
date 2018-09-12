@@ -7,7 +7,7 @@ var roster = [];
 
 $.when(
 		$.ajax({
-		url: "https://www.bungie.net/platform/GroupV2/" + exaltedGroupId + "/Members/",
+		url: "https://www.bungie.net/platform/GroupV2/699392/Members/",
 		headers: {
 			"X-API-Key": apiKey
 		}

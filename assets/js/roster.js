@@ -3,7 +3,7 @@
 
 // get list of members and populate roster table
 
-var roster 
+var roster = [];
 
 $.when(
 		$.ajax({
@@ -36,12 +36,12 @@ $.when(
 	}),
 
 	$.ajax({
-		url: 'https://www.bungie.net/platform/destiny2/2/profile/4611686018442820791/?components=200',
+		url: 'https://www.bungie.net/platform/destiny2/1/profile/4611686018442820791/?components=200',
 		headers: {
 			'X-API-Key': apiKey
 		}
 	}).success(function(res) {
-		console.log('PS4 stats:', res);
+		console.log('XBOX stats:', res);
 	})
 
 )
@@ -95,12 +95,12 @@ function listMembers(rsp) {
         memberId = profile.membershipId,
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
-     
+        rank = rsp[i].memberType;
 			// configure DOM node and add to page
       member
         .attr({
           'class': 'j-row vertical-center-row member',
-          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined,
+          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
           'title': 'See player profile for ' + name,
           'data-joined' : joined.replace(/-/g, ''),
           'data-username': name,
@@ -109,9 +109,23 @@ function listMembers(rsp) {
         })
         .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
-          '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>'
-		);
-     
+          '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
+          '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
+          '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
+          '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'
+        );
+
+			if (rsp[i].exalted) {
+				member.addClass('exalted')
+				.attr({
+					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&exalted=true'
+				})
+				.find('.member-name').find('h3')
+				.html(name + ' &nbsp;<span class="gold" title="Exalted">&epsilon;</span>');
+			}
+
+			member.appendTo(list);
+
 			// indicate online/offline status
       if (String(online) === 'true') {
         $('#status-' + memberId)

@@ -116,7 +116,7 @@ function listMembers(rsp) {
 			if (rsp[i].exalted) {
 				member.addClass('exalted')
 				.attr({
-					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&exalted=true'
+					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&exalted=false'
 				})
 				.find('.member-name').find('h3')
 				.html(name + ' &nbsp;<span class="gold" title="Exalted">&epsilon;</span>');

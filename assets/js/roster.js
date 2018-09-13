@@ -38,10 +38,10 @@ $.when(
 	$.ajax({
 		url: 'https://www.bungie.net/platform/destiny2/2/profile/4611686018442820791/?components=200',
 		headers: {
-			'X-API-Key': apiKey
+			'X-API-Key': "47b810e692d64237911c2cbe0d433cfe"
 		}
 	}).success(function(res) {
-		console.log('XBOX stats:', res);
+		console.log('ps4 stats:', res);
 	})
 
 )

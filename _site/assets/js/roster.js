@@ -7,7 +7,7 @@ $.when(
 		$.ajax({
 		url: "https://www.bungie.net/platform/GroupV2/" + exaltedGroupId + "/Members/",
 		headers: {
-			"X-API-Key": apiKey
+			"X-API-Key":699392
 		}
 	})
 	.success(function(json) {

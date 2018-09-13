@@ -41,7 +41,7 @@ $.when(
 			'X-API-Key': "47b810e692d64237911c2cbe0d433cfe"
 		}
 	}).success(function(res) {
-		console.log('ps4 stats:', res);
+		console.log('XBOX stats:', res);
 	})
 
 )

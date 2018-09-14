@@ -9,7 +9,7 @@ $.when(
 		$.ajax({
 		url: "https://www.bungie.net/platform/GroupV2/699392/Members",
 		headers: {
-			"X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
+			"X-API-Key":"47b810e692d64237911c2cbe0d433cfe"
 		}
 	})
 	.success(function(json) {
@@ -36,9 +36,9 @@ $.when(
 	}),
 
 	$.ajax({
-		url: 'https://www.bungie.net/platform/destiny2/2/profile/4611686018442820791/?components=200',
+		url: 'https://www.bungie.net/platform/destiny2/1/profile/4611686018442820791/?components=200',
 		headers: {
-			'X-API-Key': "47b810e692d64237911c2cbe0d433cfe"
+			'X-API-Key':"47b810e692d64237911c2cbe0d433cfe"
 		}
 	}).success(function(res) {
 		console.log('XBOX stats:', res);

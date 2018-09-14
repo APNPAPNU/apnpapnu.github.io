@@ -1,3 +1,4 @@
+
 // get list of members and populate roster table
 
 var roster = [];
@@ -33,12 +34,12 @@ $.when(
 	}),
 
 	$.ajax({
-		url: 'https://www.bungie.net/platform/destiny2/1/profile/4611686018442820791/?components=200',
+		url: 'https://www.bungie.net/platform/destiny2/2/profile/4611686018429000034/?components=200',
 		headers: {
 			'X-API-Key': apiKey
 		}
 	}).success(function(res) {
-		console.log('XBOX stats:', res);
+		console.log('PS4 stats:', res);
 	})
 
 )
@@ -115,7 +116,7 @@ function listMembers(rsp) {
 			if (rsp[i].exalted) {
 				member.addClass('exalted')
 				.attr({
-					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&exalted=true'
+					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&exalted=false'
 				})
 				.find('.member-name').find('h3')
 				.html(name + ' &nbsp;<span class="gold" title="Exalted">&epsilon;</span>');

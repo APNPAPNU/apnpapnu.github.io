@@ -77,6 +77,7 @@ $(function() {
           patrolClock = patrol.secondsPlayed.basic.displayValue,
           patrolHours = calcHours(patrolClock),
 	  patrolWeapon = patrol.weaponBestType.basic.displayValue,
+	  patrolHPE = patrol.heroicPublicEventsCompleted.basic.displayValue,
           // raid stats
           raid = data.Response.raid.allTime,
           raidClears = raid.activitiesCleared.basic.displayValue,
@@ -135,7 +136,7 @@ $(function() {
           $('#player-strike-kills-pga').text(strikesAvgKills);
           $('#player-strike-best-kills').text(strikesBestKills);
 	  //patrol
-	  $('#player-strike-clears').text(strikesClears);
+	  $('#player-heroic-public-events').text(patrolHPE);
           $('#player-patrol-kills').text(patrolKills);
           $('#player-patrol-best-weapon').text(patrolWeapon);
 	  $('#player-patrol-kills-pga').text(strikesAvgKills);

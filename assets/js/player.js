@@ -74,7 +74,8 @@ $(function() {
           // patrol stats
           patrol = data.Response.patrol.allTime,
 	  patrolKills = patrol.kills.basic.displayValue,
-          patrolClock = patrol.secondsPlayed.basic.displayValue,
+          patrolDeaths = patrol.deaths.basic.displayValue,
+	  patrolClock = patrol.secondsPlayed.basic.displayValue,
           patrolHours = calcHours(patrolClock),
 	  patrolWeapon = patrol.weaponBestType.basic.displayValue,
 	  patrolHPE = patrol.heroicPublicEventsCompleted.basic.displayValue,
@@ -138,6 +139,7 @@ $(function() {
 	  //patrol
 	  $('#player-heroic-public-events').text(patrolHPE);
           $('#player-patrol-kills').text(patrolKills);
+	  $('#player-patrol-deaths').text(patrolDeaths);
           $('#player-patrol-best-weapon').text(patrolWeapon);
 	  $('#player-patrol-kills-pga').text(strikesAvgKills);
           			} else {

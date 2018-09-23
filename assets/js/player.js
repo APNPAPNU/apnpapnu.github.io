@@ -136,9 +136,9 @@ $(function() {
           $('#player-strike-best-kills').text(strikesBestKills);
 	  //patrol
 	  $('#player-strike-clears').text(strikesClears);
-          $('#player-patrol-best-weapon').text(patrolWeapon);
           $('#player-patrol-kills').text(patrolKills);
-          $('#player-patrol-kills-pga').text(strikesAvgKills);
+          $('#player-patrol-best-weapon').text(patrolWeapon);
+	  $('#player-patrol-kills-pga').text(strikesAvgKills);
           			} else {
 					alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
 				  console.log(data);

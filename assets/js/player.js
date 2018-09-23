@@ -76,6 +76,7 @@ $(function() {
 	  patrolKills = patrol.kills.basic.displayValue,
           patrolClock = patrol.secondsPlayed.basic.displayValue,
           patrolHours = calcHours(patrolClock),
+	  patrolWeapon = patrol.weaponBestType.basic.displayValue,
           // raid stats
           raid = data.Response.raid.allTime,
           raidClears = raid.activitiesCleared.basic.displayValue,
@@ -135,10 +136,10 @@ $(function() {
           $('#player-strike-best-kills').text(strikesBestKills);
 	  //patrol
 	  $('#player-strike-clears').text(strikesClears);
-          $('#player-strike-kd').text(strikesKd);
+          $('#player-patrol-best-weapon').text(patrolWeapon);
           $('#player-patrol-kills').text(patrolKills);
           $('#player-patrol-kills-pga').text(strikesAvgKills);
-          $('#player-strike-best-kills').text(strikesBestKills);			} else {
+          			} else {
 					alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
 				  console.log(data);
 				}

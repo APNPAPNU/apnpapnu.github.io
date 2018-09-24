@@ -1,0 +1,24 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "Destiny Carnage Report",
+    "description": "A detailed Postgame Carnage Report of your Crucible games.",
+    "author": "Darren Strauss",
+    "version": "2.0.0",
+    "manifest_version": 2,
+    "offline_enabled": false,
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "icons": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    },
+    "permissions": [
+        "*://*.bungie.net/*",
+        "https://www.paypal.com/cgi-bin/webscr"
+    ]
+}

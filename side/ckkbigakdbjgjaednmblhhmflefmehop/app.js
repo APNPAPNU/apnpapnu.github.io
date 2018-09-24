@@ -185,7 +185,7 @@ function processMapDetails(e) {
 }
 
 function bungieRequest(e, t, a) {
-    e = "http://www.bungie.net/Platform/Destiny" + e;
+    e = "https://www.bungie.net/Platform/Destiny" + e;
     var i = {
             headerName: "X-API-KEY",
             headerValue: "47b810e692d64237911c2cbe0d433cfec"

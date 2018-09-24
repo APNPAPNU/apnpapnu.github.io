@@ -195,10 +195,10 @@ function bungieRequest(e, t, a) {
 }
 
 function bungieImageRequest(e, t, a) {
-    e = "http://www.bungie.net" + e, httpGetRequest(e, null, "blob", t, a)
+    e = "https://www.bungie.net" + e, httpGetRequest(e, null, "blob", t, a)
 }
 
-function httpGetRequest(e, t, a, i, n) {
+function httpsGetRequest(e, t, a, i, n) {
     try {
         var l = new XMLHttpRequest;
         if (l.onreadystatechange = function() {

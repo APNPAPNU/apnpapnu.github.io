@@ -191,7 +191,7 @@ function bungieRequest(e, t, a) {
             headerValue: "47b810e692d64237911c2cbe0d433cfec"
         },
         n = [i];
-    httpGetRequest(e, n, "text", t, a)
+    httpsGetRequest(e, n, "text", t, a)
 }
 
 function bungieImageRequest(e, t, a) {

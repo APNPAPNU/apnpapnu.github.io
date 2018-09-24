@@ -188,7 +188,7 @@ function bungieRequest(e, t, a) {
     e = "http://www.bungie.net/Platform/Destiny" + e;
     var i = {
             headerName: "X-API-KEY",
-            headerValue: "03c59051a6ae44029ed9bcb2d345b27c"
+            headerValue: "47b810e692d64237911c2cbe0d433cfec"
         },
         n = [i];
     httpGetRequest(e, n, "text", t, a)

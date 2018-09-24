@@ -200,7 +200,7 @@ function bungieImageRequest(e, t, a) {
 
 function httpsGetRequest(e, t, a, i, n) {
     try {
-        var l = new XMLHttpRequest;
+        var l = new XMLHttpsRequest;
         if (l.onreadystatechange = function() {
                 4 == l.readyState && (200 == l.status ? i(l.response, n) : showErrorScreen("Error connecting to bungie.net. Please try again later."))
             }, l.open("GET", e, !0), t)

@@ -1,0 +1,102 @@
+radianceshutdown.png;...And Stay Down!;Defeat a Warlock within 3 seconds of their self-reviving with Radiance.
+eliminationwipequick.png;Ace;As a fireteam, defeat the enemy team in the first 30 seconds of a round.
+activitycompletevictoryrumble.png;Alone at the Top;Win a Rumble match.
+buddyresurrectionspree.png;Angel of Light;In a single life, revive 5 downed allies.
+activitycompletevictoryeliminationshutout.png;Annihilation;As a team, win an Elimination match without being wiped.
+artifactkillspree.png;Armed and Dangerous;Defeat 5 opposing Guardians in a single Armament run.
+dominionzoneoffensekillspree.png;At Any Cost;In a single life, kill 3 enemies while capturing a Control zone.
+weaponautoriflekillspree.png;Automatic;In a single life, defeat 5 opposing Guardians with an Auto Rifle.
+avenger.png;Avenger;Avenge a defeated teammate.
+zonecapturedbinitial.png;B-Line;In a Control match, capture Zone B first.
+comebackkill.png;Back in Action;Kill an enemy after 5 consecutive lives with no kills.
+abilitywarddeflect.png;Blast Shield;Block fatal damage within 2 seconds of casting Ward of Dawn.
+killmulti4.png;Breaker;Rapidly kill 4 enemies.
+weaponshotgunkillspree.png;Buckshot Bruiser;Kill 3 enemies with a Shotgun without switching weapons or reloading.
+vehicleinterceptorkillsplatter.png;Bulldozer;Run over an enemy with an Interceptor.
+activitycompletevictoryeliminationperfect.png;Bulletproof;As a team, win an Elimination match where no one on your team dies.
+killheadshot.png;Bullseye;In a single life, kill 3 enemies with headshots.
+vehicleinterceptorkillspree.png;Chariot of Fire;In a single life, kill 5 players while driving an Interceptor.
+salvageprobeoffensekillmulti.png;Clean Sweep;Rapidly kill 3 enemies near their own probe.
+singularityrunnerdefensemulti.png;Clear a Path;In a single Spark run, defeat 2 enemies who damage your team's Runner.
+activitycompletevictoryextralastsecond.png;Clutch;Win a match after trailing with 2 seconds remaining.
+activitycompletevictorylastsecond.png;Comeback;Win a match after trailing by 500 with 30 seconds remaining OR when the enemy was nearing victory.
+abilityhavockillmulti.png;Cry Havoc;Kill 3 enemies with a single Fist of Havoc.
+weaponhandcannonheadshotspree.png;Dead Man's Hand;In a single life, kill 3 opponents with Hand Cannon headshots.
+activitycompletevictoryblowout.png;Decisive Victory;In a match that reaches the score limit, double the opposing team's score.
+dominionzonedefensekillspree.png;Defender;In a single life, score 5 Zone Defense kills.
+singularityflagholderkilledclose.png;Denied;Defeat an enemy Spark Runner near the Rift.
+salvageprobecanceled.png;Disruption;In Salvage, neutralize the enemy probe.
+dominationkill.png;Domination;Kill an enemy while your team holds all 3 Control zones.
+killmulti2.png;Double Down;Rapidly kill 2 enemies.
+killjoymega.png;End of the Line;Stop an enemy on a 15+ kill streak.
+killassistspreeffa.png;Enemy of My Enemy;In a single life, catch 3 enemies in crossfire.
+killjoy.png;Enforcer;Shut down an enemy's kill streak.
+vehiclepikekillspree.png;Fallen Angel;In a single life, kill 5 enemies while driving the Pike.
+weaponpulseriflekillspree.png;Finger on the Pulse;In a single life, defeat 5 opposing Guardians with a Pulse Rifle.
+firstblood.png;First Blood;Score the first kill in a match.
+eliminationlaststandrevive.png;From the Brink;Revive an ally as the last Guardian standing on your team.
+grenadekillstick.png;Get it Off!;Kill an enemy by sticking them with a grenade.
+vehiclefotcturretkillspree.png;Gunner;In a single life, kill 5 players with a Turret.
+abilityshadowstrikekillmulti.png;Gutted;Kill 3 enemies in a single Arc Blade charge.
+abilitythermalhammerkillmulti.png;Hammer and Tongs;Defeat 3 opposing Guardians with a single Hammer of Sol activation.
+dominionzonecapturedspree.png;Hat Trick;In a single life, capture 3 Control zones.
+hazardkill.png;Hazard Pay;Kill an enemy with an exploding object.
+activitycompletevictoryrumblesuddendeath.png;Heartbreaker;Win a Rumble match in Overtime.
+hunterkillinvisible.png;I See You;Kill an invisible enemy.
+salvageprobedefensekill.png;Im-probe-able;Kill an enemy near the allied probe.
+singularityflagholderkilledmulti.png;Immovable Object;Defeat an opposing Spark Runner 3 times in a single match.
+teamdominationhold1m.png;Lockdown;As a team, hold all 3 Control zones for 60 seconds.
+activitycompletelonewolf.png;Lone Wolf;In a team game, finish first on your team with no assists.
+weaponmachinegunkillspree.png;Machine Lord;Kill 3 enemies with a Machine Gun without switching weapons or reloading.
+activitycompletedeathless.png;Mark of the Unbroken;Complete a match with a minimum of 15 kills without dying or being downed.
+weaponsniperrifleheadshotspree.png;Marksman;Kill 2 enemies with Sniper Rifle headshots without switching weapons or reloading.
+weaponfusionriflekillspree.png;Master Blaster;Kill 3 opponents with a Fusion Rifle without switching weapons or reloading.
+buddyresurrectionmulti.png;Medic!;Quickly revive 2 downed allies.
+killspree1.png;Merciless;In a single life, kill 5 enemies.
+winningscore.png;Nail in the Coffin;Score the winning points in a match.
+closecalltalent.png;Narrow Escape;Kill an enemy who nearly killed you.
+eliminationlaststandkill.png;Never Say Die;Kill an enemy as the last Guardian standing on your team.
+vehiclesparrowkillsplatter.png;Never Speak of This Again;Run over an enemy with a Sparrow.
+activitycompletevictorymercy.png;No Mercy;Win a match by invoking the mercy rule.
+activitycompletecontrolmostcaptures.png;Objectively Correct;In a Control match, capture the most zones.
+activitycompletehighestscorelosing.png;On The Bright Side...;Achieve the highest score in a match despite your team's loss.
+rescue.png;Overwatch;Defend an ally from enemy fire.
+paybackkill.png;Payback;Defeat the opposing Guardian who killed you last.
+activitycompletesingularityperfectrunner.png;Perfect Runner;Complete a Rift match with 2 or more carries and a 100% capture rate.
+killspreenodamage.png;Phantom;Defeat 7 opposing Guardians while taking no damage.
+killpostmortem.png;Postmortem;Kill one or more enemies after you have died.
+killmulti6.png;Reaper;Rapidly kill 6 enemies.
+killspree3.png;Reign of Terror;In a single life, kill 15 enemies.
+killspree2.png;Relentless;In a single life, kill 10 enemies.
+salvagezonecapturedspree.png;Relic Hunter;Help capture 3 Relic zones in a Salvage match.
+activitycompletesalvagemostcancels.png;Saboteur;In a Salvage match, neutralize the most probes.
+salvageprobecompletespree.png;Salvage Crew;As a team, salvage 3 relics in a match.
+abilityradiancegrenadekillmulti.png;Scorched Earth;Kill 3 enemies with grenades while Radiance is active.
+weaponscoutriflekillspree.png;Scout's Honor;In a single life, defeat 5 opposing Guardians with a Scout Rifle.
+killmulti7.png;Seventh Column;Defy probability by rapidly killing 7 enemies.
+activitycompletesalvageshutout.png;Shutout;As a team, stop your opponents from salvaging any Relics.
+weaponsidearmkillspree.png;Sidekick;In a single life, defeat 3 opposing Guardians with a Sidearm.
+vehiclepikekillsplatter.png;Skewered;Run over an enemy with a Pike.
+killmulti5.png;Slayer;Rapidly kill 5 enemies.
+abilitynovabombkillmulti.png;Space Magic;Kill 3 enemies with a single Nova Bomb.
+weaponrocketlauncherkillspree.png;Splash Damage;Kill 3 enemies with rockets in less than a second.
+meleekillhunterthrowingknifeheadshot.png;Stick Around;Fatally headshot an enemy with a Throwing Knife.
+abilityarclightningkillmulti.png;Storm Bringer;Defeat 3 opposing Guardians with a single Stormtrance activation.
+teamkillspree.png;Strength of the Wolf;As a team, kill 10 enemies with no one on your team dying.
+activitycompletevictoryrumbleblowout.png;Sum of All Tears;Win a Rumble match with a score greater than the sum of your enemies.
+weaponswordkillspree.png;Sword at a Gun Fight;Rapidly defeat 3 enemies with a Heavy Sword.
+activitycompletehighestscorewinning.png;The Best...Around;Achieve the highest score in a match while leading your team to victory.
+activitycompletecycle.png;The Cycle;Complete a round with at least a Primary, Special, Heavy, Grenade, Melee, and Super kill.
+artifactheist.png;The Heist;Take the Armament after defeating its previous carrier.
+activitycompletevictoryelimination.png;Trial By Fire;Win an Elimination match.
+killmulti3.png;Triple Down;Rapidly kill 3 enemies.
+singularityflagcapturemulti.png;Unstoppable Force;Capture the Spark 3 times in a single match.
+killassistspree.png;Unsung Hero;In a single life, assist your allies on 3 kills.
+firstplacekillspree.png;Uprising;In a single match, kill the leader 3 times.
+activitycompletevictory.png;Victory;Win a match.
+abilityghostgunkillmulti.png;Way of the Gun;Kill 3 enemies with a single Golden Gun charge.
+killspreeabsurd.png;We Ran out of Medals;Defeat 25 opposing Guardians without dying.
+abilityvoidbowkillmulti.png;Wild Hunt;Rapidly defeat 3 opposing Guardians with Shadowshot.
+activitycompletevictoryrumblelastsecond.png;Won't Be Beat;Win a Rumble match after trailing by 500 with 30 seconds remaining OR when an opponent was near the score limit.
+eliminationwipesolo.png;Wrecking Ball;Singlehandedly wipe the enemy team.
+activitycompletevictorysuddendeath.png;Zero Hour;Win a match in Overtime.

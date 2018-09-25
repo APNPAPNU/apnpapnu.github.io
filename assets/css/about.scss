@@ -22,3 +22,11 @@
     z-index: 100;
   }
 }
+.lower_left {
+width: 125px; height: 125px;
+position: absolute;
+bottom: 0%; left: 0;
+background-image: url("/assets/img/cayde-favicon.png");
+background-repeat: no-repeat;
+background-color: red;
+}

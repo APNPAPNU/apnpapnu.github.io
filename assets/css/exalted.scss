@@ -22,3 +22,261 @@
     z-index: 100;
   }
 }
+001
+#nav,#nav ul {
+002
+    list-style: none outside none;
+003
+    margin: 0;
+004
+    padding: 0;
+005
+}
+006
+#nav {
+007
+    background: url('menu_bg.png') no-repeat scroll 0 0 transparent;
+008
+    clear: both;
+009
+    font-size: 12px;
+010
+    height: 58px;
+011
+    padding: 0 0 0 9px;
+012
+    position: relative;
+013
+    width: 957px;
+014
+}
+015
+#nav ul {
+016
+    background-color: #222;
+017
+    border:1px solid #222;
+018
+    border-radius: 0 5px 5px 5px;
+019
+    border-width: 0 1px 1px;
+020
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+021
+    left: -9999px;
+022
+    overflow: hidden;
+023
+    position: absolute;
+024
+    top: -9999px;
+025
+    z-index: 2;
+026
+    -moz-transform: scaleY(0);
+027
+    -ms-transform: scaleY(0);
+028
+    -o-transform: scaleY(0);
+029
+    -webkit-transform: scaleY(0);
+030
+    transform: scaleY(0);
+031
+    -moz-transform-origin: 0 0;
+032
+    -ms-transform-origin: 0 0;
+033
+    -o-transform-origin: 0 0;
+034
+    -webkit-transform-origin: 0 0;
+035
+    transform-origin: 0 0;
+036
+    -moz-transition: -moz-transform 0.1s linear;
+037
+    -ms-transition: -ms-transform 0.1s linear;
+038
+    -o-transition: -o-transform 0.1s linear;
+039
+    -webkit-transition: -webkit-transform 0.1s linear;
+040
+    transition: transform 0.1s linear;
+041
+}
+042
+#nav li {
+043
+    background: url('menu_line.png') no-repeat scroll right 5px transparent;
+044
+    float: left;
+045
+    position: relative;
+046
+}
+047
+#nav li a {
+048
+    color: #FFFFFF;
+049
+    display: block;
+050
+    float: left;
+051
+    font-weight: normal;
+052
+    height: 30px;
+053
+    padding: 23px 20px 0;
+054
+    position: relative;
+055
+    text-decoration: none;
+056
+    text-shadow: 1px 1px 1px #000000;
+057
+}
+058
+#nav li:hover > a {
+059
+    color: #00B4FF;
+060
+}
+061
+#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
+062
+    background: none repeat scroll 0 0 #121212;
+063
+    outline: 0 none;
+064
+}
+065
+#nav li:hover ul.subs {
+066
+    left: 0;
+067
+    top: 53px;
+068
+    width: 180px;
+069
+    -moz-transform: scaleY(1);
+070
+    -ms-transform: scaleY(1);
+071
+    -o-transform: scaleY(1);
+072
+    -webkit-transform: scaleY(1);
+073
+    transform: scaleY(1);
+074
+}
+075
+#nav ul li {
+076
+    background: none;
+077
+    width: 100%;
+078
+}
+079
+#nav ul li a {
+080
+    float: none;
+081
+}
+082
+#nav ul li:hover > a {
+083
+    background-color: #121212;
+084
+    color: #00B4FF;
+085
+}
+086
+#lavalamp {
+087
+    background: url('lavalamp.png') no-repeat scroll 0 0 transparent;
+088
+    height: 16px;
+089
+    left: 13px;
+090
+    position: absolute;
+091
+    top: 0px;
+092
+    width: 64px;
+093
+    -moz-transition: all 300ms ease;
+094
+    -ms-transition: all 300ms ease;
+095
+    -o-transition: all 300ms ease;
+096
+    -webkit-transition: all 300ms ease;
+097
+    transition: all 300ms ease;
+098
+}
+099
+#lavalamp:hover {
+100
+    -moz-transition-duration: 3000s;
+101
+    -ms-transition-duration: 3000s;
+102
+    -o-transition-duration: 3000s;
+103
+    -webkit-transition-duration: 3000s;
+104
+    transition-duration: 3000s;
+105
+}
+106
+#nav li:nth-of-type(1):hover ~ #lavalamp {
+107
+    left: 13px;
+108
+}
+109
+#nav li:nth-of-type(2):hover ~ #lavalamp {
+110
+    left: 90px;
+111
+}
+112
+#nav li:nth-of-type(3):hover ~ #lavalamp {
+113
+    left: 170px;
+114
+}
+115
+#nav li:nth-of-type(4):hover ~ #lavalamp {
+116
+    left: 250px;
+117
+}
+118
+#nav li:nth-of-type(5):hover ~ #lavalamp {
+119
+    left: 330px;
+120
+}
+121
+#nav li:nth-of-type(6):hover ~ #lavalamp {
+122
+    left: 410px;
+123
+}
+124
+#nav li:nth-of-type(7):hover ~ #lavalamp {
+125
+    left: 490px;
+126
+}
+127
+#nav li:nth-of-type(8):hover ~ #lavalamp {
+128
+    left: 565px;
+129
+}

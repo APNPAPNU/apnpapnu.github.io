@@ -1,18 +1,7 @@
 ---
 ---
-.hue 
- {
-  -webkit-animation: hue 3s infinite;
-}
-
-@-webkit-keyframes hue 
-  0%, 100%  { -webkit-filter: hue-rotate(0deg); 
-  50% { -webkit-filter: hue-rotate(180deg); 
-
-@-webkit-keyframes hue {
-  0%, 100%   -webkit-filter: hue-rotate(0deg); 
-  50%  -webkit-filter: hue-rotate(180deg); 
-  background-image: url('/assets/img/standoff.jpg');
+.hero#roi-homepage-banner {
+  background-image: url('/assets/img/roi-homepage.jpg');
   position: relative;
   .hero-content {
     z-index: 200;

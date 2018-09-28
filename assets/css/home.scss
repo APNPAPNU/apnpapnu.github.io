@@ -1,21 +1,14 @@
 ---
 ---
-.hero#roi-homepage-banner {
-  img { display: block; width: 100%; }
-
-img.animated {
-  -webkit-animation: filter-animation 5s infinite;
+.hue {
+  -webkit-animation: hue 3s infinite;
 }
 
-@-webkit-keyframes filter-animation {
-  0% {
-    -webkit-filter: sepia(0) saturate(2);
-  }
-  
-  50% {
-    -webkit-filter: sepia(1) saturate(8);
-  }
-  
-  100% {
-    -webkit-filter: sepia(0) saturate(2);
-  }
+@-webkit-keyframes hue {
+  0%, 100%  { -webkit-filter: hue-rotate(0deg); }
+  50% { -webkit-filter: hue-rotate(180deg); }
+}
+
+.saturate {
+  -webkit-animation: saturate 3s infinite;
+}

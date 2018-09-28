@@ -1,8 +1,24 @@
 ---
 ---
 .hero#roi-homepage-banner {
-  background-image: url('/assets/img/standoff.jpg');
-  position: relative;
+  img { display: block; width: 100%; }
+
+img.animated {
+  -webkit-animation: filter-animation 5s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: sepia(0) saturate(2);
+  }
+  
+  50% {
+    -webkit-filter: sepia(1) saturate(8);
+  }
+  
+  100% {
+    -webkit-filter: sepia(0) saturate(2);
+  }
   .hero-content {
     z-index: 200;
    }

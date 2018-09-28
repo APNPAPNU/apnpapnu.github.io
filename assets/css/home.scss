@@ -8,24 +8,10 @@
 @-webkit-keyframes hue {
   0%, 100%  { -webkit-filter: hue-rotate(0deg); }
   50% { -webkit-filter: hue-rotate(180deg); }
-}
-
-.saturate {
-  -webkit-animation: saturate 3s infinite;
-}
-.homeban#roi-homepage-banner
- {
-  -webkit-animation: hue 3s infinite;
-}
 
 @-webkit-keyframes hue {
   0%, 100%  { -webkit-filter: hue-rotate(0deg); }
   50% { -webkit-filter: hue-rotate(180deg); }
-}
-
-.saturate {
-  -webkit-animation: saturate 3s infinite;
-} {
   background-image: url('/assets/img/standoff.jpg');
   position: relative;
   .hero-content {

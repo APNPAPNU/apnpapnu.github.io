@@ -13,9 +13,8 @@
 .saturate {
   -webkit-animation: saturate 3s infinite;
 }
-.homeban {
-  background-image: url('/assets/img/cayde-looking-up-2.jpeg');
-  background-position: top;
+.homeban#roi-homepage-banner {
+  background-image: url('/assets/img/roi-homepage.jpg');
   position: relative;
   .hero-content {
     z-index: 200;
@@ -31,7 +30,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(black, 0.65);
+    background-color: rgba(black, 0.6);
     z-index: 100;
   }
 }

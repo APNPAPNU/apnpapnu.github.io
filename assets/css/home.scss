@@ -1,10 +1,10 @@
 ---
 ---
 @keyframes example {
-    0%   {background-color: rgba(blue, 0.6);}
-    25%  {background-color: rgba(red, 0.6);}
-    50%  {background-color: rgba(yellow, 0.6);}
-    100% {background-color: rgba(green, 0.6);}
+    0%   {background-color: rgba(blue, 0.2);}
+    25%  {background-color: rgba(red, 0.2);}
+    50%  {background-color: rgba(yellow, 0.2);}
+    100% {background-color: rgba(green, 0.2);}
 }
 .hero#roi-homepage-banner {
   background-image: url('/assets/img/roi-homepage.jpg');
@@ -25,7 +25,8 @@
     height: 100%;
     background-color: rgba(black, 0.6);
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     z-index: 100;
   }
 }

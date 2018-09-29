@@ -1,7 +1,7 @@
 ---
 ---
 @keyframes example {
-    0%   {background-color: rgba(blue, 0.2);}
+    0%   {background-color: rgba(Maroon, 0.2);}
     25%  {background-color: rgba(red, 0.2);}
     50%  {background-color: rgba(yellow, 0.2);}
     75% {background-color: rgba(green, 0.2);}
@@ -26,7 +26,7 @@
     height: 100%;
     background-color: rgba(black, 0.1);
     animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     z-index: 100;
   }

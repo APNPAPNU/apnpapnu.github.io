@@ -1,10 +1,10 @@
 ---
 ---
 @keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    0%   {background-color: rgba(blue, 0.6);}
+    25%  {background-color: rgba(red, 0.6);}
+    50%  {background-color: rgba(yellow, 0.6);}
+    100% {background-color: rgba(green, 0.6);}
 }
 .hero#roi-homepage-banner {
   background-image: url('/assets/img/roi-homepage.jpg');

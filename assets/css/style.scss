@@ -130,7 +130,9 @@ position: absolute;
   z-index: 400;
   span {
      background-image: url('/assets/img/ghost2.png');
-    display: block;
+    width: 24px;
+    height: 2px;
+	  display: block;
     position: absolute;
     -webkit-transition: 300ms ease-in-out;
     transition: 300ms ease-in-out;

@@ -68,6 +68,33 @@ body {
     opacity: .8;
   }
 }
+.roiNav-logo2 {
+  display: block;
+  padding: 0 1rem;
+	transition: 300ms ease;
+  @media screen and (max-width: 1024px) {
+    left: 1rem;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  img,
+  strong {
+    display: inline-block;
+    vertical-align: middle;
+  }
+	img {
+		margin-right: 0.618rem;
+	}
+  strong {
+    color: #e3d081;
+    font-size: 1.618rem;
+  }
+  &:hover {
+    opacity: .8;
+  }
+}
 .roiNav-item {
   align-self: stretch;
   display: block;

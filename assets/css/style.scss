@@ -131,7 +131,7 @@ body {
   right: 1rem;
   z-index: 400;
   span {
-    background-color: #fff;
+    background-color: #gold;
     display: block;
     position: absolute;
     width: 24px;
@@ -143,7 +143,7 @@ body {
     }
     &:last-child {
       top: 15px;
-      width: 16px;
+      width: 24px;
       right: 0;
     }
   }

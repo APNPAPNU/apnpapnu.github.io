@@ -42,7 +42,7 @@ body {
   }
 }
 .roiNav-logo {
-  display: circle;
+  display: block;
   padding: 0 1rem;
 	transition: 300ms ease;
   @media screen and (max-width: 1024px) {
@@ -121,19 +121,21 @@ body {
 }
 
 .roiNav-trigger {
- display: none;
-position: absolute;
+  display: none;
+  height: 24px;
+  width: 24px;
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 1rem;
   z-index: 400;
   span {
-     background-image: url('/assets/img/ghost2.png');
+    background-color: #fff;
+    display: block;
+    position: absolute;
     width: 24px;
     height: 2px;
-	  display: block;
-    position: absolute;
     -webkit-transition: 300ms ease-in-out;
     transition: 300ms ease-in-out;
     &:first-child {

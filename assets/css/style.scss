@@ -121,15 +121,16 @@ body {
 }
 
 .roiNav-trigger {
- background-image: url('/assets/img/ghost.png);
-  position: absolute;
+ display: none;
+	position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 1rem;
   z-index: 400;
   span {
-    background-color: #fff;
+     background-image: url('/assets/img/ghost.png);
+	    background-color: #fff;
     display: block;
     position: absolute;
     width: 24px;

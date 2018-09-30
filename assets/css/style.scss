@@ -68,7 +68,6 @@ body {
     opacity: .8;
   }
 }
-
 .roiNav-item {
   align-self: stretch;
   display: block;
@@ -132,7 +131,7 @@ body {
   right: 1rem;
   z-index: 400;
   span {
-    background-color: #gold;
+    background-color: #fff;
     display: block;
     position: absolute;
     width: 24px;
@@ -144,7 +143,7 @@ body {
     }
     &:last-child {
       top: 15px;
-      width: 24px;
+      width: 16px;
       right: 0;
     }
   }

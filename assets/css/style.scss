@@ -69,13 +69,13 @@ body {
   }
 }
 .roiNav-logo2 {
-  display: block;
+  display: inline-block;
   padding: 0 1rem;
 	transition: 300ms ease;
   @media screen and (max-width: 1024px) {
     left: 1rem;
     padding: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
   }

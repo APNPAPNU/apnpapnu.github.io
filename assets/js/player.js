@@ -166,9 +166,9 @@ $(function() {
 					response = data.Response,
 					about = response.about,
 					banner = response.profileThemeName,
-					blizzard = response.psnDisplayName,
+					blizzard = response.DisplayName,
 					icon = response.profilePicturePath,
-					name = psn.substring(0, psn.indexOf('#'));
+					name = response.psndisplayname;
 
 					// Populate profile
 					$('.hero#player-hero').css({

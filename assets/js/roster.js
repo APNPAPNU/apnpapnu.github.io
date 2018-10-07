@@ -109,7 +109,8 @@ function listMembers(rsp) {
           '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
           '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
           '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
-          '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'
+          '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>' +
+	  '<div class="j-col j-col-3 member-button"><a href="https://gambit-tracker.firebaseapp.com/#/user/2/'+ destinyId + '">' + 'gambit stats' + '</a></div>'
         );
 
 			if (rsp[i].exalted) {

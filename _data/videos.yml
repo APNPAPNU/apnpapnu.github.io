@@ -1,17 +1,15 @@
-
-
 - title: "apnp_apnu livestream"
   platform: youtube
   source: live_stream?channel=UCk5D5unj8m-l4vytWqKeLow
-  player: apnp_apnu
+  player: apnp_apnu rickypettit12
 
-- title: "Boss-Melt-2"
+- title: "Boss Melt 2"
   platform: youtube
   source: JKyFy6OHKcg
-  player: apnp_apnu RickyPettit12 Geneticsky Spqrmerk
-  
-  - title: "How to melt a primeval in 2 seconds"
+  player: apnp_apnu
+
+- title: "how to melt a primeval in 2 seconds"
   platform: youtube
   source: pPIYOqTwnp0
-  player: apnp_apnu RickyPettit12 Geneticsky Spqrmerk
-
+  player: apnp_apnu
+  

@@ -1,4 +1,13 @@
----
+$.ajax({
+  url: "https://www.bungie.net/Platform/Destiny2/2/Account/4611686018429000034/Character/0/Stats/?groups=0,0&modes=63&periodType=0"",
+  headers: {
+    "X-API-Key": apiKey
+  }
+}).done(function(json) {
+  var members = json.Response.results;
+  console.log('Member list:', members);
+  listMembers(members);
+});---
 ---
 $(function() {
 

@@ -104,4 +104,5 @@ $(function() {
         console.log('Error loading player stats:', data);
       }
     });
+	});
 

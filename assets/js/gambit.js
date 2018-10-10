@@ -26,38 +26,7 @@ $(function() {
 	        assists = stats.assists.basic.displayValue,
 	        precisionKills = stats.precisionKills.basic.displayValue,
 	       
-	        mostKills = stats.bestSingleGameKills.basic.displayValue,
-	        killSpree = stats.longestKillSpree.basic.displayValue,
-	        mostPrecision = stats.mostPrecisionKills.basic.displayValue,
-	        weapon = stats.weaponBestType.basic.displayValue,
-         
-          // patrol stats
-          patrol = data.Response.patrol.allTime,
-	  patrolKills = patrol.kills.basic.displayValue,
-          patrolDeaths = patrol.deaths.basic.displayValue,
-	  patrolClock = patrol.secondsPlayed.basic.displayValue,
-          patrolHours = calcHours(patrolClock),
-	  patrolWeapon = patrol.weaponBestType.basic.displayValue,
-	  patrolHPE = patrol.heroicPublicEventsCompleted.basic.displayValue,
-          // raid stats
-          raid = data.Response.raid.allTime,
-          raidClears = raid.activitiesCleared.basic.displayValue,
-          raidKd = raid.killsDeathsRatio.basic.displayValue,
-          raidKills = raid.kills.basic.displayValue,
-          raidAvgKills = raid.kills.pga.displayValue,
-          raidBestKills = raid.bestSingleGameKills.basic.displayValue,
-          
-          // story stats
-          story = data.Response.story.allTime,
-        
-          // strikes stats
-          strikes = data.Response.allStrikes.allTime,
-          strikesClears = strikes.activitiesCleared.basic.displayValue,
-          strikesKd = strikes.killsDeathsRatio.basic.displayValue,
-          strikesKills = strikes.kills.basic.displayValue,
-          strikesAvgKills = strikes.kills.pga.displayValue,
-          strikesBestKills = strikes.bestSingleGameKills.basic.displayValue,
-        
+	      
 
          
 
@@ -74,24 +43,7 @@ $(function() {
 	        $('#player-kill-spree').text(killSpree);
 	        $('#player-most-kills').text(mostKills);
 	        $('#player-most-precision').text(mostPrecision);
-          // raid
-          $('#player-raid-clears').text(raidClears);
-          $('#player-raid-kd').text(raidKd);
-          $('#player-raid-kills').text(raidKills);
-          $('#player-raid-kills-pga').text(raidAvgKills);
-          $('#player-raid-best-kills').text(raidBestKills);
-          // strikes
-          $('#player-strike-clears').text(strikesClears);
-          $('#player-strike-kd').text(strikesKd);
-          $('#player-strike-kills').text(strikesKills);
-          $('#player-strike-kills-pga').text(strikesAvgKills);
-          $('#player-strike-best-kills').text(strikesBestKills);
-	  //patrol
-	  $('#player-heroic-public-events').text(patrolHPE);
-          $('#player-patrol-kills').text(patrolKills);
-	  $('#player-patrol-deaths').text(patrolDeaths);
-          $('#player-patrol-best-weapon').text(patrolWeapon);
-	  $('#player-patrol-kills-pga').text(strikesAvgKills);
+        
           			
 
       },

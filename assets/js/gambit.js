@@ -30,8 +30,7 @@ $(function() {
 	        killSpree = stats.longestKillSpree.basic.displayValue,
 	        mostPrecision = stats.mostPrecisionKills.basic.displayValue,
 	        weapon = stats.weaponBestType.basic.displayValue,
-          pvpClock = stats.secondsPlayed.basic.displayValue,
-          pvpHours = calcHours(pvpClock),
+         
           // patrol stats
           patrol = data.Response.patrol.allTime,
 	  patrolKills = patrol.kills.basic.displayValue,
@@ -47,12 +46,10 @@ $(function() {
           raidKills = raid.kills.basic.displayValue,
           raidAvgKills = raid.kills.pga.displayValue,
           raidBestKills = raid.bestSingleGameKills.basic.displayValue,
-          raidClock = raid.secondsPlayed.basic.displayValue,
-          raidHours = calcHours(raidClock),
+          
           // story stats
           story = data.Response.story.allTime,
-          storyClock = story.secondsPlayed.basic.displayValue,
-          storyHours = calcHours(storyClock),
+        
           // strikes stats
           strikes = data.Response.allStrikes.allTime,
           strikesClears = strikes.activitiesCleared.basic.displayValue,
@@ -60,14 +57,13 @@ $(function() {
           strikesKills = strikes.kills.basic.displayValue,
           strikesAvgKills = strikes.kills.pga.displayValue,
           strikesBestKills = strikes.bestSingleGameKills.basic.displayValue,
-          strikesClock = strikes.secondsPlayed.basic.displayValue,
-          strikesHours = calcHours(strikesClock);
+        
 
          
 
 	        // Populate stats
           // pvp
-	        $('#player-clock').text(totalHours + 'h');
+	   
 	        $('#player-efficiency').text(efficiency);
 	        $('#player-kd').text(kd);
 	        $('#player-kda').text(kda);

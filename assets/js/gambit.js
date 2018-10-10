@@ -7,8 +7,7 @@ $.ajax({
   var members = json.Response.results;
   console.log('Member list:', members);
   listMembers(members);
-});---
----
+});
 $(function() {
 
   

@@ -17,25 +17,7 @@ $(function() {
         "X-API-Key": apiKey
       },
       success: function(data) {
-				if (data.ErrorStatus === 'Success') {
-					var
-          calcHours = function(activity) {
-            // as long as the activity has at least 1 hour
-            if (activity.indexOf('s') < 0) {
-              // if there's an 'm' leave off the minutes value
-              if (activity.indexOf('m') > -1) {
-                var trim = activity.split('h');
-                // return only hours
-                return (Number(trim[0]));
-              } else {
-                // if no 's' or 'm', convert days to hours + hours
-                var hours = activity.match(/\d+/g);
-                return ((Number(hours[0]) * 24) + Number(hours[1]));
-              }
-            } else {
-              return 0;
-            }
-          },
+				
           // pvp stats
 	        stats = data.Response.pvecomp_gambit.allTime,
 	        efficiency = stats.efficiency.basic.displayValue,
@@ -45,7 +27,7 @@ $(function() {
 	        deaths = stats.deaths.basic.displayValue,
 	        assists = stats.assists.basic.displayValue,
 	        precisionKills = stats.precisionKills.basic.displayValue,
-	        combatRating = stats.combatRating.basic.displayValue,
+	       
 	        mostKills = stats.bestSingleGameKills.basic.displayValue,
 	        killSpree = stats.longestKillSpree.basic.displayValue,
 	        mostPrecision = stats.mostPrecisionKills.basic.displayValue,
@@ -83,14 +65,7 @@ $(function() {
           strikesClock = strikes.secondsPlayed.basic.displayValue,
           strikesHours = calcHours(strikesClock);
 
-          totalHours = (patrolHours + pvpHours + raidHours + storyHours + strikesHours);
-	        console.log('Player stats:', data);
-          console.log('Player hours:\n Patrol:', patrolHours + 'h\n',
-            'PvP:', pvpHours + 'h\n',
-            'Raid:', raidHours + 'h\n',
-            'Story:', storyHours + 'h\n',
-            'Strikes:', strikesHours + 'h'
-          );
+         
 
 	        // Populate stats
           // pvp

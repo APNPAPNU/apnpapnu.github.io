@@ -171,6 +171,6 @@ $(function() {
         alert('Uh oh, looks like Bungie\'s doing server maintenance or having problems. Stats will be back up when Bungie\'s servers are. Please check back again soon!');
       }
     });
-  }
+  });
 
 });

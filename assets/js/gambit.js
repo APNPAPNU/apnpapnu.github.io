@@ -4,9 +4,7 @@ $.ajax({
     "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
   }
 }).done(function(json) {
-  var members = json.Response.results;
-  console.log('Member list:', members);
-  listMembers(members);
+
 });
 $(function() {
 

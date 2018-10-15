@@ -16,7 +16,7 @@ $(function() {
       },
       success: function(data) {
 				
-          // pvp stats
+          // Gambit stats
 	        stats = data.Response.pvecomp_gambit.allTime,
 	        efficiency = stats.efficiency.basic.displayValue,
 	        kd = stats.killsDeathsRatio.basic.displayValue,
@@ -25,6 +25,10 @@ $(function() {
 	        deaths = stats.deaths.basic.displayValue,
 	        assists = stats.assists.basic.displayValue,
 	        precisionKills = stats.precisionKills.basic.displayValue,
+	 bestSingleGameKills = stats.bestSingleGameKills.basic.displayValue,
+	  invasions = stats.invasions.basic.displayValue,
+	 invasionKills = stats.invasionKills.basic.displayValue,
+	  weaponBestType = stats.weaponBestType.basic.displayValue,
 	       
 	      
 
@@ -43,7 +47,16 @@ $(function() {
 	        $('#player-kill-spree').text(killSpree);
 	        $('#player-most-kills').text(mostKills);
 	        $('#player-most-precision').text(mostPrecision);
-        
+                $('#player-efficiency').text(efficiency);
+	        $('#player-kd').text(kd);
+	        $('#player-kda').text(kda);
+	        $('#player-kills').text(kills);
+	        $('#player-assists').text(assists);
+	        $('#player-precision-kills').text(precisionKills);
+	        $('#player-weapon').text(weapon);
+	        $('#player-kill-spree').text(killSpree);
+	        $('#player-most-kills').text(mostKills);
+	        $('#player-most-precision').text(mostPrecision);
           			
 
       },

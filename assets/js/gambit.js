@@ -49,7 +49,7 @@ $(function() {
 	        weaponBestType = stats.weaponBestType.basic.displayValue,
 	      
                 multiplier = 100,
-                winlossratio = (activitiesWon / activitiesEntered * multiplier,)
+                winlossratio = (activitiesWon / activitiesEntered * multiplier);
 
 	        // Populate stats
           // pvp

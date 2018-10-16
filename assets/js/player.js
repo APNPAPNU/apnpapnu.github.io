@@ -221,7 +221,7 @@ $(function() {
   }
 
 });
-$.ajax(
+$.ajax({
   url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/?groups=0,0&modes=63&periodType=0",
   headers: {
     "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
@@ -232,7 +232,7 @@ $.ajax(
 $(function() {
 
   
-    $.ajax(
+    $.ajax({
       url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/?groups=0,0&modes=63&periodType=0",
       headers: {
         "X-API-Key": apiKey
@@ -325,4 +325,6 @@ $(function() {
         console.log('Error loading player stats:', data);
       }
     });
+	});
+  });
 	});

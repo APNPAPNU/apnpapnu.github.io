@@ -270,9 +270,7 @@ $(function() {
 	        ginvasionKills = gstats.invasionKills.basic.displayValue,
 	        gweaponBestType = gstats.weaponBestType.basic.displayValue,
 
-                multiplier = 100,
-                winlossratio = (gactivitiesWon / activitiesEntered * multiplier);
-
+              
 	        // Populate stats
           // pvp
 	   

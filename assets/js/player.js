@@ -271,7 +271,7 @@ $(function() {
 	        gweaponBestType = gstats.weaponBestType.basic.displayValue,
 
                 multiplier = 100,
-                winlossratio = (activitiesWon / activitiesEntered * multiplier);
+                winlossratio = (gactivitiesWon / activitiesEntered * multiplier);
 
 	        // Populate stats
           // pvp

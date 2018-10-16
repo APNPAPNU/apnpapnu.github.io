@@ -1,9 +1,8 @@
----
----
+
 $(function() {
 
   var
-  {% include js/api.js %},
+
     bungieId = checkParams('bungieId'),
     destinyId = checkParams('destinyId'),
     joined = checkParams('joined'),
@@ -156,7 +155,7 @@ $(function() {
 $(function() {
 
   var
-  {% include js/api.js %},
+
     bungieId = checkParams('bungieId'),
     destinyId = checkParams('destinyId'),
     joined = checkParams('joined'),
@@ -326,5 +325,4 @@ $(function() {
       }
     });
 	});
-  });
-	});
+  }	});

@@ -65,10 +65,10 @@ $(function() {
 	        $('#player-g-blocker-kills').text(gblockerKills);
 	        $('#player-g-mob-kills').text(gmobKills);
                 $('#player-g-high-value-kills').text(ghighValueKills);
-	        $('#player-g=kd').text(gkd);
-	        $('#player-g-kda').text(gkda);
-	        $('#player-g-kills').text(gkills);
-	        $('#player-g-assists').text(gassists);
+	        $('#player-g-motes-Picked-Up').text(gmotesPickedUp);
+	        $('#player-g-motes-Deposited').text(gmotesDeposited);
+	        $('#player-g-primeval-Damage').text(gprimevalDamage);
+	        $('#player-g-best-Single-Game-Kills ').text(gbestSingleGameKills );
 	        $('#player-g-precision-kills').text(gprecisionKills);
 	        $('#player-g-weapon').text(gweapon);
 	        $('#player-g-kill-spree').text(gkillSpree);

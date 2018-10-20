@@ -285,14 +285,14 @@ $(function() {
 	        $('#player-g-blocker-kills').text(gblockerKills);
 	        $('#player-g-mob-kills').text(gmobKills);
                 $('#player-g-high-value-kills').text(ghighValueKills);
-	        $('#player-g=kd').text(gkd);
-	        $('#player-g-kda').text(gkda);
-	        $('#player-g-kills').text(gkills);
-	        $('#player-g-assists').text(gassists);
+	        $('#player-g-motes-Picked-Up').text(gmotesPickedUp);
+	        $('#player-g-motes-Deposited').text( gmotesDeposited);
+	        $('#player-g-primeval-Damage ').text(gprimevalDamage );
+	        $('#player-g-small=Blockers-Sent').text(gsmallBlockersSent);
 	        $('#player-g-precision-kills').text(gprecisionKills);
-	        $('#player-g-weapon').text(gweapon);
-	        $('#player-g-kill-spree').text(gkillSpree);
-	        $('#player-g-most-kills').text(gmostKills);
+	        $('#player-g-kills-Deaths-Ratio').text(gkillsDeathsRatio);
+	        $('#player-g-medium-Blockers-Sent').text(gmediumBlockersSent);
+	        $('#player-g-large-Blockers-Sent').text(glargeBlockersSent);
 	        $('#player-g-most-precision').text(gmostPrecision);
           	$('#player-g-efficiency').text(gefficiency);
 	        $('#player-g-kd').text(gkd);
@@ -307,14 +307,7 @@ $(function() {
                 $('#player-g-efficiency').text(gefficiency);
 	        $('#player-g-kd').text(gkd);
 	        $('#player-g-kda').text(gkda);
-	        $('#player-g-kills').text(gkills);
-	        $('#player-g-assists').text(gassists);
-	        $('#player-g-precision-kills').text(gprecisionKills);
-	        $('#player-g-weapon').text(gweapon);
-	        $('#player-g-kill-spree').text(gkillSpree);
-	        $('#player-g-most-kills').text(gmostKills);
-	        $('#player-g-most-precision').text(gmostPrecision);
-          					
+	   
 
       },
       error: function(data) {

@@ -29,13 +29,13 @@ $(function(){
 
 	//GetBungieAccount
 	$.ajax({
-		url: "http://www.bungie.net/Platform/User/GetBungieAccount/5962930/254/",
+		url: "https://www.bungie.net/Platform/User/GetBungieAccount/5962930/254/",
 		async: true,
   		crossDomain: true,
 		methode: "GET",
 		dataType: "json",
 		headers: {
-			"x-api-key": "f37abf77de544293b9c2e5837a863462"
+			"x-api-key": "47b810e692d64237911c2cbe0d433cfe"
 	}
 	}).done(function(e) {
 		response = e.Response;
@@ -70,7 +70,7 @@ $(function(){
 		methode: "GET",
 		dataType: "json",
 		headers: {
-			"x-api-key": "f37abf77de544293b9c2e5837a863462"
+			"x-api-key": "47b810e692d64237911c2cbe0d433cfe"
 		}
 	}).done(function(e){
 		console.log("I", e.Response);
@@ -151,7 +151,7 @@ $(function(){
 		methode: "GET",
 		dataType: "json",
 		headers: {
-			"x-api-key": "f37abf77de544293b9c2e5837a863462"
+			"x-api-key": "47b810e692d64237911c2cbe0d433cfe"
 		}
 	}).done(function(e){
 		console.log("II", e.Response);
@@ -226,7 +226,7 @@ $(function(){
 		methode: "GET",
 		dataType: "json",
 		headers: {
-			"x-api-key": "f37abf77de544293b9c2e5837a863462"
+			"x-api-key": "47b810e692d64237911c2cbe0d433cfe"
 		}
 	}).done(function(e){
 		console.log("III", e.Response);

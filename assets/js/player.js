@@ -293,12 +293,12 @@ $(function() {
 	        $('#player-g-kills-Deaths-Ratio').text(gkillsDeathsRatio);
 	        $('#player-g-medium-Blockers-Sent').text(gmediumBlockersSent);
 	        $('#player-g-large-Blockers-Sent').text(glargeBlockersSent);
-	        $('#player-g-most-precision').text(gmostPrecision);
-          	$('#player-g-efficiency').text(gefficiency);
-	        $('#player-g-kd').text(gkd);
-	        $('#player-g-kda').text(gkda);
-	        $('#player-g-kills').text(gkills);
-	        $('#player-g=assists').text(gassists);
+	        $('#player-g-fastest-Completion-Ms').text(gfastestCompletionMs);
+          	$('#player-g-motes-Denied').text(gmotesDenied);
+	        $('#player-g-motes-Lost').text(gmotesLost);
+	        $('#player-g=invasions').text(ginvasions);
+	        $('#player-g-invasion-Kills').text(ginvasionKills);
+	        $('#player-g-weapon-Best-Type').text(gweaponBestType);
 	        $('#player-g-precision-kills').text(gprecisionKills);
 	        $('#player-g-weapon').text(gweapon);
 	        $('#player-g-kill-spree').text(gkillSpree);

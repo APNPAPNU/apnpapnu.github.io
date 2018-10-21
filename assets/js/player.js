@@ -288,7 +288,7 @@ $(function() {
 	        $('#player-g-motes-Picked-Up').text(gmotesPickedUp);
 	        $('#player-g-motes-Deposited').text( gmotesDeposited);
 	        $('#player-g-primeval-Damage ').text(gprimevalDamage );
-	        $('#player-g-small=Blockers-Sent').text(gsmallBlockersSent);
+	        $('#player-g-small-Blockers-Sent').text(gsmallBlockersSent);
 	        $('#player-g-precision-kills').text(gprecisionKills);
 	        $('#player-g-kills-Deaths-Ratio').text(gkillsDeathsRatio);
 	        $('#player-g-medium-Blockers-Sent').text(gmediumBlockersSent);

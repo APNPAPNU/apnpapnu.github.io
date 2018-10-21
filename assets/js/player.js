@@ -296,7 +296,7 @@ $(function() {
 	        $('#player-g-fastest-Completion-Ms').text(gfastestCompletionMs);
           	$('#player-g-motes-Denied').text(gmotesDenied);
 	        $('#player-g-motes-Lost').text(gmotesLost);
-	        $('#player-g=invasions').text(ginvasions);
+	        $('#player-g-invasions').text(ginvasions);
 	        $('#player-g-invasion-Kills').text(ginvasionKills);
 	        $('#player-g-weapon-Best-Type').text(gweaponBestType);
 	        $('#player-g-precision-kills').text(gprecisionKills);

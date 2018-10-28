@@ -1,15 +1,21 @@
 - title: "apnp_apnu livestream"
   platform: youtube
   source: live_stream?channel=UCk5D5unj8m-l4vytWqKeLow
-  player: apnp_apnu rickypettit12
+  player: apnp_apnu 
 
 - title: "Boss Melt 2"
   platform: youtube
   source: JKyFy6OHKcg
-  player: apnp_apnu
+  player: apnp_apnu rickypettit12
 
 - title: "how to melt a primeval in 2 seconds"
   platform: youtube
   source: pPIYOqTwnp0
-  player: apnp_apnu
+  player: apnp_apnu 
+  rickypettit12
+
+- title: "3 man melt"
+  platform: youtube
+  source: UaeAFTpiFe8
+  player: rickypettit12
   

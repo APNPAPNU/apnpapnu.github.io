@@ -93,7 +93,9 @@ function listMembers(rsp) {
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
         rank = rsp[i].memberType;
-			// configure DOM node and add to page
+			// configure D OM node and add to page
+	     $('#destiny-iD').text(destinyId);
+	   
       member
         .attr({
           'class': 'j-row vertical-center-row member',
@@ -109,9 +111,8 @@ function listMembers(rsp) {
           '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
           '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
           '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
-          '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'+
-	      '<div class="j-col j-col-3 members-button"><a class="button outline gold full-width">' + '<a href="https://https://braytech.org/2/' + destinyId +'">Visit W3Schools</a>' + '</a></div>'
-	  );
+          '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'
+	       );
 
 			if (rsp[i].exalted) {
 				member.addClass('exalted')

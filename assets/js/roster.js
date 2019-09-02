@@ -113,7 +113,7 @@ function listMembers(rsp) {
 		}
 	})
 	.success(function(response) {var
-CharacterId = response.characters.characterbase.characterId};
+CharacterId = response.characters.characterbase.characterId});
 
 		if (json.ErrorStatus === 'Success') {
 

@@ -128,7 +128,7 @@ CharacterId = response.characters.characterbase.characterId});
 
 		}
 
-	})
+	}
 var
 {CharacterId = response.characters.characterbase.characterId};
 	    html

@@ -114,8 +114,6 @@ function listMembers(rsp) {
 	}).success(function(res) {
 		console.log('PS4 stats:', res);
 	})
-
-)
 var
 CharacterId = response.data.characters.characterbase.CharacterId;
 	    $('#CHaracter-Id').text(CharacterId);

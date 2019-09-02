@@ -137,8 +137,8 @@ var
           '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
           '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
           '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'+
-	     '<div class="j-col j-col-3 members-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + characterId +' /legend">In Depth Stats</a>' + '</a></div>'
-	       );
+	     '<div class="j-col j-col-3 members-button">{<a href="https://braytech.org/2/'+ destinyId +'/' + characterId +' /legend">In Depth Stats</a>' + '</a></div>'
+		    });
 
 			if (rsp[i].exalted) {
 				member.addClass('exalted')

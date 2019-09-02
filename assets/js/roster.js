@@ -107,17 +107,31 @@ function listMembers(rsp) {
         })
 	    
 	$.ajax({
-		url: 'https://www.bungie.net/Platform/Destiny/2/Account/' + destinyId + '/',
+		url: "https://www.bungie.net/Platform/Destiny/2/Account/' + destinyId + '/
+",
 		headers: {
-			'X-API-Key': "47b810e692d64237911c2cbe0d433cfe"
+			"X-API-Key":"47b810e692d64237911c2cbe0d433cfe"
 		}
-	}).success(function(res) {
-		console.log('PS4 stats:', res);
+	})
+	.success(function(response) {
+
+		if (json.ErrorStatus === 'Success') {
+
+			response = response.data;
+
+			console.log('Exalted member list:', roster);
+
+		} else {
+
+			alert('Uh oh, looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
+			console.log(json);
+
+		}
+
 	})
 var
 CharacterId = response.data.characters.characterbase.CharacterId;
-	    $('#CHaracter-Id').text(CharacterId);
-	    html
+	    
 	    .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
           '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +

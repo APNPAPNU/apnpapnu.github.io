@@ -107,7 +107,7 @@ function listMembers(rsp) {
         })
 	    
 	$.ajax({
-		url: "https://www.bungie.net/Platform/Destiny/2/Account/'+destinyId+'/",
+		url: "https://www.bungie.net/Platform/Destiny/2/Account/"'+ destinyId +'"/",
 		headers: {
 			"X-API-Key":"47b810e692d64237911c2cbe0d433cfe"
 		}
@@ -137,7 +137,7 @@ CharacterId = response.characters.characterbase.characterId;
           '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
           '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
           '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'+
-	     '<div class="j-col j-col-3 members-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + CharacterId +' /legend">In Depth Stats</a>' + '</a></div>'
+	     '<div class="j-col j-col-3 members-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + characterId +' /legend">In Depth Stats</a>' + '</a></div>'
 	       );
 
 			if (rsp[i].exalted) {

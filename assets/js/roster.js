@@ -128,7 +128,7 @@ CharacterId = response.characters.characterbase.characterId});
 
 		}
 
-	})
+	}
 
 	    .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +

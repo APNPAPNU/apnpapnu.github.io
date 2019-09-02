@@ -118,7 +118,7 @@ function listMembers(rsp) {
 				
           // character
 	      var
-	     CharacterId = data.response.data.characterbase.characterId,}
+	     CharacterId = data.response.data.characterbase.characterId)'
 	   
 	  .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +

@@ -112,11 +112,11 @@ function listMembers(rsp) {
 			"X-API-Key":"47b810e692d64237911c2cbe0d433cfe"
 		}
 	})
-	.success(function(response) {
+	.success(function(data) {
 
-        if (json.ErrorStatus === 'Success') {
+        if (data.ErrorStatus === 'Success') {
 
-            response = response.data;
+            response = data.response.data;
 
             console.log('Exalted member list:', roster);
 
@@ -127,7 +127,8 @@ function listMembers(rsp) {
 
         }
         //have the line here
-        var CharacterId = response.characters.characterbase.characterId;
+        var 
+	CharacterId = response.characters.characterbase.characterId;
     })
 	    .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +

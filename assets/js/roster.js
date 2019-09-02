@@ -118,7 +118,7 @@ function listMembers(rsp) {
 				
           // character
 	      var
-	     CharacterId = data.response.data.characterbase.characterId);
+	     CharacterId = data.response.data.characterbase.characterId,
 		  $('#Character-Id').text(CharacterId);
       }
 	  .html(

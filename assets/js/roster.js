@@ -106,27 +106,37 @@ function listMembers(rsp) {
           'data-searchable' : name,
         })
 	    
-	$(function() {
+	$.ajax({
+		url: "https://www.bungie.net/Platform/Destiny/2/Account/'+ destinyId +'/",
+		headers: {
+			"X-API-Key":"47b810e692d64237911c2cbe0d433cfe"
+		}
+	})
+	.success(function(response) {
 
-  
-    $.ajax({
-      url: "http://www.bungie.net/Platform/Destiny/2/Account/" + destinyId + "/",
-      headers: {
-        "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
-      },
-      success: function(data) {
-				
-	     CharacterId = data.response.data.characterbase.characterId;
-		  $('#Character-Id').text(CharacterId);
-      };
-	  .html(
+        if (json.ErrorStatus === 'Success') {
+
+            response = response.data;
+
+            console.log('Exalted member list:', roster);
+
+        } else {
+
+            alert('Uh oh, looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
+            console.log(json);
+
+        }
+        //have the line here
+        var CharacterId = response.characters.characterbase.characterId;
+    })
+	    .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
           '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
           '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
           '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
           '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'+
-	     '<div class="j-col j-col-3 members-button">{<a href="https://braytech.org/2/'+ destinyId +'/' + CharacterId +' /legend">In Depth Stats</a>' + '</a></div>'
-		    );
+	     '<div class="j-col j-col-3 members-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + characterId +' /legend">In Depth Stats</a>' + '</a></div>'
+	       );
 
 			if (rsp[i].exalted) {
 				member.addClass('exalted')
@@ -160,4 +170,3 @@ function listMembers(rsp) {
 	$('#member-count').text(on + ' / ' + rsp.length + ' Members Online');
 
 }
-	  

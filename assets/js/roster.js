@@ -113,19 +113,7 @@ function listMembers(rsp) {
 		}
 	})
 	.success(function(data) {
-
-        if (Response.ErrorStatus === 'Success') {
-
-            depth = data.response.data;
-
-            console.log('Exalted member list:', roster);
-
-        } else {
-
-            alert('Uh oh, looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-            console.log(json);
-
-        }
+		
         //have the line here
         var 
 	CharacterIds = data.Response.data.characters.characterBase.characterId;

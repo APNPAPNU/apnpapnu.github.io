@@ -116,7 +116,8 @@ function listMembers(rsp) {
 		
         //have the line here
         var 
-	CharacterIds = data.Response.data.characters.characterBase.characterId;
+	characterIds = Response.data.characters.characterBase.characterId;
+		$('#character-Id').text(characterIds);
     })
 	    .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
@@ -124,7 +125,7 @@ function listMembers(rsp) {
           '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
           '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
           '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'+
-	     '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + CharacterIds +' /legend">In Depth Stats</a>' + '</a></div>'
+	     '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + "CharacterIds" +' /legend">In Depth Stats</a>' + '</a></div>'
 	       );
 
 			if (rsp[i].exalted) {

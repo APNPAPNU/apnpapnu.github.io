@@ -3,7 +3,7 @@ layout: default
 title: Player Profile
 noindex: true
 js:
-  - "player.js"
+  - "gambit.js"
 style:
   - "player.css"
 bodyclass: playerProfile

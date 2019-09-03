@@ -95,40 +95,6 @@ function listMembers(rsp) {
 			// configure D OM node and add to page
 	     $('#destiny-Id').text(destinyId);
 	   
-      member
-      .attr({
-        'class': 'j-row vertical-center-row member',
-        'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
-        'title': 'See player profile for ' + name,
-        'data-joined' : joined.replace(/-/g, ''),
-        'data-username': name,
-        'data-online' : 'false',
-        'data-searchable' : name,
-      })
-        .html(
-        '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
-        '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
-        '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
-        '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
-        '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>' +
-	      '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + "characterId" +' /legend">In Depth Stats</a>' + '</a></div>'
-      )
-      .appendTo(list);
-      // indicate online/offline status
-      if (String(online) === 'true') {
-        $('#status-' + memberId)
-        .text('Online')
-        .addClass('online')
-        .closest('.member')
-        .attr('data-online', true)
-        .addClass('online');
-      } else {
-        $('#status-' + memberId).text('Offline').removeClass('online');
-      }
-      sortMembers(joined); // sort members by join date
-    }
-  }
-}
 	    $.ajax({
   url: "https://www.bungie.net/Platform/Destiny/2/Account/" + destinyId + "/",
   headers: {
@@ -164,3 +130,38 @@ $(function() {
       }
     });
 });
+
+      member
+      .attr({
+        'class': 'j-row vertical-center-row member',
+        'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
+        'title': 'See player profile for ' + name,
+        'data-joined' : joined.replace(/-/g, ''),
+        'data-username': name,
+        'data-online' : 'false',
+        'data-searchable' : name,
+      })
+        .html(
+        '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
+        '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
+        '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
+        '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
+        '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>' +
+	      '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + "characterId" +' /legend">In Depth Stats</a>' + '</a></div>'
+      )
+      .appendTo(list);
+      // indicate online/offline status
+      if (String(online) === 'true') {
+        $('#status-' + memberId)
+        .text('Online')
+        .addClass('online')
+        .closest('.member')
+        .attr('data-online', true)
+        .addClass('online');
+      } else {
+        $('#status-' + memberId).text('Offline').removeClass('online');
+      }
+      sortMembers(joined); // sort members by join date
+    }
+  }
+}

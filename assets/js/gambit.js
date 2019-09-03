@@ -1,5 +1,5 @@
 $.ajax({
-  url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/?groups=0,0&modes=63&periodType=0",
+  url: "http://www.bungie.net/Platform/Destiny/2/Account/4611686018441311466/",
   headers: {
     "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
   }
@@ -10,15 +10,15 @@ $(function() {
 
   
     $.ajax({
-      url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/?groups=0,0&modes=63&periodType=0",
+      url: "http://www.bungie.net/Platform/Destiny/2/Account/4611686018441311466/",
       headers: {
         "X-API-Key": apiKey
       },
       success: function(data) {
 				
           // Gambit stats
-	        gstats = data.Response.pvecomp_gambit.allTime,
-	        gefficiency = gstats.efficiency.basic.displayValue,
+	        fstats = data.Response.data.characters[0]characterBase.characterId,
+	        gefficiency = fstats.efficiency.basic.displayValue,
 	        gkd = gstats.killsDeathsRatio.basic.displayValue,
 	        gkda = gstats.killsDeathsAssists.basic.displayValue,
 	        gkills = gstats.kills.basic.displayValue,
@@ -54,7 +54,7 @@ $(function() {
 	        // Populate stats
           // pvp
 	   
-	        $('#player-g-efficiency').text(gefficiency);
+	        $('#player-f-stats').text(fstats);
 	        $('#player-g-kd').text(gkd);
 	        $('#player-g-kda').text(gkda);
 	        $('#player-g-kills').text(gkills);

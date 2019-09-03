@@ -1,4 +1,5 @@
 // get list of members and populate roster table
+
 var roster = [];
 
 $.when(

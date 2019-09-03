@@ -149,7 +149,6 @@ $(function() {
 	  
 	 )
 	 });
-	 append
       .appendTo(list);
       // indicate online/offline status
       if (String(online) === 'true') {

@@ -130,7 +130,7 @@ function listMembers(rsp) {
   }
 }
 	    $.ajax({
-  url: "https://www.bungie.net/Platform/Destiny/2/Account/"+ destinyId +"/",
+  url: "https://www.bungie.net/Platform/Destiny/2/Account/" + destinyId + "/",
   headers: {
     "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
   }
@@ -141,7 +141,7 @@ $(function() {
 
   
     $.ajax({
-      url: "https://www.bungie.net/Platform/Destiny/2/Account/"+ destinyId +"/",
+      url: "https://www.bungie.net/Platform/Destiny/2/Account/" + destinyId + "/",
       headers: {
         "X-API-Key": apiKey
       },

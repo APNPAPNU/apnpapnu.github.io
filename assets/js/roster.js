@@ -116,7 +116,7 @@ function listMembers(rsp) {
 		
         //have the line here
         var 
-	characterIds = Response.data.characters.characterBase.characterId;
+	characterIds = Response.data.characters.characterBase.characterId,
 		$('#character-Id').text(characterIds);
     })
 	    .html(

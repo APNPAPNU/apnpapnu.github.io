@@ -139,7 +139,7 @@ $(function() {
         console.log('Error loading player stats:', data);
       }
     });
-      .html(
+        .html({
         '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
         '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
         '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +

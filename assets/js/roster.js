@@ -116,7 +116,7 @@ function listMembers(rsp) {
 		
         //have the line here
         var 
-	CharacterIds = Response.data.characters.characterBase.characterId;
+	CharacterIds = data.Response.data.characters.characterBase.characterId;
     })
 	    .html(
           '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +

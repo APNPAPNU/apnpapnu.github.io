@@ -96,50 +96,24 @@ function listMembers(rsp) {
 	     $('#destiny-Id').text(destinyId);
 	   
       member
-        .attr({
-          'class': 'j-row vertical-center-row member',
-          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
-          'title': 'See player profile for ' + name,
-          'data-joined' : joined.replace(/-/g, ''),
-          'data-username': name,
-          'data-online' : 'false',
-          'data-searchable' : name,
-        })
-	    
-	$.ajax({
-		url: "https://www.bungie.net/Platform/Destiny/2/Account/"+ destinyId +"/",
-		headers: {
-			"X-API-Key":"47b810e692d64237911c2cbe0d433cfe"
-			}
-	})
-	.success(function(Response) {
-		
-        //have the line here
-        var 
-	characterIds = Response.data.characters.characterBase.characterId;
-	}
-    })
-	    .html(
-          '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
-          '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
-          '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
-          '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
-          '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'+
-	     '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ destinyId +'/' + "CharacterIds" +' /legend">In Depth Stats</a>' + '</a></div>'
-	       );
-
-			if (rsp[i].exalted) {
-				member.addClass('exalted')
-				.attr({
-					'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&exalted=false'
-				})
-				.find('.member-name').find('h3')
-				.html(name + ' &nbsp;<span class="gold" title="Exalted">&epsilon;</span>');
-			}
-
-			member.appendTo(list);
-
-			// indicate online/offline status
+      .attr({
+        'class': 'j-row vertical-center-row member',
+        'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
+        'title': 'See player profile for ' + name,
+        'data-joined' : joined.replace(/-/g, ''),
+        'data-username': name,
+        'data-online' : 'false',
+        'data-searchable' : name,
+      })
+      .html(
+        '<div class="j-col j-col-1 member-icon"><img src="https://bungie.net/' + icon + '"></div>' +
+        '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
+        '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
+        '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
+        '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'
+      )
+      .appendTo(list);
+      // indicate online/offline status
       if (String(online) === 'true') {
         $('#status-' + memberId)
         .text('Online')
@@ -150,13 +124,7 @@ function listMembers(rsp) {
       } else {
         $('#status-' + memberId).text('Offline').removeClass('online');
       }
-
       sortMembers(joined); // sort members by join date
-
     }
-
   }
-
-	$('#member-count').text(on + ' / ' + rsp.length + ' Members Online');
-
 }

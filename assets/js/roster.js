@@ -129,7 +129,7 @@ $(function() {
         console.log('Error loading player stats:', data);
 		  '<div class="j-col j-col-3 members-button"><a href="https://braytech.org/2/'+ destinyId +'/'+ CharacterId +'/legend">In Depth Stats</a>' + '</a></div>'    
       }
-	)}  
+	})
       member
       .attr({
         'class': 'j-row vertical-center-row member',

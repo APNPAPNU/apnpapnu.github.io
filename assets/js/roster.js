@@ -127,7 +127,7 @@ $(function() {
       error: function(data) {
 				alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
         console.log('Error loading player stats:', data);
-		  <button onclick="window.location='https://braytech.org/2/'+ destinyId +'/'+ fstats +'/legend';">Visit Page Now</button>   }
+		  '<button onclick="window.location='https://braytech.org/2/'+ destinyId +'/'+ fstats +'/legend';">Visit Page Now</button>'   }
 	    
 	  });
 });

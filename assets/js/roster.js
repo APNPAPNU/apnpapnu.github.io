@@ -133,7 +133,7 @@ $(function() {
       member
       .attr({
         'class': 'j-row vertical-center-row member',
-        'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank + '&CharacterId=' + CharacterId,
+        'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
         'title': 'See player profile for ' + name,
         'data-joined' : joined.replace(/-/g, ''),
         'data-username': name,

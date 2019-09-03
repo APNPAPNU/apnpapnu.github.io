@@ -17,7 +17,7 @@ $(function() {
       success: function(data) {
 				
           // Gambit stats
-	        fstats = data.Response.data.characters[0]characterBase.characterId,
+	        fstats = data.Response.data.characters.characterBase.characterId,
 	        gefficiency = fstats.efficiency.basic.displayValue,
 	        gkd = gstats.killsDeathsRatio.basic.displayValue,
 	        gkda = gstats.killsDeathsAssists.basic.displayValue,

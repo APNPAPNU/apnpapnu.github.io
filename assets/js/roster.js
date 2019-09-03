@@ -162,7 +162,8 @@ $(function() {
         $('#status-' + memberId).text('Offline').removeClass('online');
       }
       sortMembers(joined); // sort members by join date
-    }
+   });
+}
   }
 }
-});
+

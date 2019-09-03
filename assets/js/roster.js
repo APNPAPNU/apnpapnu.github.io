@@ -149,6 +149,8 @@ $(function() {
 	       '<div class="j-col j-col-3 members-button"><a href="https://braytech.org/2/'+ destinyId +'/'+ CharacterId +'/legend">In Depth Stats</a>' + '</a></div>'    
    
 	 )
+	 });
+	 append
       .appendTo(list);
       // indicate online/offline status
       if (String(online) === 'true') {
@@ -165,4 +167,3 @@ $(function() {
 }
   }
 }
-});

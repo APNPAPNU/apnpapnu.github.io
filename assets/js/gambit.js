@@ -17,11 +17,7 @@ $(function() {
       success: function(data) {
 				
           // Gambit stats
-	        fstats = data.Response.data.characters[0].characterBase.characterId,
-	        
-
-                multiplier = 100,
-                winlossratio = (activitiesWon / activitiesEntered * multiplier);
+	        fstats = data.Response.data.characters[0].characterBase.characterId;
 
 	        // Populate stats
           // pvp

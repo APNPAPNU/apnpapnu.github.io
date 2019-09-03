@@ -110,7 +110,6 @@ function listMembers(rsp) {
 		url: "https://www.bungie.net/Platform/Destiny/2/Account/"+ destinyId +"/",
 		headers: {
 			"X-API-Key":"47b810e692d64237911c2cbe0d433cfe"
-		}
 	})
 	.success(function(Response) {
 		

@@ -1,5 +1,5 @@
 $.ajax({
-  url: "https://www.bungie.net/Platform/Destiny/2/Account/4611686018441311466/",
+  url: "https://www.bungie.net/Platform/Destiny/2/Account/4611686018429000034/",
   headers: {
     "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
   }
@@ -10,7 +10,7 @@ $(function() {
 
   
     $.ajax({
-      url: "https://www.bungie.net/Platform/Destiny/2/Account/4611686018441311466/",
+      url: "https://www.bungie.net/Platform/Destiny/2/Account/4611686018429000034/",
       headers: {
         "X-API-Key": apiKey
       },

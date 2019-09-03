@@ -127,7 +127,9 @@ $(function() {
       error: function(data) {
 				alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
         console.log('Error loading player stats:', data);
-   
+         }
+	   });
+});
       member
       .attr({
         'class': 'j-row vertical-center-row member',
@@ -144,7 +146,7 @@ $(function() {
         '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
         '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
         '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>' +
-	           '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ destinyId +'/'+ fstats +'/legend">In Depth Stats</a>' + '</a></div>'
+	           '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ destinyId +'/"+ fstats +"/legend">In Depth Stats</a>' + '</a></div>'
       )
       .appendTo(list);
       // indicate online/offline status
@@ -162,6 +164,4 @@ $(function() {
     }
   }
 }
-      }
-	   });
-});
+

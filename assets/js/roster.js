@@ -148,7 +148,7 @@ $(function() {
         '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'
 	  
 	 )
-	 });
+	 })
       .appendTo(list);
       // indicate online/offline status
       if (String(online) === 'true') {

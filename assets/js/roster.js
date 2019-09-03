@@ -122,14 +122,12 @@ $(function() {
 	        $('#player-f-stats').text(fstats);
 	        
           					
-
+      
       },
       error: function(data) {
 				alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
         console.log('Error loading player stats:', data);
       }
-    });
-
       member
       .attr({
         'class': 'j-row vertical-center-row member',
@@ -164,4 +162,5 @@ $(function() {
     }
   }
 }
+    });
 });

@@ -17,13 +17,13 @@ $(function() {
       success: function(data) {
 				
           // Gambit stats
-	        fstats = data.Response.data.characters[0].characterBase.characterId;
-
+	        fstats = data.Response.data.characters[0].characterBase.characterId,
+                webLink = url:"https://braytech.org/2/4611686018429000034/'+fstats+'/legend";
 	        // Populate stats
           // pvp
 	   
-	        $('#player-f-stats').text(fstats);
-	        
+	        $('#player-f-stats').text(fstats),
+	        $('#player-web-Link').text(webLink);
           					
 
       },

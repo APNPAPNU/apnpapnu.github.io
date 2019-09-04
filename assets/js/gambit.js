@@ -24,10 +24,11 @@ $(function() {
           // pvp
 	   
 	        $('#player-f-stats').text(fstats);
-	        
+	        }
+	      .html(
           		'<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ 4611686018429000034 +'/'+ fstats +'/legend">In Depth Stats</a>' + '</a></div>';
-			
+			)
 
-      },
+      
     });
 	});

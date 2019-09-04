@@ -17,6 +17,7 @@ $(function() {
       success: function(data) {
 				
           // Gambit stats
+	      let
 	        fstats = data.Response.data.characters[0].characterBase.characterId;
 
 	        // Populate stats
@@ -24,13 +25,9 @@ $(function() {
 	   
 	        $('#player-f-stats').text(fstats);
 	        
-          					
+          		'<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ 4611686018429000034 +'/"+ fstats +"/legend">In Depth Stats</a>' + '</a></div>';
+			
 
       },
-      error: function(data) {
-				alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-        console.log('Error loading player stats:', data);
-      }
     });
 	});
-'<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ 4611686018429000034 +'/"+ fstats +"/legend">In Depth Stats</a>' + '</a></div>'

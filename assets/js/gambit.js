@@ -18,13 +18,11 @@ $(function() {
 				
           // Gambit stats
 	      let
-	        fstats = data.Response.data.characters[0].characterBase.characterId;
-
-	        // Populate stats
-          // pvp
-      html
-          .html( '<div class="j-col j-col-3 member-button"> + <a href="https://braytech.org/2/'+ 4611686018429000034 +'/'+ fstats +'/legend">In Depth Stats</a>' + '</a></div>'
-          )
+        fstats = data.Response.data.characters[0].characterBase.characterId;
+    fstats={fStats}
+          .html( '<div class="j-col j-col-3 member-button"><a href="https://braytech.org/2/'+ 4611686018429000034 +'/'+ fstats +'/legend">In Depth Stats</a>' + '</a></div>'
+      )
+      
 	    }
               
    });

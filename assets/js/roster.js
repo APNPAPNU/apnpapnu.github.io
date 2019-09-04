@@ -90,8 +90,7 @@ function listMembers(rsp) {
         memberId = profile.membershipId,
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
-        rank = rsp[i].memberType,
-	fStats = data.Response.data.characters[0].characterBase.characterId;
+        rank = rsp[i].memberType;
 			// configure D OM node and add to page
 	     $('#destiny-Id').text(destinyId);
 	   
@@ -115,12 +114,12 @@ $(function() {
 				
           // Gambit stats
 	        var
-	      fStats = data.Response.data.characters[0].characterBase.characterId;
+	      fstats = data.Response.data.characters[0].characterBase.characterId;
 
 	        // Populate stats
           // pvp
 	   
-	        $('#player-f-stats').text(fStats);
+	        $('#player-f-stats').text(fstats);
 	        
           					
       
@@ -128,7 +127,7 @@ $(function() {
       error: function(data) {
 				alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
         console.log('Error loading player stats:', data);
-		  '<div class="j-col j-col-4 member-button"><a href="https://braytech.org/2/'+ destinyId +'/'+ fStats +'/legend">In Depth Stats</a>' + '</a></div>'    
+		  '<div class="j-col j-col-4 member-button"><a href="https://braytech.org/2/'+ destinyId +'/'+ fstats +'/legend">In Depth Stats</a>' + '</a></div>'    
       }
 	  });
 });
@@ -147,9 +146,8 @@ $(function() {
         '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
         '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
         '<div class="j-col j-col-3 member-status" data-label="Status"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div>' +
-        '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>' +
-	'<div class="j-col j-col-4 member-button"><a href="https://braytech.org/2/'+ destinyId +'/'+ fStats +'/legend">In Depth Stats</a>' + '</a></div>'    
-    )
+        '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'View Stats' + '</a></div>'
+	 )
       .appendTo(list);
       // indicate online/offline status
       if (String(online) === 'true') {

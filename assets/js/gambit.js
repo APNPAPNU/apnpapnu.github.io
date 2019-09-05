@@ -17,9 +17,10 @@ $(function() {
       success: function(data) {
 				
           // Gambit stats
+          let
 	        fstats = data.Response.data.characters[0].characterBase.characterId,
                 webLink = "https://braytech.org/2/4611686018429000034/'+fstats+'/legend";
-	        )// Populate stats
+	        // Populate stats
           // pvp
 	   
 	        $('#player-f-stats').text(fstats),

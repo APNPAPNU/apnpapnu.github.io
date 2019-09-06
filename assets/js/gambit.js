@@ -15,20 +15,13 @@ $.ajax({
           "X-API-Key": apiKey
         },
         success: function(data) {
-                  
-            // Gambit stats
-            let
-              fstats = data.Response.data.characters[0].characterBase.characterId,
-                  webLink = "https://braytech.org/2/4611686018429000034/"+ fstats + "/legend";
-         
-              $('#player-f-stats').text(fstats),
-              $('#player-web-Link').text(webLink);
-                                
-  
-        },
-        error: function(data) {
-                  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-          console.log('Error loading player stats:', data);
-        }
+        $(document).ready(function(){
+  var fstats = data.Response.data.characters[0].characterBase.characterId;
+  var webLink = "braytech.org/2/4611686018429000034/"+ fstats + "/legend";
+  $('#player-f-stats').text(fstats);
+  $("button").click(function(){
+    $("#player-web-Link").attr("href", webLink);
+  });
+}
       });
       });

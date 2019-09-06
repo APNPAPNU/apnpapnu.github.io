@@ -29,7 +29,7 @@ revered = [
 	'Sore',
 ],
 exaltedGeneral = [
-	'rickypettit12',
+	'carryabigrick',
 ],
 founder = [
 	'Canis'

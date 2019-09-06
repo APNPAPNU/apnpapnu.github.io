@@ -45,4 +45,8 @@ background-image: url('/assets/img/destiny orbit.gif');
     color: #e3d081;
     font-size: .8rem;
   }
+  .button {
+display: block;
+margin-top: 25px;
+}
 }

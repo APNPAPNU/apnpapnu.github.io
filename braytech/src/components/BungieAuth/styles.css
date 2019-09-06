@@ -1,0 +1,163 @@
+.bungie-auth .member {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bungie-auth .member .details {
+  position: absolute;  
+  bottom: 2rem;
+  left: 1rem;
+  display: grid;
+  grid-template-columns: 48px auto;
+  grid-gap: 1rem;
+}
+
+.bungie-auth .member .details .icon {
+  position: relative;
+  height: unset;
+  padding-bottom: 100%;
+}
+
+.bungie-auth .member .details .icon.shadow {
+  box-shadow: 0 15px 25px 10px rgba(0,0,0,0.4);
+}
+
+.bungie-auth .member .details .text {
+  position: relative;
+  display: grid;
+  align-content: center;
+}
+
+.bungie-auth .member .image.background {
+  position: relative;
+  height: unset;
+  padding-bottom: 39%;
+  background-size: cover;
+}
+
+.bungie-auth .member .image.background.dl {
+  opacity: 0.8;
+}
+
+.bungie-auth .member .displayName {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+.bungie-auth .member .firstAccess {
+  font-size: 12px;
+  margin: 1px 0 1px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bungie-auth h4 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  margin: 20px 0 14px;
+}
+
+.bungie-auth .member ~ .button {
+  margin: 1rem 0 0;
+}
+
+.bungie-auth .memberships {
+  margin: 1rem 0 0;
+  max-width: 300px;
+}
+
+.bungie-auth .memberships .list li {
+  padding: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+.bungie-auth .memberships .list li.linked:hover {
+  z-index: 3;
+}
+
+.bungie-auth .memberships .list li.linked span {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 0 0;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4CAF50;
+}
+
+.bungie-auth .memberships .list li.linked span.destiny-platform_pc {
+  background-color: #2196F3;
+}
+
+.bungie-auth .memberships .list li.linked span.destiny-platform_playstation {
+  background-color: #3F51B5;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .bungie-auth .member .details {
+    bottom: 1rem;
+  }
+
+  .bungie-auth .memberships {
+    max-width: unset;
+  }
+}
+
+
+
+
+
+
+.bungie-auth.no-auth {
+  padding: 4rem 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.bungie-auth.no-auth .properties {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bungie-auth.no-auth .properties .name {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0 0 7px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 7px;
+  margin-bottom: 1rem;
+}
+
+.bungie-auth.no-auth .properties .description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+
+.bungie-auth.no-auth .properties .description ~ .button,
+.bungie-auth.no-auth .properties .description ~ .spinner {
+  margin: 1rem 0 0;
+}
+
+@media screen and (max-width: 600px) {
+
+  .bungie-auth.no-auth {
+    padding: 3rem 2rem 2rem;
+  }
+
+  .bungie-auth.no-auth .properties .name {
+    font-size: 24px;
+  }
+  
+  .bungie-auth.no-auth .properties .description {
+    font-size: 14px;
+  }  
+
+}

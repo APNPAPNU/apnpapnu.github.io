@@ -1,0 +1,338 @@
+#checklists {
+  padding: 0;
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#checklists > .padder,
+#checklists > .module.head {
+  width: 100%;
+  padding: 3rem;
+  display: grid;
+  grid-gap: 3rem;
+}
+
+#checklists > .module.head {
+  padding: 4rem 3rem 3rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#checklists .module .page-header {
+  margin-bottom: 0;
+}
+
+#checklists .module .module-header {
+  position: relative;
+  margin: 12px 0 0;
+}
+
+#checklists .module .module-header .sub-name,
+#checklists .module h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#checklists .module .module-header .sub-name {
+  font-size: 18px;
+}
+
+#checklists .module .module-header::after {
+  content: ' ';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 16px;
+  border-bottom: 3px solid #ffffff;
+  opacity: 0.2;
+}
+
+#checklists .module .page-header .sub-title,
+#checklists .module .module-header .sub-title {
+  margin: 0 0 3px;
+  font-size: 18px;
+}
+
+#checklists .module .module-header .name {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+#checklists .module .module-header .tooltip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  display: grid;
+  align-content: center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#checklists .cols-6 {
+  grid-template-columns: 83px repeat(6, 1fr);
+}
+
+#checklists .cols-5 {
+  grid-template-columns: 83px repeat(5, 1fr);
+}
+
+#checklists .cols-4 {
+  grid-template-columns: 83px repeat(4, 1fr);
+}
+
+#checklists .cols-3 {
+  grid-template-columns: 83px repeat(3, 1fr);
+}
+
+#checklists .cols-2 {
+  grid-template-columns: 83px repeat(2, 1fr);
+}
+
+#checklists .cols-1 {
+  grid-template-columns: 40px repeat(1, 1fr);
+}
+
+#checklists .cols-0 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#checklists > .module.head .content:first-child {
+  grid-column: 1/6;
+}
+
+#checklists > .module.head .content.source {
+  grid-column: 6/8;
+  position: relative;
+  padding: 0 0 0 2rem;
+}
+
+#checklists > .module.head.cols-5 .content:first-child {
+  grid-column: 1/5;
+}
+
+#checklists > .module.head.cols-5 .content.source {
+  grid-column: 5/7;
+}
+
+#checklists > .module.head.cols-4 .content:first-child {
+  grid-column: 1/4;
+}
+
+#checklists > .module.head.cols-4 .content.source {
+  grid-column: 4/6;
+}
+
+#checklists > .module.head.cols-3 .content:first-child {
+  grid-column: 1/3;
+}
+
+#checklists > .module.head.cols-3 .content.source {
+  grid-column: 3/5;
+}
+
+#checklists > .module.head.cols-2 .content:first-child {
+  grid-column: 1/3;
+}
+
+#checklists > .module.head.cols-2 .content.source {
+  grid-column: 3/4;
+}
+
+#checklists > .module.head.cols-1 .content:first-child {
+  grid-column: 1/3;
+}
+
+#checklists > .module.head.cols-1 .content.source {
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+#checklists > .module.head .content.source::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+#checklists > .module.head .content.source p {
+  font-size: 14px;
+}
+
+#checklists > .module.head .content.source p:first-child {
+  font-size: 16px;
+}
+
+#checklists .module.views .list {
+  position: sticky;
+  top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
+}
+
+#checklists .module.views .list li {
+  margin: 0;
+  display: grid;
+  height: 40px;  
+  justify-content: center;
+  font-size: 24px;
+}
+
+#checklists .module.views .list li .image {
+  background-size: 70%;
+}
+
+#checklists .module.views .list li::before {
+  box-shadow: inset 0 0 0 1px rgba(214, 214, 214, 0.4);
+}
+
+#checklists .module.views .list li.linked:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+}
+
+#checklists .module.views .list li a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 1px rgba(214, 214, 214, 1);
+  color: #fff;
+}
+
+#checklists .module.views .list li a:hover {
+  color: #fff;
+}
+
+#checklists .module.list .progress-bar {
+  margin: 1rem 0 2rem;
+}
+
+#checklists .module.list li {
+  position: relative;
+  padding: 0;
+  margin: 0 0 14px;
+  line-height: 1.4;
+  font-size: 14px;
+  align-items: flex-start;
+  height: unset;
+}
+
+#checklists .module.list li .state {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 4px 18px 0 3px;
+  flex-shrink: 0;
+  transition: background-color 0.25s;
+}
+
+#checklists .module.list li .state::before {
+  content: ' ';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+#checklists .module.list li .state.completed {
+  background-color: #78ba82;
+}
+
+#checklists .module.list li .state.completed + .text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#checklists .module.list li .text {
+  flex-basis: calc(100% - 2.8rem - 10px);
+}
+
+#checklists .module.list li .text p {
+  line-height: 1.4;
+  margin: 0 0 6px;
+}
+
+#checklists .module.list li .text p:last-child {
+  margin: 0;
+}
+
+#checklists .module.list li .lowlines {
+  width: 2rem;
+  right: 0;
+  position: absolute;
+  text-align: right;
+}
+
+#checklists .module.list li .lowlines a {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  padding: 0 0.4rem;
+  opacity: 0;
+}
+
+#checklists .module.list li .lowlines a span {
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#checklists .module.list li:hover .lowlines a {
+  opacity: 0.6;
+}
+
+#checklists .module.list li:hover .lowlines a:hover {
+  opacity: 1;
+}
+
+#checklists .module.list.single-line li {
+  align-items: center;
+}
+
+#checklists .module.list.single-line li .state {
+  margin: 0 1rem 0 3px;
+}
+
+#checklists .module.list .info .text {
+  margin: 0;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 1200px) {
+  #checklists .module.list li .text {
+    flex-basis: calc(100% - 1rem - 10px);
+  }
+
+  #checklists .module.list li .lowlines a {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #checklists > .module.head {
+    padding: 3rem 2rem 2rem;
+    grid-gap: 2rem;
+  }
+
+  #checklists > .module.head .content.source {
+    padding: 0 0 0 1rem;
+  }
+  
+  #checklists > .padder {
+    padding: 2rem;
+    grid-gap: 2rem;
+  }
+
+  #checklists .module.views .list {
+    top: 2rem;
+    grid-template-columns: 1fr;
+  }
+}

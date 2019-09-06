@@ -1,0 +1,285 @@
+
+#get-profile {
+  display: grid;
+  padding: 0;
+  margin: -40px auto 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#get-profile .module.head {
+  padding: calc(4rem + 40px) 3rem 3rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#get-profile > .padder {
+  width: 100%;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: minmax(auto, 360px) minmax(200px, auto);
+  grid-gap: 3rem;
+}
+
+#get-profile .module .sub-header ~ .sub-header {
+  margin: 3rem 0 1rem;
+}
+
+#get-profile .module.head .page-header {
+  margin-bottom: 0rem;
+}
+
+#get-profile .module.head .text {
+  max-width: 680px;
+}
+
+#get-profile .module.head .text p:first-child {
+  font-size: 16px;
+}
+
+#get-profile .error {
+  margin: 0 0 3rem;
+  font-size: 14px;
+}
+
+#get-profile .error button {
+  margin: 1rem 0 0;
+}
+
+#get-profile .search {
+  position: relative;
+}
+
+#get-profile .form {
+  margin: 0 0 1rem;
+}
+
+#get-profile .form .field input {
+  transition: color 0.25s, background-color 0.25s, box-shadow 0.25s;
+}
+
+#get-profile .form .field:hover input {
+  z-index: 2;
+}
+
+#get-profile .results {
+  margin: 1rem 0 0;
+}
+
+#get-profile .search .sub-header ~ .sub-header {
+  margin: 2rem 0 0;
+}
+
+#get-profile .results .list li {
+  padding: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+#get-profile.loading .list li .icon,
+#get-profile.loading .list li .displayName {
+  transition: opacity 0.25ms;
+}
+
+#get-profile .results .list li.linked:hover {
+  z-index: 3;
+}
+
+#get-profile .results .list li.linked span {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 0 0;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4CAF50;
+}
+
+#get-profile .results .list li.linked span.destiny-platform_pc {
+  background-color: #2196F3;
+}
+
+#get-profile .results .list li.linked span.destiny-platform_playstation {
+  background-color: #3F51B5;
+}
+
+#get-profile .profile .user {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: minmax(200px, 360px) 474px;
+}
+
+#get-profile .profile .info {
+  
+}
+
+#get-profile .profile .info .displayName {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+#get-profile .profile .info .clan {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#get-profile .profile .info .clan::before {
+  content: '// ';
+  white-space: pre-line;
+}
+
+#get-profile .profile .info .stamps {
+  margin: 1.5rem 0 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 38px);
+  grid-gap: 3px;
+}
+
+#get-profile .profile .info .stamps div i {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 0 0;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#get-profile .profile .info .stamps div i.destiny-platform_xbox {
+  background-color: #4CAF50;
+}
+
+#get-profile .profile .info .stamps div i.destiny-platform_pc {
+  background-color: #2196F3;
+}
+
+#get-profile .profile .info .stamps div i.destiny-platform_playstation {
+  background-color: #3F51B5;
+}
+
+#get-profile .profile .info .stamps div i.destiny-clovis_bray_device {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#get-profile .profile .info .stamps div i.destiny-clovis_bray_device.one-hundo {
+  background-color: rgb(241, 40, 24);
+}
+
+#get-profile .profile .info .basics {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+#get-profile .profile .info .basics > div {
+  position: relative;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+#get-profile .profile .info .basics > div:last-child {
+  margin: 0;
+}
+
+#get-profile .profile .info .basics div .name {
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.4;
+}
+
+#get-profile .profile .info .basics div .value {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+#get-profile .characters-list {
+  padding-bottom: unset;
+  height: unset;
+}
+
+#get-profile .characters-list .list li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#get-profile.loading .form .field,
+#get-profile.loading .form .field input,
+#get-profile.loading .list li,
+#get-profile.loading .profile {
+  pointer-events: none;
+}
+
+#get-profile.loading .list li .icon,
+#get-profile.loading .list li .displayName,
+#get-profile.loading .profile .user {
+  opacity: 0;
+}
+
+#get-profile.loading .form .field input {
+  color: transparent !important;
+}
+
+@media screen and (max-width: 1280px) {
+
+  #get-profile .profile .user {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #get-profile > .padder {
+    grid-template-columns: minmax(200px, auto) minmax(300px, auto);
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #get-profile > .padder {
+    padding: 2rem;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  #get-profile .module.head {
+    padding: calc(3rem + 40px) 2rem 2rem;
+  }
+
+  #get-profile .module .sub-header ~ .sub-header {
+    margin: 2rem 0 1rem;
+  }
+
+  #get-profile .error {
+    margin: 0 0 2rem;
+  }
+
+  #get-profile .profile .user {
+    grid-gap: 2rem;
+  }
+
+  #get-profile .profile .info .displayName {
+    font-size: 32px;
+  }
+
+  #get-profile .profile .info .clan {
+    font-size: 16px;
+  }
+
+  #get-profile .profile .info .basics {
+    display: none;
+  }
+
+  #get-profile .profile .info .stamps {
+    margin-bottom: 0;
+  }
+}
+

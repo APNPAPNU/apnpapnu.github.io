@@ -15,13 +15,11 @@ $.ajax({
           "X-API-Key": apiKey
         },
         success: function(data) {
-        $(document).ready(function(){
   var fstats = data.Response.data.characters[0].characterBase.characterId;
   var webLink = "braytech.org/2/4611686018429000034/"+ fstats + "/legend";
   $('#player-f-stats').text(fstats);
-  $("button").click(function(){
     $("#player-web-Link").attr("href", webLink);
-  });
-}
+        }
+
       });
       });

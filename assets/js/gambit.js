@@ -19,7 +19,7 @@ $.ajax({
        $("#player-web-Link").attr("href", webLink);
        }
         .html(
-       '<div class="j-col j-col-3 member-button"><a class="button outline gold full-width">' + 'webLink' + '</a></div>'
+       '<div class="j-col j-col-3 member-button"><a ' + 'webLink' + '</a></div>'
          );  
           
 });

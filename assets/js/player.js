@@ -317,3 +317,99 @@ $(function() {
     });
 	});
   }	});
+$.ajax({
+  url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/?groups=0,0&modes=63&periodType=0",
+  headers: {
+    "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
+  }
+}).done(function(json) {
+
+});
+$(function() {
+
+  
+    $.ajax({
+      url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/?groups=0,0&modes=75&periodType=0",
+      headers: {
+        "X-API-Key": apiKey
+      },
+      success: function(data) {
+				
+          // Gambit stats
+	        gpstats = data.Response.pvecomp_gambit.allTime,
+	        gpefficiency = gpstats.efficiency.basic.displayValue,
+	        gpkd = gpstats.killsDeathsRatio.basic.displayValue,
+	        gpkda = gpstats.killsDeathsAssists.basic.displayValue,
+	        gpkills = gpstats.kills.basic.displayValue,
+	        gpdeaths = gpstats.deaths.basic.displayValue,
+	        gpassists = gpstats.assists.basic.displayValue,
+	        gpprecisionKills = gpstats.precisionKills.basic.displayValue,
+		gpprimevalKills = gpstats.primevalKills.basic.displayValue,
+	        gpblockerKills = gpstats.blockerKills.basic.displayValue,
+	        gpmobKills = gpstats.mobKills.basic.displayValue,
+	        gphighValueKills = gpstats.highValueKills.basic.displayValue,
+	        gpmotesPickedUp = gpstats.motesPickedUp.basic.displayValue,
+	        gpmotesDeposited = gpstats.motesDeposited.basic.displayValue,
+	        gpprimevalDamage = gpstats.primevalDamage.basic.displayValue,
+	        gpbestSingleGameKills = gpstats.bestSingleGameKills.basic.displayValue,
+	        gpsmallBlockersSent = gpstats.smallBlockersSent.basic.displayValue,
+	        gpmediumBlockersSent = gpstats.mediumBlockersSent.basic.displayValue,
+	        gplargeBlockersSent = gpstats.largeBlockersSent.basic.displayValue,
+	        gpbestSingleGameKills = gpstats.bestSingleGameKills.basic.displayValue,
+	        gpkillsDeathsRatio = gpstats.killsDeathsRatio.basic.displayValue,
+	        gpfastestCompletionMs = gpstats.fastestCompletionMs.basic.displayValue,
+	        gpmotesDenied = gpstats.motesDenied.basic.displayValue,
+	        gpmotesLost = gpstats.motesLost.basic.displayValue,
+	        gpactivitiesWon = gpstats.activitiesWon.basic.displayValue,
+	        gpactivitiesEntered = gpstats.activitiesEntered.basic.displayValue,
+	        gpbestSingleGameKills = gpstats.bestSingleGameKills.basic.displayValue,
+	        gpinvasions = gpstats.invasions.basic.displayValue,
+	        gpinvasionKills = gpstats.invasionKills.basic.displayValue,
+	        gpweaponBestType = gpstats.weaponBestType.basic.displayValue,
+
+              
+	        // Populate stats
+          // pvp
+	   
+	        $('#player-g-efficiency').text(gpefficiency);
+	        $('#player-g-kd').text(gpkd);
+	        $('#player-g-kda').text(gpkda);
+	        $('#player-g-kills').text(gpkills);
+	        $('#player-g-assists').text(gpassists);
+	        $('#player-g-precision-kills').text(gpprecisionKills);
+	        $('#player-g-primeval-kills').text(gpprimevalKills);
+	        $('#player-g-best-single-game-kills').text(gpbestSingleGameKills);
+	        $('#player-g-blocker-kills').text(gpblockerKills);
+	        $('#player-g-mob-kills').text(gpmobKills);
+                $('#player-g-high-value-kills').text(gphighValueKills);
+	        $('#player-g-motes-Picked-Up').text(gpmotesPickedUp);
+	        $('#player-g-motes-Deposited').text( gpmotesDeposited);
+	        $('#player-g-primeval-Damage ').text(gpprimevalDamage );
+	        $('#player-g-small-Blockers-Sent').text(gpsmallBlockersSent);
+	        $('#player-g-precision-kills').text(gpprecisionKills);
+	        $('#player-g-kills-Deaths-Ratio').text(gpkillsDeathsRatio);
+	        $('#player-g-medium-Blockers-Sent').text(gpmediumBlockersSent);
+	        $('#player-g-large-Blockers-Sent').text(gplargeBlockersSent);
+	        $('#player-g-fastest-Completion-Ms').text(gpfastestCompletionMs);
+          	$('#player-g-motes-Denied').text(gpmotesDenied);
+	        $('#player-g-motes-Lost').text(gpmotesLost);
+	        $('#player-g-invasions').text(gpinvasions);
+	        $('#player-g-invasion-Kills').text(gpinvasionKills);
+	        $('#player-g-weapon-Best-Type').text(gpweaponBestType);
+	        $('#player-g-precision-kills').text(gpprecisionKills);
+	        $('#player-g-weapon').text(gpweapon);
+	        $('#player-g-kill-spree').text(gpkillSpree);
+	        $('#player-g-most-kills').text(gpmostKills);
+	        $('#player-g-most-precision').text(gpmostPrecision);
+                $('#player-g-efficiency').text(gpefficiency);
+	       
+	   
+
+      },
+      error: function(data) {
+				alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
+        console.log('Error loading player stats:', data);
+      }
+    });
+	});
+  }	});

@@ -371,37 +371,37 @@ $(function() {
 	        // Populate stats
           // pvp
 	   
-	        $('#player-g-efficiency').text(gpefficiency);
-	        $('#player-g-kd').text(gpkd);
-	        $('#player-g-kda').text(gpkda);
-	        $('#player-g-kills').text(gpkills);
-	        $('#player-g-assists').text(gpassists);
-	        $('#player-g-precision-kills').text(gpprecisionKills);
-	        $('#player-g-primeval-kills').text(gpprimevalKills);
-	        $('#player-g-best-single-game-kills').text(gpbestSingleGameKills);
-	        $('#player-g-blocker-kills').text(gpblockerKills);
-	        $('#player-g-mob-kills').text(gpmobKills);
-                $('#player-g-high-value-kills').text(gphighValueKills);
-	        $('#player-g-motes-Picked-Up').text(gpmotesPickedUp);
-	        $('#player-g-motes-Deposited').text( gpmotesDeposited);
-	        $('#player-g-primeval-Damage ').text(gpprimevalDamage );
-	        $('#player-g-small-Blockers-Sent').text(gpsmallBlockersSent);
-	        $('#player-g-precision-kills').text(gpprecisionKills);
-	        $('#player-g-kills-Deaths-Ratio').text(gpkillsDeathsRatio);
-	        $('#player-g-medium-Blockers-Sent').text(gpmediumBlockersSent);
-	        $('#player-g-large-Blockers-Sent').text(gplargeBlockersSent);
-	        $('#player-g-fastest-Completion-Ms').text(gpfastestCompletionMs);
-          	$('#player-g-motes-Denied').text(gpmotesDenied);
-	        $('#player-g-motes-Lost').text(gpmotesLost);
-	        $('#player-g-invasions').text(gpinvasions);
-	        $('#player-g-invasion-Kills').text(gpinvasionKills);
-	        $('#player-g-weapon-Best-Type').text(gpweaponBestType);
-	        $('#player-g-precision-kills').text(gpprecisionKills);
-	        $('#player-g-weapon').text(gpweapon);
-	        $('#player-g-kill-spree').text(gpkillSpree);
-	        $('#player-g-most-kills').text(gpmostKills);
-	        $('#player-g-most-precision').text(gpmostPrecision);
-                $('#player-g-efficiency').text(gpefficiency);
+	        $('#player-g-p-efficiency').text(gpefficiency);
+	        $('#player-g-p-kd').text(gpkd);
+	        $('#player-g-p-kda').text(gpkda);
+	        $('#player-g-p-kills').text(gpkills);
+	        $('#player-g-p-assists').text(gpassists);
+	        $('#player-g-p-precision-kills').text(gpprecisionKills);
+	        $('#player-g-p-primeval-kills').text(gpprimevalKills);
+	        $('#player-g-p-best-single-game-kills').text(gpbestSingleGameKills);
+	        $('#player-g-p-blocker-kills').text(gpblockerKills);
+	        $('#player-g-p-mob-kills').text(gpmobKills);
+                $('#player-g-p-high-value-kills').text(gphighValueKills);
+	        $('#player-g-p-motes-Picked-Up').text(gpmotesPickedUp);
+	        $('#player-g-p-motes-Deposited').text( gpmotesDeposited);
+	        $('#player-g-p-primeval-Damage ').text(gpprimevalDamage );
+	        $('#player-g-p-small-Blockers-Sent').text(gpsmallBlockersSent);
+	        $('#player-g-p-precision-kills').text(gpprecisionKills);
+	        $('#player-g-p-kills-Deaths-Ratio').text(gpkillsDeathsRatio);
+	        $('#player-g-p-medium-Blockers-Sent').text(gpmediumBlockersSent);
+	        $('#player-g-p-large-Blockers-Sent').text(gplargeBlockersSent);
+	        $('#player-g-p-fastest-Completion-Ms').text(gpfastestCompletionMs);
+          	$('#player-g-p-motes-Denied').text(gpmotesDenied);
+	        $('#player-g-p-motes-Lost').text(gpmotesLost);
+	        $('#player-g-p-invasions').text(gpinvasions);
+	        $('#player-g-p-invasion-Kills').text(gpinvasionKills);
+	        $('#player-g-p-weapon-Best-Type').text(gpweaponBestType);
+	        $('#player-g-p-precision-kills').text(gpprecisionKills);
+	        $('#player-g-p-weapon').text(gpweapon);
+	        $('#player-g-p-kill-spree').text(gpkillSpree);
+	        $('#player-g-p-most-kills').text(gpmostKills);
+	        $('#player-g-p-most-precision').text(gpmostPrecision);
+                $('#player-g-p-efficiency').text(gpefficiency);
 	       
 	   
 

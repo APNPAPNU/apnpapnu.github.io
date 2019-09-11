@@ -335,7 +335,7 @@ $(function() {
 		success: function(data) {
 				  
 			// Gambit stats
-			  gpstats = data.Response.pvecomp_gambit.allTime,
+			  gpstats = data.Response.pvecomp_mamba.allTime,
 			  gpefficiency = gpstats.efficiency.basic.displayValue,
 			  gpkd = gpstats.killsDeathsRatio.basic.displayValue,
 			  gpkda = gpstats.killsDeathsAssists.basic.displayValue,

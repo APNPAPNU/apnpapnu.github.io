@@ -1,0 +1,15 @@
+:host {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+}
+
+asc-color-block {
+    flex: 0;
+}
+
+asc-destiny-stats {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}

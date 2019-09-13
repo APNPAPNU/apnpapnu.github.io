@@ -38,7 +38,7 @@ $(function() {
 				  if (data.ErrorStatus === 'Success') {
 					  
 			// pvp stats
-			  stats = stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
+			 stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
 			autoRifle = stats.weaponPrecisionKillsAutoRifle.displayValue,
 			  kd = stats.killsDeathsRatio.basic.displayValue,
 			  kda = stats.killsDeathsAssists.basic.displayValue,

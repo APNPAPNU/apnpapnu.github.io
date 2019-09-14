@@ -1,3 +1,4 @@
+
 $(function() {
 
 	var
@@ -37,33 +38,12 @@ $(function() {
 				  if (data.ErrorStatus === 'Success') {
 					  
             // pvp stats
-            var stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
+             let stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
 			 autoRifle = stats.weaponPrecisionKillsAutoRifle.displayValue;
 	
 		
 			$('#player-auto-rifle').text(autoRifle);
-			 
-						} else {
-					  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-					console.log(data);
-				  }
-  
-		},
-		error: function(data) {
-				  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-		  console.log('Error loading player stats:', data);
-		}
-	  });
-     $(function() {
-  
-	var
-  
-	  bungieId = checkParams('bungieId'),
-	  destinyId = checkParams('destinyId'),
-	  joined = checkParams('joined'),
-	  checkName = function(name, list) {
-	  
-	}
-  
-  });
-}});
+                  }
+			
+	  }
+    });

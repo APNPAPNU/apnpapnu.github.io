@@ -38,7 +38,15 @@ $(function() {
 					  
 			// pvp stats
 			  stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
-			autoRifle = stats.weaponKillsAutoRifle.basic.value;
+			autoRifle = stats.weaponKillsAutoRifle.basic.value,
+		        Sword = stats.weaponKillsSword.basic.value,
+		        autoRifle = stats.weaponKillsSideArm.basic.value,
+	                autoRifle = stats.weaponKillsAutoRifle.basic.value,
+		        autoRifle = stats.weaponKillsAutoRifle.basic.value,
+		        autoRifle = stats.weaponKillsAutoRifle.basic.value,
+			Bow = stats.weaponKillsBow.basic.value,
+		        autoRifle = stats.weaponKillsAutoRifle.basic.value,
+		        autoRifle = stats.weaponKillsAutoRifle.basic.value;
 			  $('#player-auto-rifle').text(autoRifle);
 			 
 						} else {

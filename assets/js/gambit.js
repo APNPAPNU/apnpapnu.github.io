@@ -1,26 +1,55 @@
-$.ajax({
-  url: "https://www.bungie.net/Platform/Destiny/2/Account/4611686018429000034/",
-  headers: {
-    "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
-  }
-}).done(function(json) {
-
-});
 $(function() {
-    $.ajax({
-      url: "https://www.bungie.net/Platform/Destiny/2/Account/4611686018429000034/",
-      headers: {
-        "X-API-Key": apiKey
-      },
-      success: function(data) {
-     var fstats = data.Response.data.characters[0].characterBase.characterId;
-     var webLink = "braytech.org/2/4611686018429000034/"+ fstats + "/legend";
-     $('#player-f-stats').text(fstats);
-     $("#player-web-Link").attr("href", webLink)
-     
-      .html(
-     '<div class="j-col j-col-3 member-button"> '+ webLink +'</div>'
-       )
-      }
-});
-});
+
+	var
+  
+	  bungieId = checkParams('bungieId'),
+	  destinyId = checkParams('destinyId'),
+	  joined = checkParams('joined'),
+	  checkName = function(name, list) {
+  
+		var m = false; // flag
+		console.log('Checking list for ' + name + '...');
+  
+		// loop through clan usernames and check for a match
+		$.each(list, function(i) {
+		  // make case insensitve
+		  if (name.toLowerCase() === list[i].toLowerCase()) {
+			console.log('Confirmed: ' + list[i]);
+			m = true;
+		  }
+		});
+  
+		if (m) {
+		  return true;
+		} else {
+		  return false;
+		}
+  
+	  };
+  
+	if (bungieId && destinyId && joined) {
+	  $.ajax({
+		url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Stats/?Groups=Medals&Groups=Weapons",
+		headers: {
+		  "X-API-Key": apiKey
+		},
+		success: function(data) {
+				  if (data.ErrorStatus === 'Success') {
+					  
+			// pvp stats
+			  stats = data.Response.mergedAllCharacters.results.allPve.allTime,
+			autoRifle = stats.weaponKillsAutoRifle.basic.value;
+			  $('#player-auto-rifle').text(autoRifle);
+			 
+						} else {
+					  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
+					console.log(data);
+				  }
+  
+		},
+		error: function(data) {
+				  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
+		  console.log('Error loading player stats:', data);
+		}
+	  });
+}});

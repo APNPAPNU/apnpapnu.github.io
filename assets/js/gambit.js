@@ -37,15 +37,12 @@ $(function() {
 		success: function(data) {
 				  if (data.ErrorStatus === 'Success') {
 					  
-			// pvp stats
-			 stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
-			autoRifle = stats.weaponPrecisionKillsAutoRifle.displayValue;
+            // pvp stats
+            let stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
+			 autoRifle = stats.weaponPrecisionKillsAutoRifle.displayValue;
+	
 		
-  
-			  // Populate stats
-			// pvp
-		
-			  $('#player-auto-rifle').text(autoRifle);
+			$('#player-auto-rifle').text(autoRifle);
 			 
 						} else {
 					  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');

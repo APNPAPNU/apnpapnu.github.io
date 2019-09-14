@@ -1,4 +1,3 @@
-
 $(function() {
 
 	var
@@ -37,12 +36,20 @@ $(function() {
 		success: function(data) {
 				  if (data.ErrorStatus === 'Success') {
 					  
-            // pvp stats
-             let stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
-			 autoRifle = stats.weaponKillsAutoRifle.basic.value;
-		
-			$('#auto-rifle').text(autoRifle);
-                  }
-			
-	  }
-    });
+			// pvp stats
+			  stats = stats = data.Response.mergedAllCharacters.results.allPve.allTime,
+			autoRifle = stats.weaponKillsAutoRifle.basic.value;
+			  $('#player-clock').text(totalHours + 'h');
+			 
+						} else {
+					  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
+					console.log(data);
+				  }
+  
+		},
+		error: function(data) {
+				  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
+		  console.log('Error loading player stats:', data);
+		}
+	  });
+}});

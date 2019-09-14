@@ -37,17 +37,23 @@ $(function() {
 				  if (data.ErrorStatus === 'Success') {
 					  
 			// pvp stats
-			  stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
-			autoRifle = stats.weaponKillsAutoRifle.basic.value,
-		        Sword = stats.weaponKillsSword.basic.value,
-		      sideArm = stats.weaponKillsSideArm.basic.value,
-	                rocketLauncher = stats.weaponKillsRocketLauncher.basic.value,
-		        autoRifle = stats.weaponKillsAutoRifle.basic.value,
-		        autoRifle = stats.weaponKillsAutoRifle.basic.value,
-			Bow = stats.weaponKillsBow.basic.value,
-		        autoRifle = stats.weaponKillsAutoRifle.basic.value,
-		        autoRifle = stats.weaponKillsAutoRifle.basic.value;
-			  $('#player-auto-rifle').text(autoRifle);
+			stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
+			pveAutoRifle = stats.weaponKillsAutoRifle.basic.value,
+		        pveSword = stats.weaponKillsSword.basic.value,
+		        pvesideArm = stats.weaponKillsSideArm.basic.value,
+	                pverocketLauncher = stats.weaponKillsRocketLauncher.basic.value,
+		        pveMelee = stats.weaponKillsMelee.basic.value,
+		        pvepulseRifle = stats.weaponKillsPulseRifle.basic.value,
+			pveBow = stats.weaponKillsBow.basic.value,
+		        pveShotgun = stats.weaponKillsShotgun.basic.value,
+		        pveSniper = stats.weaponKillsSniper.basic.value;
+			                   $('#player-pve-sword').text(autoRifle);
+					   $('#player-pve-auto-rifle').text(pveAutoRifle);
+					   $('#player-pve-sword').text(autoRifle);
+					   $('#player-pve-sword').text(autoRifle);
+					   $('#player-pve-sword').text(autoRifle);
+					   $('#player-pve-sword').text(autoRifle);
+					   $('#player-pve-sword').text(autoRifle);
 			 
 						} else {
 					  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');

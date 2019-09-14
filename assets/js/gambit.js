@@ -1,4 +1,3 @@
-
 $(function() {
 
 	var
@@ -38,7 +37,7 @@ $(function() {
 				  if (data.ErrorStatus === 'Success') {
 					  
             // pvp stats
-            let stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
+            var stats = data.Response.mergedAllCharacters.results.allPvE.allTime,
 			 autoRifle = stats.weaponPrecisionKillsAutoRifle.displayValue;
 	
 		

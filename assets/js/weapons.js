@@ -29,7 +29,7 @@ $(function() {
   
 	if (bungieId && destinyId && joined) {
 	  $.ajax({
-		url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Stats/?Groups=Medals&Groups=Weapons",
+		url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Stats/?Groups=Weapons",
 		headers: {
 		  "X-API-Key": apiKey
 		},

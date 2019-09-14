@@ -39,7 +39,7 @@ $(function() {
 			// pvp stats
 			  stats = stats = data.Response.mergedAllCharacters.results.allPve.allTime,
 			autoRifle = stats.weaponKillsAutoRifle.basic.value;
-			  $('#player-clock').text(totalHours + 'h');
+			  $('#player-auto-rifle').text(autoRifle);
 			 
 						} else {
 					  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');

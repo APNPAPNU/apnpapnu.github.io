@@ -37,7 +37,7 @@ $(function() {
 				  if (data.ErrorStatus === 'Success') {
 					  
 			// pvp stats
-			  stats = stats = data.Response.mergedAllCharacters.results.allPve.allTime,
+			  stats = data.Response.mergedAllCharacters.results.allPve.allTime,
 			autoRifle = stats.weaponKillsAutoRifle.basic.value;
 			  $('#player-auto-rifle').text(autoRifle);
 			 

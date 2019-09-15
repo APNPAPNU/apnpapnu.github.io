@@ -44,4 +44,16 @@
     color: #e3d081;
     font-size: .8rem;
   }
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centeredfusion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 }

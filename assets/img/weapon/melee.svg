@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="73.825462mm"
+   height="74.085129mm"
+   viewBox="0 0 73.825462 74.085129"
+   version="1.1"
+   id="svg187"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="melee.svg">
+  <defs
+     id="defs181" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="136.65554"
+     inkscape:cy="542.86052"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="664"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata184">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-69.676554,-218.38005)">
+    <g
+       id="svgg-5"
+       transform="matrix(0.26458333,0,0,0.26458333,57.290807,202.26599)">
+      <path
+         d="m 142.857,69.221 c -163.152,58.657 -103.39,300.664 66.382,268.814 76.357,-14.325 130.903,-139.71 67.94,-156.175 -8.775,-2.295 -15.955,-9.437 -15.955,-15.871 0,-6.434 -5.604,-22.536 -12.454,-35.782 -18.062,-34.928 15.861,-28.639 59.393,11.012 24.593,22.399 23.29,9.632 -2.463,-24.131 C 268.214,67.941 201.204,48.244 142.857,69.221 m 77.551,45.065 c 0,8.979 -3.673,16.326 -8.163,16.326 -4.49,0 -8.163,-7.347 -8.163,-16.326 0,-8.98 3.673,-16.327 8.163,-16.327 4.49,0 8.163,7.347 8.163,16.327 m -40.941,18.849 c -0.102,14.541 -1.605,15.595 -8.038,5.641 -10.394,-16.083 -10.394,-34.995 0,-28.572 4.489,2.775 8.107,13.094 8.038,22.931 m -32.356,34.975 c 8.84,39.198 -1.791,53.936 -36.123,50.078 -22.433,-2.52 -25.45,-5.996 -26.841,-30.922 -1.347,-24.116 -0.701,-25.2 4.572,-7.674 5.948,19.768 6.319,19.536 11.821,-7.385 11.952,-58.488 33.869,-60.415 46.571,-4.097 m 129.866,46.657 c -0.553,17.244 -0.825,17.3 -7.589,1.56 -9.656,-22.47 -9.656,-30.458 0,-24.49 4.49,2.775 7.905,13.093 7.589,22.93 M 133.754,277.37 c 5.007,-0.1 -0.081,-7.766 -11.305,-17.035 -22.291,-18.409 -7.985,-12.895 24.49,9.438 11.224,7.719 27.755,15.874 36.734,18.123 10.7,2.679 7.043,4.414 -10.609,5.035 -30.048,1.056 -66.195,-14.923 -83.863,-37.073 -8.145,-10.211 -4.565,-9.145 11.9,3.544 12.952,9.982 27.646,18.067 32.653,17.968"
+         id="path0-2"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    </g>
+  </g>
+</svg>

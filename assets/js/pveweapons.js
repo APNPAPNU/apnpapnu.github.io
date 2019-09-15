@@ -26,7 +26,9 @@ $(function() {
 		}
   
 	  };
-  
+  $("#payBtn").click(function() {
+  location.href = 'https://www.d2checklist.com/home();
+});
 	if (bungieId && destinyId && joined) {
 	  $.ajax({
 		url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Stats/?Groups=Weapons",

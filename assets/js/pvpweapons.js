@@ -57,7 +57,7 @@ $(function() {
 			pvpSword = stats.weaponKillsSword.basic.displayValue,
 			pvpAbility = stats.weaponKillsAbility.basic.displayValue,
 			pvpBeamRifle = stats.weaponKillsBeamRifle.basic.displayValue,
-			pvpBow = stats.weaponKillsBow.basic.displayValue,;
+			pvpBow = stats.weaponKillsBow.basic.displayValue;
 			/////////
 			
 			$('#player-pvp-fusion-rifle').text(pvpFusionRifle);

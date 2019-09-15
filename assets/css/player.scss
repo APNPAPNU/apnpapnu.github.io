@@ -49,11 +49,25 @@
   text-align: center;
   color: white;
 }
+.GetBtn {
+  border: none;
+  background-color: #6dc55d;
+  border-bottom: 4px solid #4CAF50;
+  padding: 7px;
+  font-size: 17px;
+  border-radius: 2px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
 
-.centeredfusion {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.GetBtn:hover {
+  background-color: #43A047;
+  border-bottom: 4px solid #388E3C;
 }
 }

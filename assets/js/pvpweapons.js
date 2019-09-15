@@ -37,7 +37,7 @@ $(function() {
 				  if (data.ErrorStatus === 'Success') {
 					  
 			// pvp stats
-			stats = data.Response.mergedAllCharacters.results.allpvp.allTime,
+			stats = data.Response.mergedAllCharacters.results.allPvP.allTime,
 			pvpFusionRifle = stats.weaponKillsFusionRifle.basic.displayValue,
 			pvpGrenade = stats.weaponKillsGrenade.basic.displayValue,
 			pvpGrenadeLauncher = stats.weaponKillsGrenadeLauncher.basic.displayValue,

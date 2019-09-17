@@ -18,6 +18,27 @@
       background: darken($gold, 10%);
     }
   }
+	.button2 {
+	 border: 1px solid; padding: 10px; box-shadow: 1px 5px 10px .1px #000; 
+	background: $gold;
+	border-radius: 30px;
+	color: $black;
+	cursor: pointer;
+  display: table-cell;
+  font-size: 0.8em;
+  font-weight: 700;
+	letter-spacing: .16em;
+	padding: 0.1rem 0.618rem;
+  transition: 400ms $transition-ease;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      background: darken($gold, 10%);
+    }
+  }
+	
   &.white {
     background: $white;
     color: $dark-blue;

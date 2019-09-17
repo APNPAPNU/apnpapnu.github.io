@@ -13,6 +13,7 @@
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+}
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       background: darken($gold, 10%);
@@ -33,6 +34,7 @@
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+}
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       background: darken($gold, 10%);

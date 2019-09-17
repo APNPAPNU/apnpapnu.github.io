@@ -1,24 +1,18 @@
 .button {
-     position: relative;
-  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.77);
-  padding: 10px;
-  background: white;
-    background: #e3d081;
-    border-radius: 30px;
-    color: #333;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.8em;
-    font-weight: 700;
-    letter-spacing: .16em;
-    padding: 1rem 1.618rem;
-    transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1);
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase
-}
+	{ border: 1px solid; padding: 10px; box-shadow: 1px 10px 12px 2px #000; }
+	background: $gold;
+	border-radius: 30px;
+	color: $black;
+	cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 700;
+	letter-spacing: .16em;
+	padding: $spacing-small $spacing-normal;
+  transition: 400ms $transition-ease;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       background: darken($gold, 10%);

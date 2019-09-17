@@ -1,0 +1,126 @@
+.button2 {
+	 border: 1px solid; padding: 10px; box-shadow: 1px 5px 10px .1px #000; 
+ background: $gold;
+ border-radius: 30px;
+ color: $black;
+ cursor: pointer;
+ display: table-cell;
+ font-size: 0.8em;
+ font-weight: 700;
+ letter-spacing: .16em;
+ padding: 0.1rem 0.618rem;
+ transition: 400ms $transition-ease;
+ text-align: center;
+ text-decoration: none;
+ text-transform: upperca
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      background: darken($gold, 10%);
+    }
+  }
+  &.white {
+    background: $white;
+    color: $dark-blue;
+    &.outline {
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $black;
+        color: $white;
+        &.outline {
+          background: rgba($white, .2);
+          @include boxshadow($glow-white);
+        }
+      }
+    }
+  }
+  &.gold {
+    background: $gold;
+    color: $black;
+    &.outline {
+      background: transparent;
+      border: 2px solid $gold;
+      color: #561c1c;
+    }
+    &.flat {
+      background: transparent;
+      color: $gold;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $gold;
+        color: $black;
+        &.outline {
+          color: $white;
+        }
+      }
+    }
+  }
+	&.black {
+    background: $black;
+    color: $white;
+    &.outline {
+      background: transparent;
+      border: 2px solid $black;
+      color: $black;
+    }
+    &.flat {
+      background: transparent;
+      color: $black;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $dark-black;
+        color: $white;
+        &.outline {
+					border-color: $dark-black;
+          color: $white;
+        }
+      }
+    }
+  }
+	&.button--flat {
+		background: transparent;
+		border: 0;
+		color: $blue;
+		font-weight: 700;
+    &.gold {
+      color: $gold;
+    }
+		&:hover {
+			background: rgba($darkest-blue, .1);
+      &.gold {
+        background: rgba($gold, .1);
+      }
+		}
+	}
+  &.full-width {
+    display: block;
+		width: 100%;
+  }
+	&.disabled {
+		opacity: .5;
+		pointer-events: none;
+	}
+	&.button--small-text {
+		@media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+			font-size: $type-smaller;
+		}
+	}
+}
+a {
+  .link-arrow {
+    margin-left: .6em;
+    transition: 400ms $transition-ease-in;
+  }
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      .link-arrow {
+        margin-left: 1em;
+      }
+    }
+  }
+}

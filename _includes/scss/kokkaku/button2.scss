@@ -12,7 +12,7 @@
  transition: 400ms $transition-ease;
  text-align: center;
  text-decoration: none;
- text-transform: upperca
+ text-transform: uppercase;
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       background: darken($gold, 10%);

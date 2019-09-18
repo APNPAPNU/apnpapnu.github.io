@@ -273,7 +273,7 @@ $(function() {
 			  // Populate stats
 			// pvp
 		 
-			  $('#player-g-efficiency').text(gefficiency);
+
 			  $('#player-g-kd').text(gkd);
 			  $('#player-g-kda').text(gkda);
 			  $('#player-g-kills').text(gkills);
@@ -299,8 +299,7 @@ $(function() {
 			  $('#player-g-invasion-Kills').text(ginvasionKills);
 			  $('#player-g-weapon-Best-Type').text(gweaponBestType);
 			  $('#player-g-precision-kills').text(gprecisionKills);
-			  $('#player-g-most-kills').text(gmostKills);
-			  $('#player-g-most-precision').text(gmostPrecision);
+						  $('#player-g-most-precision').text(gmostPrecision);
 				  $('#player-g-efficiency').text(gefficiency);
 			  $('#player-g-kd').text(gkd);
 			  $('#player-g-kda').text(gkda);
@@ -368,7 +367,6 @@ $(function() {
 			  // Populate stats
 			// pvp
 		 
-			  $('#player-g-p-efficiency').text(gpefficiency);
 			  $('#player-g-p-kd').text(gpkd);
 			  $('#player-g-p-kda').text(gpkda);
 			  $('#player-g-p-kills').text(gpkills);
@@ -394,7 +392,6 @@ $(function() {
 			  $('#player-g-p-invasion-Kills').text(gpinvasionKills);
 			  $('#player-g-p-weapon-Best-Type').text(gpweaponBestType);
 			  $('#player-g-p-precision-kills').text(gpprecisionKills);
-			  $('#player-g-p-most-kills').text(gpmostKills);
 			  $('#player-g-p-most-precision').text(gpmostPrecision);
 				  $('#player-g-p-efficiency').text(gpefficiency);
 			 

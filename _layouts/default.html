@@ -36,6 +36,12 @@
       <script type="text/javascript" src="/assets/js/{{file}}"></script>
       {% endfor %}
     {% endif %}
+	  {% if destinyID == 4611686018428807356 %}
+	  {% include html/nav.html %}
+	  {% endif %}
+	  
+    <p>The website is in maintenance mode.</p>
+{% endif %}
 	    </body>
     {% include html/footer.html %}
 </html>

@@ -31,7 +31,7 @@ $(function() {
 	  $.ajax({
 		url: "https://www.bungie.net/Platform/Destiny2/2/Account/4611686018428807356/Character/0/Stats/",
 		headers: {
-		  "X-API-Key": apiKey
+		  "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
 		},
 		success: function(data) {
 				  if (data.ErrorStatus === 'Success') {
@@ -184,7 +184,7 @@ $(function() {
 	  $.ajax({ // get Bungie Profile
 		url: "https://www.bungie.net/Platform/User/GetBungieNetUserById/4595415/",
 		headers: {
-		  "X-API-Key": apiKey
+		  "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
 		},
 		success: function(data) {
 				  if (data.ErrorStatus === 'Success') {
@@ -233,7 +233,7 @@ $(function() {
 	  $.ajax({
 		url: "https://www.bungie.net/Platform/Destiny2/2/Account/4611686018428807356/Character/0/Stats/?groups=0,0&modes=63&periodType=0",
 		headers: {
-		  "X-API-Key": apiKey
+		  "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
 		},
 		success: function(data) {
 				  
@@ -328,7 +328,7 @@ $(function() {
 	  $.ajax({
 		url: "https://www.bungie.net/Platform/Destiny2/2/Account/4611686018428807356/Character/0/Stats/?groups=0,0&modes=75&periodType=0",
 		headers: {
-		  "X-API-Key": apiKey
+		  "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
 		},
 		success: function(data) {
 				  

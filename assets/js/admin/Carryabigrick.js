@@ -27,7 +27,6 @@ $(function() {
   
 	  };
   
-	if (bungieId && destinyId && joined) {
 	  $.ajax({
 		url: "https://www.bungie.net/Platform/Destiny2/2/Account/4611686018428807356/Character/0/Stats/",
 		headers: {
@@ -311,7 +310,7 @@ $(function() {
 		}
 	  });
 	  });
-		};
+		
   $.ajax({
 	url: "https://www.bungie.net/Platform/Destiny2/2/Account/4611686018428807356/Character/0/Stats/?groups=0,0&modes=63&periodType=0",
 	headers: {

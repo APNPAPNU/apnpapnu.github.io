@@ -390,8 +390,7 @@ $(function() {
 			  $('#player-g-p-invasion-Kills').text(gpinvasionKills);
 			  $('#player-g-p-weapon-Best-Type').text(gpweaponBestType);
 			  $('#player-g-p-precision-kills').text(gpprecisionKills);
-			  $('#player-g-p-most-precision').text(gpmostPrecision);
-				  $('#player-g-p-efficiency').text(gpefficiency);
+			 				  $('#player-g-p-efficiency').text(gpefficiency);
 			 
 		 
   

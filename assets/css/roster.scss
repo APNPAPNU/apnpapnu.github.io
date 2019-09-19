@@ -93,3 +93,12 @@ span.member-online {
     color: #4DAA57;
   }
 }
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

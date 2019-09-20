@@ -300,7 +300,6 @@ $(function() {
 			  $('#player-g-invasion-Kills').text(ginvasionKills);
 			  $('#player-g-weapon-Best-Type').text(gweaponBestType);
 			  $('#player-g-precision-kills').text(gprecisionKills);
-			  $('#player-g-most-kills').text(gmostKills);
 			  $('#player-g-most-precision').text(gmostPrecision);
 				  $('#player-g-efficiency').text(gefficiency);
 			  $('#player-g-kd').text(gkd);

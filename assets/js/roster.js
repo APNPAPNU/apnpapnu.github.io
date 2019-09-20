@@ -95,10 +95,11 @@ function listMembers(rsp) {
         rank = rsp[i].memberType,
 			  link = '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank;
       
-        if (destinyId = 4611686018429000034){
+        if (link.contains=4611686018429000034){
           
         var
-        link = '/Carryabigrick/'};
+        link = '/Carryabigrick/'}
+        else  {var link = '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank};
 
         member
         .attr({
@@ -150,3 +151,5 @@ function listMembers(rsp) {
 	$('#member-count').text(on + ' / ' + rsp.length + ' Members Online');
 
 }
+
+

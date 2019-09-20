@@ -2,481 +2,485 @@
  layout: default 
  title: Player Profile 
  noindex: true 
- js:  - "player.js"  - "pveweapons.js"  - "pvpweapons.js"  - "Menagarie.js" 
+ js: 
+- "player.js"
+- "pveweapons.js"  
+- "pvpweapons.js" 
+- "Menagarie.js" 
  style:  - "player.css" 
  bodyclass: playerProfile 
  --- 
- <section class="hero" id="player-hero"> 
- <div class="content hero-content"> 
- <div class="j-col j-col-12"> 
- <h1 class="white" id="player-title"></h1> 
- <div class="j-1-col j-col-3 playerProfile-meta"> 
- <img src="" alt="" class="player-icon"> 
- <h4 id="player-rank"></h4> 
- <p class="gray">Joined clan <span class="gray" id="player-join-date"></span></p> 
- <p<p style="color:white;">Total time played:<br><span class="type-large" style="color:white;" id="player-clock"></span></p> 
- </div> 
- </div> 
- </div> 
- </section> 
- <section class="color-block lighter-gray"> 
- <div class="content">     </div>     <div class="j-col j-col-9 playerProfile-stats"> 
- <h1><img src="/assets/img/weapon/Crucible.svg" width="50" height="50">Crucible<img src="/assets/img/weapon/Crucible.svg" width="50" height="50"></h1> 
- <div class="collapsible-section"> 
- <h3 class="collapsible-title"><b>Crucible Stats</h3> 
- <div class="collapsible-section--content" style="display: none;"> 
- <h2>PvP Stats</h2> 
- <h3 class="gray">Averages</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-4"> 
- <h4>KDA</h4> 
- <span class="type-larger" id="player-kda"></span> 
- <div class="j-col j-col-4"> 
- </div> 
- <h4>KD</h4> 
- <span class="type-larger" id="player-kd"></span> 
- </div> 
- <div class="j-col j-col-4"> 
- <h4>Efficiency</h4> 
- <span class="type-larger" id="player-efficiency"></span> 
- </div> 
- </div> 
- </div> 
- <h3 class="gray">Totals</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-4"> 
- <h4>Kills</h4> 
- <span class="type-larger" id="player-kills"></span> 
- </div> 
- <div class="j-col j-col-4"> 
- <h4>Assists</h4> 
- <span class="type-larger" id="player-assists"></span> 
- </div> 
- <div class="j-col j-col-4"> 
- <h4>Precision Kills</h4> 
- <span class="type-larger" id="player-precision-kills"></span> 
- </div> 
- </div> 
- </div> 
- <h3 class="gray">Bests</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>Best Single Game Kills</h4> 
- <span class="type-larger" id="player-most-kills"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Longest Kill Spree</h4> 
- <span class="type-larger" id="player-kill-spree"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Most Precision Kills</h4> 
- <span class="type-larger" id="player-most-precision"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Best Weapon Type</h4> 
- <span class="type-larger" id="player-weapon"></span> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div>     <div class="j-col j-col-9 playerProfile-stats"> 
- <h1><img src="/assets/img/weapon/Vanguard.svg" width="50" height="50">Vanguard<img src="/assets/img/weapon/Vanguard.svg" width="50" height="50"></h1> 
- <div class="collapsible-section"> 
- <h3 class="collapsible-title">PvE Stats</h3> 
- <div class="collapsible-section--content" style="display: none;"> 
- <h2>Pve Stats</h2>         <h3 class="gray">Raid Stats</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>Total Clears</h4> 
- <span class="type-larger" id="player-raid-clears"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>KD</h4> 
- <span class="type-larger" id="player-raid-kd"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Kills</h4> 
- <span class="type-larger" id="player-raid-kills"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Average Kills Per Game</h4> 
- <span class="type-larger" id="player-raid-kills-pga"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Best Single Game Kills</h4> 
- <span class="type-larger" id="player-raid-best-kills"></span> 
- </div> 
- </div> 
- </div> 
- <h3 class="gray">Strike Stats</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>Total Clears</h4> 
- <span class="type-larger" id="player-strike-clears"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>KD</h4> 
- <span class="type-larger" id="player-strike-kd"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Kills</h4> 
- <span class="type-larger" id="player-strike-kills"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Average Kills Per Game</h4> 
- <span class="type-larger" id="player-strike-kills-pga"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Best Single Game Kills</h4> 
- <span class="type-larger" id="player-strike-best-kills"></span> 
- </div> 
- </div> 
- </div><h3 class="gray">Patrol Stats</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>Heroic Public Events Completed</h4> 
- <span class="type-larger" id="player-heroic-public-events"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Kills</h4> 
- <span class="type-larger" id="player-patrol-kills"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Deaths</h4> 
- <span class="type-larger" id="player-patrol-deaths"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Best Weapon Type</h4> 
- <span class="type-larger" id="player-patrol-best-weapon"></span> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- <div class="collapsible-section"> 
- <h3 class="collapsible-title">Weapons</h3> 
- <div class="collapsible-section--content" style="display: none;"> 
- <h2>Weapon Kills</h2> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6">  <h4>Abilities</h4>  <span class="type-larger" id="player-pve-ability"></span></div> 
- <div class="j-col j-col-6">  <h4>Beam Weapons</h4>  <span class="type-larger" id="player-pve-beam-rifle"></span></div> 
- <div class="j-col j-col-6">  <h4>Bows</h4>  <span class="type-larger" id="player-pve-bow"></span></div> 
- <div class="j-col j-col-6">  <h4>Fusion Rifles</h4><img src="/assets/img/weapon/FusionRifle.svg" width="50" height="50"></Fusion>  <span class="type-larger" id="player-pve-fusion-rifle"></span></div> 
- <div class="j-col j-col-6">  <h4>Grenades</h4>  <span class="type-larger" id="player-pve-grenade"></span></div> 
- <div class="j-col j-col-6">  <h4>Grenade Launchers</h4><img src="/assets/img/weapon/GrenadeLauncher.svg" width="50" height="50">  <span class="type-larger" id="player-pve-grenade-launcher"></span></div> 
- <div class="j-col j-col-6">  <h4>Hand Cannons</h4><img src="/assets/img/weapon/Handcannon.svg" width="50" height="50">  <span class="type-larger" id="player-pve-hand-cannon"></span></div> 
- <div class="j-col j-col-6">  <h4>Hive Swords AKA Relics</h4>  <span class="type-larger" id="player-pve-relic"></span></div> 
- <div class="j-col j-col-6">  <h4>Machine Guns </h4><span class="type-larger" id="player-pve-machinegun"></span></div> 
- <div class="j-col j-col-6">  <h4>Melees </h4><span class="type-larger" id="player-pve-melee"></span></div> 
- <div class="j-col j-col-6">  <h4>Pulse Rifles</h4><img src="/assets/img/weapon/PulseRifle.svg" width="50" height="50">  <span class="type-larger" id="player-pve-pulse-rifle"></span></div> 
- <div class="j-col j-col-6">  <h4>Rocket Launchers</h4><img src="/assets/img/weapon/RocketLAuncher.svg" width="50" height="50">  <span class="type-larger" id="player-pve-rocket-launcher"></span></div> 
- <div class="j-col j-col-6">  <h4>Scout Rifles</h4><img src="/assets/img/weapon/ScoutRifle.svg" width="50" height="50">  <span class="type-larger" id="player-pve-scout-rifle"></span></div> 
- <div class="j-col j-col-6">  <h4>Shotguns</h4><img src="/assets/img/weapon/shotgun.svg" width="50" height="50">  <span class="type-larger" id="player-pve-shotgun"></span></div> 
- <div class="j-col j-col-6">  <h4>Sidearms</h4><img src="/assets/img/weapon/Sidearm.svg" width="50" height="50"></Sidearmsimg>  <span class="type-larger" id="player-pve-sidearm"></span></div> 
- <div class="j-col j-col-6">  <h4>Snipers</h4><img src="/assets/img/weapon/sniper.svg" width="50" height="50">  <span class="type-larger" id="player-pve-sniper"></span></div> 
- <div class="j-col j-col-6">  <h4>Submachine Guns</h4><img src="/assets/img/weapon/SubmachineGun.svg" width="50" height="50">  <span class="type-larger" id="player-pve-submachinegun"></span></div> 
- <div class="j-col j-col-6">  <h4>Supers</h4><span class="type-larger" id="player-pve-super"></span></div> 
- <div class="j-col j-col-6">  <h4>Swords </h4><span class="type-larger" id="player-pve-sword"></h4><img src="/assets/img/weapon/sword.svg" width="50" height="50"></span></div> 
- <div class="j-col j-col-6">  <h4>Trace Rifles</h4><img src="/assets/img/weapon/Tracerifle.svg" width="50" height="50">  <span class="type-larger" id="player-pve-trace-rifle"></span></div> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div>  
- <div class="j-col j-col-9 playerProfile-stats"> 
- <h1><img src="/assets/img/weapon/chalice.svg" width="50" height="50">Menagarie<img src="/assets/img/weapon/chalice.svg" width="50" height="50"></h1> 
- <div class="collapsible-section"> 
- <h3 class="collapsible-title">Menagarie Stats</h3> 
- <div class="collapsible-section--content" style="display: none;"> 
- <h2>Menagarie Stats</h2> 
- <h3 class="gray">Basic Stats</h3> 
- <div class="j-col j-col-6"> 
- 	<div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <h4>Completions</h4> 
- <span class="type-larger" id="player-menagarie-Clears"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Assist</h4> 
- <span class="type-larger" id="player-menagarie-assists"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Most kills in a run</h4> 
- <span class="type-larger" id="player-menagarie-mostSingleGameKills"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Highest score </h4> 
- <span class="type-larger" id="player-menagarie-highestScore"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Kills</h4> 
- <span class="type-larger" id="player-menagarie-Kills"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Orbs generated</h4> 
- <span class="type-larger" id="player-menagarie-orbsGenerated"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Precision kills</h4> 
- <span class="type-larger" id="player-menagarie-precisionKills"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Revives Performed</h4> 
- <span class="type-larger" id="player-menagarie-revivesPerformed"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Revives recieved</h4> 
- <span class="type-larger" id="player-menagarie-revivesRecieved"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Accidental deaths</h4> 
- <span class="type-larger" id="player-menagarie-accidentalDeaths"> 
- </span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Best Weapon</h4> 
- <span class="type-larger" id="player-menagarie-bestWeapon"> 
- </span> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- 	    <div class="j-col j-col-9 playerProfile-stats"> 
- <div class="collapsible-section"> <h3 class="collapsible-title">Menagarie Weapons</h3> 
- <div class="collapsible-section--content" style="display: none;"> 
- <h2>Menagarie Weapon stats</h2> 
- <h3 class="gray">Weapons</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-4"> 
- 	<h4>Abilities</h4> 
- <span class="type-larger" id="player-menagarie-ability"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Beam Weapons</h4> 
- <span class="type-larger" id="player-menagarie-beam-rifle"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Bows</h4> 
- <span class="type-larger" id="player-menagarie-bow"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Fusion Rifles</h4> 
- <img src="/assets/img/weapon/FusionRifle.svg" width="50" height="50"></Fusion><span class="type-larger" id="player-menagarie-fusion-rifle"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Grenades</h4> 
- <span class="type-larger" id="player-menagarie-grenade"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Grenade Launchers</h4> 
- <img src="/assets/img/weapon/GrenadeLauncher.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-grenade-launcher"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Hand Cannons</h4> 
- <img src="/assets/img/weapon/Handcannon.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-hand-cannon"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Hive Swords AKA Relics</h4> 
- <span class="type-larger" id="player-menagarie-relic"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Machine Guns</h4> 
- <span class="type-larger" id="player-menagarie-machinegun"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Melees</h4> 
- <span class="type-larger" id="player-menagarie-melee"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Pulse Rifles</h4> 
- <img src="/assets/img/weapon/PulseRifle.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-pulse-rifle"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Rocket Launchers</h4> 
- <img src="/assets/img/weapon/RocketLAuncher.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-rocket-launcher"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Scout Rifles</h4> 
- <img src="/assets/img/weapon/ScoutRifle.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-scout-rifle"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Shotguns</h4> 
- <img src="/assets/img/weapon/shotgun.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-shotgun"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Sidearms</h4> 
- <img src="/assets/img/weapon/Sidearm.svg" width="50" height="50"></Sidearmsimg><span class="type-larger" id="player-menagarie-sidearm"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Snipers</h4> 
- <img src="/assets/img/weapon/sniper.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-sniper"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Submachine Guns</h4> 
- <img src="/assets/img/weapon/SubmachineGun.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-submachinegun"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Supers</h4> 
- <span class="type-larger" id="player-menagarie-super"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Swords</h4> 
- <span class="type-larger" id="player-menagarie-sword"></h4> 
- <img src="/assets/img/weapon/sword.svg" width="50" height="50"></span></div> 
- <div class="j-col j-col-6">  
- <h4>Trace Rifles</h4> 
- <img src="/assets/img/weapon/Tracerifle.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-trace-rifle"></span></div> 
- </div> 
- <span class="type-larger" id="player-menagarie-Bow"> 
- </span> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- <div class="j-1-col j-col-9 playerProfile-stats"> 
- <h1><img src="/assets/img/weapon/Drifter.svg" width="50" height="50">Drifter<img src="/assets/img/weapon/Drifter.svg" width="50" height="50"></h1> 
- <div class="collapsible-section"> 
- <h3 class="collapsible-title">Gambit Stats</h3> 
- <div class="collapsible-section--content" style="display: none;"> 
- <h2>Gambit Stats</h2>         <h3 class="gray">Averages</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>KD</h4> 
- <span class="type-larger" id="player-g-kd"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>KDA</h4> 
- <span class="type-larger" id="player-g-kda"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Kills</h4> 
- <span class="type-larger" id="player-g-kills"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Assists</h4> 
- <span class="type-larger" id="player-g-assists"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Primeval Kills</h4> 
- <span class="type-larger" id="player-g-primeval-kills"></span> 
- </div><div class="j-col j-col-6"> 
- <h4>Total Primeval Damage</h4> 
- <span class="type-larger" id="player-g-primeval-Damage"></span> 
- </div> 
- </div> 
- </div><h3 class="gray">Blockers</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>Small blockers sent</h4> 
- <span class="type-larger" id="player-g-small-Blockers-Sent"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Medium blockers sent</h4> 
- <span class="type-larger" id="player-g-medium-Blockers-Sent"></span> 
- </div><div class="j-col j-col-6"> 
- <h4>Large blockers sent</h4> 
- <span class="type-larger" id="player-g-large-Blockers-Sent"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Fastest completion</h4> 
- <span class="type-larger" id="player-g-fastest-Completion-Ms"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Motes Deposited</h4> 
- <span class="type-larger" id="player-g-motes-Deposited"></span> 
- </div> 
- </div> 
- </div><h3 class="gray">Invasions / Invaders</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-4"> 
- <h4>Invasions</h4> 
- <span class="type-larger" id="player-g-invasions"></span> 
- </div> 
- <div class="j-col j-col-4"> 
- <h4>Invasion Kills</h4> 
- <span class="type-larger" id="player-g-invasion-Kills"></span> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- <div class="j-1-col j-col-9 playerProfile-stats"> 
- <div class="collapsible-section"> 
- <h3 class="collapsible-title">Gambit Prime Stats</h3> 
- <div class="collapsible-section--content" style="display: none;"> 
- <h2>Gambit Prime Stats</h2>         <h3 class="gray">Averages</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>KD</h4> 
- <span class="type-larger" id="player-g-p-kd"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>KDA</h4> 
- <span class="type-larger" id="player-g-p-kda"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Kills</h4> 
- <span class="type-larger" id="player-g-p-kills"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Test1</h4> 
- <span class="type-larger" id="player-pvp-rocket-launcher"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Primeval Kills</h4> 
- <span class="type-larger" id="player-g-p-primeval-kills"></span> 
- </div><div class="j-col j-col-6"> 
- <h4>Total Primeval Damage</h4> 
- <span class="type-larger" id="player-g-p-primeval-Damage"></span> 
- </div> 
- </div> 
- </div><h3 class="gray">Blockers</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-6"> 
- <h4>Small blockers sent</h4> 
- <span class="type-larger" id="player-g-p-small-Blockers-Sent"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Medium blockers sent</h4> 
- <span class="type-larger" id="player-g-p-medium-Blockers-Sent"></span> 
- </div><div class="j-col j-col-6"> 
- <h4>Large blockers sent</h4> 
- <span class="type-larger" id="player-g-p-large-Blockers-Sent"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Fastest completion</h4> 
- <span class="type-larger" id="player-g-p-fastest-Completion-Ms"></span> 
- </div> 
- <div class="j-col j-col-6"> 
- <h4>Motes Deposited</h4> 
- <span class="type-larger" id="player-g-p-motes-Deposited"></span> 
- </div> 
- </div> 
- </div><h3 class="gray">Invasions / Invaders</h3> 
- <div class="playerProfile-content"> 
- <div class="j-row grid-container"> 
- <div class="j-col j-col-4"> 
- <h4>Invasions</h4> 
- <span class="type-larger" id="player-g-p-invasions"></span> 
- </div> 
- <div class="j-col j-col-4"> 
- <h4>Invasion Kills</h4> 
- <span class="type-larger" id="player-g-p-invasion-Kills"></span> 
- </div> 
- </div> 
- </div> 
- </div> 
- </div> 
- </section> 
+ <section class="hero" id="player-hero">
+<div class="content hero-content">
+<div class="j-col j-col-12">
+<h1 class="white" id="player-title"></h1>
+<div class="j-1-col j-col-3 playerProfile-meta">
+<img src="" alt="" class="player-icon">
+<h4 id="player-rank"></h4>
+<p class="gray">Joined clan <span class="gray" id="player-join-date"></span></p>
+<p<p style="color:white;">Total time played:<br><span class="type-large" style="color:white;" id="player-clock"></span></p>
+</div>
+</div>
+</div>
+</section>
+<section class="color-block lighter-gray">
+<div class="content">     </div>     <div class="j-col j-col-9 playerProfile-stats">
+<h1><img src="/assets/img/weapon/Crucible.svg" width="50" height="50">Crucible<img src="/assets/img/weapon/Crucible.svg" width="50" height="50"></h1>
+<div class="collapsible-section">
+<h3 class="collapsible-title"><b>Crucible Stats</h3>
+<div class="collapsible-section--content" style="display: none;">
+<h2>PvP Stats</h2>
+<h3 class="gray">Averages</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-4">
+<h4>KDA</h4>
+<span class="type-larger" id="player-kda"></span>
+<div class="j-col j-col-4">
+</div>
+<h4>KD</h4>
+<span class="type-larger" id="player-kd"></span>
+</div>
+<div class="j-col j-col-4">
+<h4>Efficiency</h4>
+<span class="type-larger" id="player-efficiency"></span>
+</div>
+</div>
+</div>
+<h3 class="gray">Totals</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-4">
+<h4>Kills</h4>
+<span class="type-larger" id="player-kills"></span>
+</div>
+<div class="j-col j-col-4">
+<h4>Assists</h4>
+<span class="type-larger" id="player-assists"></span>
+</div>
+<div class="j-col j-col-4">
+<h4>Precision Kills</h4>
+<span class="type-larger" id="player-precision-kills"></span>
+</div>
+</div>
+</div>
+<h3 class="gray">Bests</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>Best Single Game Kills</h4>
+<span class="type-larger" id="player-most-kills"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Longest Kill Spree</h4>
+<span class="type-larger" id="player-kill-spree"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Most Precision Kills</h4>
+<span class="type-larger" id="player-most-precision"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Best Weapon Type</h4>
+<span class="type-larger" id="player-weapon"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>     <div class="j-col j-col-9 playerProfile-stats">
+<h1><img src="/assets/img/weapon/Vanguard.svg" width="50" height="50">Vanguard<img src="/assets/img/weapon/Vanguard.svg" width="50" height="50"></h1>
+<div class="collapsible-section">
+<h3 class="collapsible-title">PvE Stats</h3>
+<div class="collapsible-section--content" style="display: none;">
+<h2>Pve Stats</h2>         <h3 class="gray">Raid Stats</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>Total Clears</h4>
+<span class="type-larger" id="player-raid-clears"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>KD</h4>
+<span class="type-larger" id="player-raid-kd"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Kills</h4>
+<span class="type-larger" id="player-raid-kills"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Average Kills Per Game</h4>
+<span class="type-larger" id="player-raid-kills-pga"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Best Single Game Kills</h4>
+<span class="type-larger" id="player-raid-best-kills"></span>
+</div>
+</div>
+</div>
+<h3 class="gray">Strike Stats</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>Total Clears</h4>
+<span class="type-larger" id="player-strike-clears"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>KD</h4>
+<span class="type-larger" id="player-strike-kd"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Kills</h4>
+<span class="type-larger" id="player-strike-kills"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Average Kills Per Game</h4>
+<span class="type-larger" id="player-strike-kills-pga"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Best Single Game Kills</h4>
+<span class="type-larger" id="player-strike-best-kills"></span>
+</div>
+</div>
+</div><h3 class="gray">Patrol Stats</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>Heroic Public Events Completed</h4>
+<span class="type-larger" id="player-heroic-public-events"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Kills</h4>
+<span class="type-larger" id="player-patrol-kills"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Deaths</h4>
+<span class="type-larger" id="player-patrol-deaths"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Best Weapon Type</h4>
+<span class="type-larger" id="player-patrol-best-weapon"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="collapsible-section">
+<h3 class="collapsible-title">Weapons</h3>
+<div class="collapsible-section--content" style="display: none;">
+<h2>Weapon Kills</h2>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">  <h4>Abilities</h4>  <span class="type-larger" id="player-pve-ability"></span></div>
+<div class="j-col j-col-6">  <h4>Beam Weapons</h4>  <span class="type-larger" id="player-pve-beam-rifle"></span></div>
+<div class="j-col j-col-6">  <h4>Bows</h4>  <span class="type-larger" id="player-pve-bow"></span></div>
+<div class="j-col j-col-6">  <h4>Fusion Rifles</h4><img src="/assets/img/weapon/FusionRifle.svg" width="50" height="50"></Fusion>  <span class="type-larger" id="player-pve-fusion-rifle"></span></div>
+<div class="j-col j-col-6">  <h4>Grenades</h4>  <span class="type-larger" id="player-pve-grenade"></span></div>
+<div class="j-col j-col-6">  <h4>Grenade Launchers</h4><img src="/assets/img/weapon/GrenadeLauncher.svg" width="50" height="50">  <span class="type-larger" id="player-pve-grenade-launcher"></span></div>
+<div class="j-col j-col-6">  <h4>Hand Cannons</h4><img src="/assets/img/weapon/Handcannon.svg" width="50" height="50">  <span class="type-larger" id="player-pve-hand-cannon"></span></div>
+<div class="j-col j-col-6">  <h4>Hive Swords AKA Relics</h4>  <span class="type-larger" id="player-pve-relic"></span></div>
+<div class="j-col j-col-6">  <h4>Machine Guns </h4><span class="type-larger" id="player-pve-machinegun"></span></div>
+<div class="j-col j-col-6">  <h4>Melees </h4><span class="type-larger" id="player-pve-melee"></span></div>
+<div class="j-col j-col-6">  <h4>Pulse Rifles</h4><img src="/assets/img/weapon/PulseRifle.svg" width="50" height="50">  <span class="type-larger" id="player-pve-pulse-rifle"></span></div>
+<div class="j-col j-col-6">  <h4>Rocket Launchers</h4><img src="/assets/img/weapon/RocketLAuncher.svg" width="50" height="50">  <span class="type-larger" id="player-pve-rocket-launcher"></span></div>
+<div class="j-col j-col-6">  <h4>Scout Rifles</h4><img src="/assets/img/weapon/ScoutRifle.svg" width="50" height="50">  <span class="type-larger" id="player-pve-scout-rifle"></span></div>
+<div class="j-col j-col-6">  <h4>Shotguns</h4><img src="/assets/img/weapon/shotgun.svg" width="50" height="50">  <span class="type-larger" id="player-pve-shotgun"></span></div>
+<div class="j-col j-col-6">  <h4>Sidearms</h4><img src="/assets/img/weapon/Sidearm.svg" width="50" height="50"></Sidearmsimg>  <span class="type-larger" id="player-pve-sidearm"></span></div>
+<div class="j-col j-col-6">  <h4>Snipers</h4><img src="/assets/img/weapon/sniper.svg" width="50" height="50">  <span class="type-larger" id="player-pve-sniper"></span></div>
+<div class="j-col j-col-6">  <h4>Submachine Guns</h4><img src="/assets/img/weapon/SubmachineGun.svg" width="50" height="50">  <span class="type-larger" id="player-pve-submachinegun"></span></div>
+<div class="j-col j-col-6">  <h4>Supers</h4><span class="type-larger" id="player-pve-super"></span></div>
+<div class="j-col j-col-6">  <h4>Swords </h4><span class="type-larger" id="player-pve-sword"></h4><img src="/assets/img/weapon/sword.svg" width="50" height="50"></span></div>
+<div class="j-col j-col-6">  <h4>Trace Rifles</h4><img src="/assets/img/weapon/Tracerifle.svg" width="50" height="50">  <span class="type-larger" id="player-pve-trace-rifle"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>  
+ <div class="j-col j-col-9 playerProfile-stats">
+<h1><img src="/assets/img/weapon/chalice.svg" width="50" height="50">Menagarie<img src="/assets/img/weapon/chalice.svg" width="50" height="50"></h1>
+<div class="collapsible-section">
+<h3 class="collapsible-title">Menagarie Stats</h3>
+<div class="collapsible-section--content" style="display: none;">
+<h2>Menagarie Stats</h2>
+<h3 class="gray">Basic Stats</h3>
+<div class="j-col j-col-6"> 
+ <div class="playerProfile-content">
+<div class="j-row grid-container">
+<h4>Completions</h4>
+<span class="type-larger" id="player-menagarie-Clears">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Assist</h4>
+<span class="type-larger" id="player-menagarie-assists">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Most kills in a run</h4>
+<span class="type-larger" id="player-menagarie-mostSingleGameKills">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Highest score </h4>
+<span class="type-larger" id="player-menagarie-highestScore">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Kills</h4>
+<span class="type-larger" id="player-menagarie-Kills">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Orbs generated</h4>
+<span class="type-larger" id="player-menagarie-orbsGenerated">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Precision kills</h4>
+<span class="type-larger" id="player-menagarie-precisionKills">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Revives Performed</h4>
+<span class="type-larger" id="player-menagarie-revivesPerformed">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Revives recieved</h4>
+<span class="type-larger" id="player-menagarie-revivesRecieved">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Accidental deaths</h4>
+<span class="type-larger" id="player-menagarie-accidentalDeaths">
+</span>
+</div>
+<div class="j-col j-col-6">
+<h4>Best Weapon</h4>
+<span class="type-larger" id="player-menagarie-bestWeapon">
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="j-col j-col-9 playerProfile-stats">
+<div class="collapsible-section"> <h3 class="collapsible-title">Menagarie Weapons</h3>
+<div class="collapsible-section--content" style="display: none;">
+<h2>Menagarie Weapon stats</h2>
+<h3 class="gray">Weapons</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-4"> 
+ <h4>Abilities</h4>
+<span class="type-larger" id="player-menagarie-ability"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Beam Weapons</h4>
+<span class="type-larger" id="player-menagarie-beam-rifle"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Bows</h4>
+<span class="type-larger" id="player-menagarie-bow"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Fusion Rifles</h4>
+<img src="/assets/img/weapon/FusionRifle.svg" width="50" height="50"></Fusion><span class="type-larger" id="player-menagarie-fusion-rifle"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Grenades</h4>
+<span class="type-larger" id="player-menagarie-grenade"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Grenade Launchers</h4>
+<img src="/assets/img/weapon/GrenadeLauncher.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-grenade-launcher"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Hand Cannons</h4>
+<img src="/assets/img/weapon/Handcannon.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-hand-cannon"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Hive Swords AKA Relics</h4>
+<span class="type-larger" id="player-menagarie-relic"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Machine Guns</h4>
+<span class="type-larger" id="player-menagarie-machinegun"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Melees</h4>
+<span class="type-larger" id="player-menagarie-melee"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Pulse Rifles</h4>
+<img src="/assets/img/weapon/PulseRifle.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-pulse-rifle"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Rocket Launchers</h4>
+<img src="/assets/img/weapon/RocketLAuncher.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-rocket-launcher"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Scout Rifles</h4>
+<img src="/assets/img/weapon/ScoutRifle.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-scout-rifle"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Shotguns</h4>
+<img src="/assets/img/weapon/shotgun.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-shotgun"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Sidearms</h4>
+<img src="/assets/img/weapon/Sidearm.svg" width="50" height="50"></Sidearmsimg><span class="type-larger" id="player-menagarie-sidearm"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Snipers</h4>
+<img src="/assets/img/weapon/sniper.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-sniper"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Submachine Guns</h4>
+<img src="/assets/img/weapon/SubmachineGun.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-submachinegun"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Supers</h4>
+<span class="type-larger" id="player-menagarie-super"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Swords</h4>
+<span class="type-larger" id="player-menagarie-sword"></h4>
+<img src="/assets/img/weapon/sword.svg" width="50" height="50"></span></div>
+<div class="j-col j-col-6">  
+ <h4>Trace Rifles</h4>
+<img src="/assets/img/weapon/Tracerifle.svg" width="50" height="50"><span class="type-larger" id="player-menagarie-trace-rifle"></span></div>
+</div>
+<span class="type-larger" id="player-menagarie-Bow">
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="j-1-col j-col-9 playerProfile-stats">
+<h1><img src="/assets/img/weapon/Drifter.svg" width="50" height="50">Drifter<img src="/assets/img/weapon/Drifter.svg" width="50" height="50"></h1>
+<div class="collapsible-section">
+<h3 class="collapsible-title">Gambit Stats</h3>
+<div class="collapsible-section--content" style="display: none;">
+<h2>Gambit Stats</h2>         <h3 class="gray">Averages</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>KD</h4>
+<span class="type-larger" id="player-g-kd"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>KDA</h4>
+<span class="type-larger" id="player-g-kda"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Kills</h4>
+<span class="type-larger" id="player-g-kills"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Assists</h4>
+<span class="type-larger" id="player-g-assists"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Primeval Kills</h4>
+<span class="type-larger" id="player-g-primeval-kills"></span>
+</div><div class="j-col j-col-6">
+<h4>Total Primeval Damage</h4>
+<span class="type-larger" id="player-g-primeval-Damage"></span>
+</div>
+</div>
+</div><h3 class="gray">Blockers</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>Small blockers sent</h4>
+<span class="type-larger" id="player-g-small-Blockers-Sent"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Medium blockers sent</h4>
+<span class="type-larger" id="player-g-medium-Blockers-Sent"></span>
+</div><div class="j-col j-col-6">
+<h4>Large blockers sent</h4>
+<span class="type-larger" id="player-g-large-Blockers-Sent"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Fastest completion</h4>
+<span class="type-larger" id="player-g-fastest-Completion-Ms"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Motes Deposited</h4>
+<span class="type-larger" id="player-g-motes-Deposited"></span>
+</div>
+</div>
+</div><h3 class="gray">Invasions / Invaders</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-4">
+<h4>Invasions</h4>
+<span class="type-larger" id="player-g-invasions"></span>
+</div>
+<div class="j-col j-col-4">
+<h4>Invasion Kills</h4>
+<span class="type-larger" id="player-g-invasion-Kills"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="j-1-col j-col-9 playerProfile-stats">
+<div class="collapsible-section">
+<h3 class="collapsible-title">Gambit Prime Stats</h3>
+<div class="collapsible-section--content" style="display: none;">
+<h2>Gambit Prime Stats</h2>         <h3 class="gray">Averages</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>KD</h4>
+<span class="type-larger" id="player-g-p-kd"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>KDA</h4>
+<span class="type-larger" id="player-g-p-kda"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Kills</h4>
+<span class="type-larger" id="player-g-p-kills"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Test1</h4>
+<span class="type-larger" id="player-pvp-rocket-launcher"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Primeval Kills</h4>
+<span class="type-larger" id="player-g-p-primeval-kills"></span>
+</div><div class="j-col j-col-6">
+<h4>Total Primeval Damage</h4>
+<span class="type-larger" id="player-g-p-primeval-Damage"></span>
+</div>
+</div>
+</div><h3 class="gray">Blockers</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-6">
+<h4>Small blockers sent</h4>
+<span class="type-larger" id="player-g-p-small-Blockers-Sent"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Medium blockers sent</h4>
+<span class="type-larger" id="player-g-p-medium-Blockers-Sent"></span>
+</div><div class="j-col j-col-6">
+<h4>Large blockers sent</h4>
+<span class="type-larger" id="player-g-p-large-Blockers-Sent"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Fastest completion</h4>
+<span class="type-larger" id="player-g-p-fastest-Completion-Ms"></span>
+</div>
+<div class="j-col j-col-6">
+<h4>Motes Deposited</h4>
+<span class="type-larger" id="player-g-p-motes-Deposited"></span>
+</div>
+</div>
+</div><h3 class="gray">Invasions / Invaders</h3>
+<div class="playerProfile-content">
+<div class="j-row grid-container">
+<div class="j-col j-col-4">
+<h4>Invasions</h4>
+<span class="type-larger" id="player-g-p-invasions"></span>
+</div>
+<div class="j-col j-col-4">
+<h4>Invasion Kills</h4>
+<span class="type-larger" id="player-g-p-invasion-Kills"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> 
  

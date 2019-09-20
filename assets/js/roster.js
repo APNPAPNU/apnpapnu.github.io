@@ -93,11 +93,11 @@ function listMembers(rsp) {
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
         rank = rsp[i].memberType;
-			 
-        member
+			// configure DOM node and add to page
+      member
         .attr({
           'class': 'j-row vertical-center-row member',
-          'href': link ,
+          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
           'title': 'See player profile for ' + name,
           'data-joined' : joined.replace(/-/g, ''),
           'data-username': name,
@@ -144,5 +144,3 @@ function listMembers(rsp) {
 	$('#member-count').text(on + ' / ' + rsp.length + ' Members Online');
 
 }
-
-

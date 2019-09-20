@@ -71,7 +71,6 @@ menagarieBeamRifle = menagariestats.weaponKillsBeamRifle.basic.displayValue,
 menagarieBow = menagariestats.weaponKillsBow.basic.displayValue;
 
 $('#player-pvp-menagarie-Clears').text(menagarieClears);
-$('#player-pvp-menagarie-BowmenagarieClears').text(menagarieBowmenagarieClears);
 $('#player-pvp-menagarie-assists').text(menagarieassists);
 $('#player-pvp-menagarie-mostSingleGameKills').text(menagariemostSingleGameKills);
 $('#player-pvp-menagarie-highestScore').text(menagariehighestScore);

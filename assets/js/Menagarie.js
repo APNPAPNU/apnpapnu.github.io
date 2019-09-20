@@ -36,7 +36,7 @@ $(function() {
 		success: function(data) {
 				  if (data.ErrorStatus === 'Success') {
           
-menagariestats = Response.caluseum.allTime,
+menagariestats = data.Response.caluseum.allTime,
 menagarieClears = menagariestats.activitiesCleared.basic.displayValue,
 menagarieassists = menagariestats.assists.basic.displayValue,
 menagariemostSingleGameKills= menagariestats.bestSingleGameKills.basic.displayValue,

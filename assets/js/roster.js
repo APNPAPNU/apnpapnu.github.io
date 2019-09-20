@@ -92,15 +92,8 @@ function listMembers(rsp) {
         memberId = profile.membershipId,
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
-        rank = rsp[i].memberType,
-			  link = '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank;
-      
-        if (link.contains=4611686018429000034){
-          
-        var
-        link = '/Carryabigrick/'}
-        else  {var link = '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank};
-
+        rank = rsp[i].memberType;
+			 
         member
         .attr({
           'class': 'j-row vertical-center-row member',

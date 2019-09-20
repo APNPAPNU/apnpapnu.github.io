@@ -92,12 +92,18 @@ function listMembers(rsp) {
         memberId = profile.membershipId,
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
-        rank = rsp[i].memberType;
-			// configure DOM node and add to page
-      member
+        rank = rsp[i].memberType,
+			  link = '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank;
+      
+        if (destinyId = 4611686018429000034){
+          
+        var
+        link = '/Carryabigrick/'};
+
+        member
         .attr({
           'class': 'j-row vertical-center-row member',
-          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
+          'href': link ,
           'title': 'See player profile for ' + name,
           'data-joined' : joined.replace(/-/g, ''),
           'data-username': name,

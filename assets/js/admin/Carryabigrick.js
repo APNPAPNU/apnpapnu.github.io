@@ -198,7 +198,7 @@ $(function() {
   
 					  // Populate profile
 					  $('.hero#player-hero').css({
-						  'background-image': 'url("https://bungie.net/img/UserThemes/' + banner + '/header.jpg")'
+						  'background-image': 'url("/assets/img/carrryabigrick.png")'
 					  })
 					  $('#player-title').text(blizzard);
 					  $('.player-icon').attr({

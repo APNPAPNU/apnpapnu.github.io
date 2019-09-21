@@ -36,6 +36,7 @@
   <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
     {% include html/nav.html %}
     {{content}}
+	  {% include html/Crucible.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/assets/js/main.js"></script>
     {% if page.js %}

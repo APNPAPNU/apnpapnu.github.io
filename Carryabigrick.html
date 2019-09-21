@@ -1,57 +1,35 @@
 ---
+layout: Player
+title: Player Profile
 noindex: true
 js:
-  - "admin/Carryabigrick.js"
-  - "admin/Carryabigrickpveweapons.js"
-  - "admin/Carryabigrickpvpweapons.js"
-  - "collapsible.js"
+  - "player.js"
+  - "pveweapons.js"
+  - "pvpweapons.js"
+  - "Menagarie.js"
+style:
+  - "player.css"
+bodyclass: playerProfile
 ---
-<head> <link rel="stylesheet" href="test.css">
-<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="collapsible.js"></script></head>
-<body>
-  <div class="tabs">
-	<div class="collapsible collapsible-collapsed" data-collapsible-set="tabs-example">
-		<h4>Tab A</h4>
-		<p>And this is the content for tab A. <a href="#">Sample link to test tab order.</a></p>
-	</div>
-	<div class="collapsible" data-collapsible-set="tabs-example">
-		<h4>Tab B</h4>
-		<p>And this is the content for tab B. <a href="#">Sample link to test tab order.</a></p>
-	</div>
-	<div class="collapsible collapsible-collapsed" data-collapsible-set="tabs-example">
-		<h4>Tab C</h4>
-		<p>And this is the content for tab C. <a href="#">Sample link to test tab order.</a></p>
-	</div>
-	<div class="collapsible collapsible-collapsed" data-collapsible-set="tabs-example">
-		<h4>Tab D</h4>
-		<p>And this is the content for tab D. <a href="#">Sample link to test tab order.</a></p>
-	</div>
+ <section class="hero" id="player-hero">
+<div class="content hero-content">
+<div class="j-col j-col-12">
+<h1 class="white" id="player-title">  
+</h1>
+<div class="j-1-col j-col-3 playerProfile-meta">
+<img src="" alt="" class="player-icon">
+<h4 id="player-rank">  
+</h4>
+<p class="gray">Joined clan <span class="gray" id="player-join-date">  
+</span>  
+</p>
+<p<p style="color:white;">Total time played:<br>  
+<span class="type-large" style="color:white;" id="player-clock">  
+</span>  
+</p>
 </div>
-<style>
-.tabnav {
-	display: table;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-.tabnav li {
-	display: table-cell;
-	border: 2px solid #fff;
-	border-bottom-width: 0;
-}
-.tabnav a {
-	display: block;
-	background-color: #aaa;
-	color: #fff;
-	padding: .4em 1em;
-	text-decoration: none;
-}
-.tabnav .tab-active {
-	border: 1px solid #aaa;
-	border-bottom-width: 0;
-	background-color: #fff;
-	color: #222;
-}
-</style>
-</body>
+</div>
+</div>
+</section>
+<section class="color-block lighter-gray">
+

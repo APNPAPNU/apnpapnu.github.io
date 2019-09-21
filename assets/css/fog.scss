@@ -1,78 +1,37 @@
----
----
-// Base
-html {
-  box-sizing: border-box;
-}
-
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
-}
-
-figure {
-  margin: 0;
-}
-
-// Absolute Background
-.absolute-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-
-  height: 100%;
-  width: 100%;
-
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+#myCanvas
+{
+  height:200px;
+  width:1600px;
+  max-width:99%;
+  min-width:800px;
+  position:absolute;
+  bottom:0;
   overflow: hidden;
-}
-
-// Fog
-.fog {
-  position: relative;
-
-  height: 100vh;
-  width: 100%;
   
-  background-color: #000;
-
-  &__container {
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-
-    overflow: hidden;
-  }
-
-  &__img {
-    position: absolute;
- 
-    height: 100vh;
-    width: 300vw;
-
-    &--first {
-      background: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png') repeat-x;
-      background-size: contain;
-      background-position: center;
-      animation: marquee 60s linear infinite;
-    }
-
-    &--second {
-      background: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png') repeat-x;
-      background-size: contain;
-      background-position: center;
-      animation: marquee 40s linear infinite;
-    }
-  }
 }
-
-// Marquee
-@keyframes marquee {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-200vw, 0, 0); }
+body
+{
+  background:transparent 
+}
+div
+{  
+  font-family: 'Exo 2', sans-serif;
+  font-size:24px;
+  text-align:center;
+  color:white;
+  
+  position:absolute;
+  
+  height:100px;
+  width:200px;
+  
+  top:50%;
+  left:50%;
+  
+  margin-top:-50px;
+  margin-left:-100px;    
+}
+div p
+{
+  font-size:15px;  //the subtitle is smaller
 }

@@ -72,7 +72,7 @@
 }
 }
 
-nav > .nav.nav-tabs{
+nav2 > .nav2.nav2-tabs{
 
   border: none;
     color:#fff;
@@ -80,8 +80,8 @@ nav > .nav.nav-tabs{
     border-radius:0;
 
 }
-nav > div a.nav-item.nav-link,
-nav > div a.nav-item.nav-link.active
+nav2 > div a.nav2-item.nav2-link,
+nav2 > div a.nav2-item.nav2-link.active
 {
   border: none;
     padding: 18px 25px;
@@ -90,7 +90,7 @@ nav > div a.nav-item.nav-link.active
     border-radius:0;
 }
 
-nav > div a.nav-item.nav-link.active:after
+nav2 > div a.nav2-item.nav2-link.active:after
  {
   content: "";
   position: relative;
@@ -108,8 +108,8 @@ nav > div a.nav-item.nav-link.active:after
     padding:30px 25px;
 }
 
-nav > div a.nav-item.nav-link:hover,
-nav > div a.nav-item.nav-link:focus
+nav2 > div a.nav2-item.nav2-link:hover,
+nav2 > div a.nav2-item.nav2-link:focus
 {
   border: none;
     background: #e74c3c;

@@ -67,6 +67,7 @@ menagarieSideArm = menagariestats.weaponKillsSideArm.basic.displayValue,
 menagarieSword = menagariestats.weaponKillsSword.basic.displayValue,
 menagarieAbility = menagariestats.weaponKillsAbility.basic.displayValue,
 menagarieBeamRifle = menagariestats.weaponKillsBeamRifle.basic.displayValue,
+menagarieAutoRifle = menagariestats.weaponKillsAutoRifle.basic.displayValue,
 menagarieBow = menagariestats.weaponKillsBow.basic.displayValue;
 
 $('#player-menagarie-Clears').text(menagarieClears);
@@ -84,6 +85,7 @@ $('#player-menagarie-FusionRifle').text(menagarieFusionRifle);
 $('#player-menagarie-Grenade').text(menagarieGrenade);
 $('#player-menagarie-GrenadeLauncher').text(menagarieGrenadeLauncher);
 $('#player-menagarie-HandCannon').text(menagarieHandCannon);
+$('#player-menagarie-AutoRifle').text(menagarieAutoRifle);
 $('#player-menagarie-TraceRifle').text(menagarieTraceRifle);
 $('#player-menagarie-MachineGun').text(menagarieMachineGun);
 $('#player-menagarie-Melee').text(menagarieMelee);

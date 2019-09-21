@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<script>
+    if(document.location.href.indexOf('4611686018452674338') > -1) { 
+        // indexOf will return the position of the first occurence of this string in the url
+        // or -1 it it's not there.
+        document.location.href = 'http://www.test.com';
+    }
+</script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    {% if page.noindex %}
+    <meta name="robots" content="noindex">
+    {% endif %}
+    <meta name="author" content="Adaptiva">
+    {% if page.meta %}
+    <meta name="description" content="{{page.meta}}">
+    <meta name="og:description" content="{{page.meta}}">
+    {% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="{{"/assets/css/kokkaku.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    {% if page.style %}
+      {% for file in page.style %}
+      <link rel="stylesheet" href="/assets/css/{{file}}">
+      {% endfor %}
+    {% endif %}
+  <link rel="icon" href="/assets/img/caydeandroid-chrome-192x192 (1).ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/assets/img/cayde-favicon.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/caydeandroid-chrome-192x192 (1).ico">
+		<link rel="apple-touch-icon" sizes="167x167" href="/assets/img/caydeandroid-chrome-192x192 (1).ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/caydeandroid-chrome-192x192 (1).ico">
+    <title>{% if page.title %}{{page.title}} - {% endif %}Beats By Cayde</title>
+	    </head>
+  <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
+    {% include html/nav.html %}
+    {{content}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    {% if page.js %}
+      {% for file in page.js %}
+      <script type="text/javascript" src="/assets/js/{{file}}"></script>
+      {% endfor %}
+    {% endif %}
+	    </body>
+    {% include html/footer.html %}
+</html>

@@ -46,9 +46,11 @@ div#site {
     }
   }
   h1 {
-    font-size: $type-largest;
-    color: $blue;
-    margin-bottom: $spacing-normal;
+   font-size: 4.263rem;
+    margin-bottom: 1.618rem;
+    color: white;
+    text-shadow: 2px 2px 22px #b39116;
+}
   }
   h3 {
     font-size: $type-big;

@@ -35,7 +35,7 @@ div#site {
   background-repeat: no-repeat;
   @include vertical-center;
   height: 33vw;
-  min-height: 240px;
+  min-height: 200px;
 	max-height: 400px;
   &.slim {
     height: 20vw;

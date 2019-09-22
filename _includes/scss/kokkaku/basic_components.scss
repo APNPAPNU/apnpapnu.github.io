@@ -71,7 +71,7 @@ div#site {
     }
   }
   @media #{$mobile} {
-    height: 360px;
+    height: 30px;
     min-height: none;
     &.slim {
       height: 240px;

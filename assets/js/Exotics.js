@@ -1,3 +1,4 @@
+    
   $(function() {
 
 	var
@@ -29,10 +30,10 @@
   
 	if (bungieId && destinyId && joined) {
 	  $.ajax({
-		url: "https://www.bungie.net/Platform/Destiny2/2/Account/'+destinyId+'/Character/0/Stats/UniqueWeapons/,
-		headers: {
-		  "X-API-Key": apiKey
-		},
+		url: "https://www.bungie.net/Platform/Destiny2/2/Account/'+destinyId+'/Character/0/Stats/UniqueWeapons/",
+        headers: {
+            "X-API-Key": apiKey
+          }, 
 		success: function(data) {
 				  if (data.ErrorStatus === 'Success') {  
 
@@ -45,7 +46,7 @@ RatKing = Response.weapons[2].values.uniqueWeaponKills.basic.displayValue,
 Anarchy = Response.weapons[3].values.uniqueWeaponKills.basic.displayValue,
 SUROSRegime = Response.weapons[4].values.uniqueWeaponKills.basic.displayValue,
 Sunshot = Response.weapons[5].values.uniqueWeaponKills.basic.displayValue,
-D.A.R.C.I. = Response.weapons[6].values.uniqueWeaponKills.basic.displayValue,
+DARCI = Response.weapons[6].values.uniqueWeaponKills.basic.displayValue,
 Borealis = Response.weapons[7].values.uniqueWeaponKills.basic.displayValue,
 Thunderlord = Response.weapons[8].values.uniqueWeaponKills.basic.displayValue,
 PolarisLance = Response.weapons[9].values.uniqueWeaponKills.basic.displayValue,
@@ -82,7 +83,7 @@ LordofWolves = Response.weapons[39].values.uniqueWeaponKills.basic.displayValue,
 TheProspector = Response.weapons[40].values.uniqueWeaponKills.basic.displayValue,
 Thorn = Response.weapons[41].values.uniqueWeaponKills.basic.displayValue,
 TheLastWord = Response.weapons[42].values.uniqueWeaponKills.basic.displayValue,
-Cerberus+ = Response.weapons[43].values.uniqueWeaponKills.basic.displayValue,
+Cerberus = Response.weapons[43].values.uniqueWeaponKills.basic.displayValue,
 WorldlineZero = Response.weapons[44].values.uniqueWeaponKills.basic.displayValue,
 TheQueenbreaker = Response.weapons[45].values.uniqueWeaponKills.basic.displayValue,
 BadJuju = Response.weapons[46].values.uniqueWeaponKills.basic.displayValue,
@@ -105,7 +106,7 @@ MIDAMultiTool = Response.weapons[53].values.uniqueWeaponKills.basic.displayValue
   $('#player-PrometheusLens').text(PrometheusLens);
   $('#player-Two-TailedFox').text(Two-TailedFox);
   $('#player-TheJadeRabbit').text(TheJadeRabbit);
-  $('#player-D.A.R.C.I.').text(D.A.R.C.I.);
+  $('#player-DARCI').text( DARCI);
   $('#player-TheChaperone').text(TheChaperone);
   $('#player-Lumina').text(Lumina);
   $('#player-LegendofAcrius').text(LegendofAcrius);
@@ -134,7 +135,7 @@ MIDAMultiTool = Response.weapons[53].values.uniqueWeaponKills.basic.displayValue
   $('#player-OutbreakPerfected').text(OutbreakPerfected);
   $('#player-Truth').text(Truth);
   $('#player-Coldheart').text(Coldheart);
-  $('#player-Cerberus+').text(Cerberus+);
+  $('#player-Cerberus+').text(Cerberus);
   $('#player-WorldlineZero').text(WorldlineZero);
   $('#player-BadJuju').text(BadJuju);
   $('#player-Riskrunner').text(Riskrunner);

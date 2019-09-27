@@ -36,7 +36,7 @@ checkName = function(name, list) {
 
 
  exotic = data.Response.weapons					    
- Telesto = exotic[0]values.uniqueWeaponKills.basic.displayValue,
+ Telesto = exotic.values.uniqueWeaponKills.basic.displayValue,
  TheHuckleberry = exotic.1.values.uniqueWeaponKills.basic.displayValue,
  RatKing = exotic.2.values.uniqueWeaponKills.basic.displayValue,
  Anarchy = exotic.3.values.uniqueWeaponKills.basic.displayValue,

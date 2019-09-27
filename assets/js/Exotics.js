@@ -1,12 +1,9 @@
-    
-  $(function() {
-
-	var
-  
-	  bungieId = checkParams('bungieId'),
-	  destinyId = checkParams('destinyId'),
-	  joined = checkParams('joined'),
-	  checkName = function(name, list) {
+$(function() {
+var
+bungieId = checkParams('bungieId'),
+destinyId = checkParams('destinyId'),
+joined = checkParams('joined'),
+checkName = function(name, list) {
   
 		var m = false; // flag
 		console.log('Checking list for ' + name + '...');
@@ -38,8 +35,8 @@
 				  if (data.ErrorStatus === 'Success') {  
 
 
-exotic = data.Response.weapons					    
- Telesto = exotic.0.values.uniqueWeaponKills.basic.displayValue,
+ exotic = data.Response.weapons					    
+ Telesto = exotic[0]values.uniqueWeaponKills.basic.displayValue,
  TheHuckleberry = exotic.1.values.uniqueWeaponKills.basic.displayValue,
  RatKing = exotic.2.values.uniqueWeaponKills.basic.displayValue,
  Anarchy = exotic.3.values.uniqueWeaponKills.basic.displayValue,

@@ -299,9 +299,7 @@ $(function() {
 			  $('#player-g-invasions').text(ginvasions);
 			  $('#player-g-invasion-Kills').text(ginvasionKills);
 			  $('#player-g-weapon-Best-Type').text(gweaponBestType);
-			  $('#player-g-precision-kills').text(gprecisionKills);
-			  $('#player-g-most-precision').text(gmostPrecision);
-				  $('#player-g-efficiency').text(gefficiency);
+			  $('#player-g-precision-kills').text(gprecisionKills);  
 			  $('#player-g-kd').text(gkd);
 			  $('#player-g-kda').text(gkda);
 		 
@@ -394,10 +392,6 @@ $(function() {
 			  $('#player-g-p-invasion-Kills').text(gpinvasionKills);
 			  $('#player-g-p-weapon-Best-Type').text(gpweaponBestType);
 			  $('#player-g-p-precision-kills').text(gpprecisionKills);
-			  $('#player-g-p-most-kills').text(gpmostKills);
-			  $('#player-g-p-most-precision').text(gpmostPrecision);
-				  $('#player-g-p-efficiency').text(gpefficiency);
-			 
 		 
   
 		},

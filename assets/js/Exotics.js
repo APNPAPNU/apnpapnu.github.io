@@ -1,10 +1,11 @@
 $(function() {
+     
      var
-    
+     bungieId = checkParams('bungieId'),
      destinyId = checkParams('destinyId'),
-     joined = checkParams('joined'),
+     joined = checkParams('joined');
        
-          if (destinyId && joined) {
+          if (bungieId && destinyId && joined) {
             $.ajax({
                url: "https://www.bungie.net/Platform/Destiny2/2/Account/" + destinyId + "/Character/0/Stats/UniqueWeapons/",
              headers: {
@@ -131,4 +132,4 @@ $(function() {
                  console.log('Error loading player stats:', data);
                }
             });
-     }});
+}});

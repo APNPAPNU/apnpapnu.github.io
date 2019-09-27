@@ -80,7 +80,7 @@ $(function() {
        $('#player-Wavesplitter').text(Wavesplitter);
        $('#player-TheQueenbreaker').text(TheQueenbreaker);
        $('#player-PrometheusLens').text(PrometheusLens);
-       $('#player-Two-TailedFox').text(Two-TailedFox);
+       $('#player-Two-TailedFox').text(TwoTailedFox);
        $('#player-TheJadeRabbit').text(TheJadeRabbit);
        $('#player-DARCI').text( DARCI);
        $('#player-TheChaperone').text(TheChaperone);

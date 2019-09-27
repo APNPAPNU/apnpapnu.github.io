@@ -104,7 +104,7 @@ $(function() {
        $('#player-LegendofAcrius').text(LegendofAcrius);
        $('#player-TheLastWord').text(TheLastWord);
        $('#player-MIDAMulti-Tool').text(MIDAMultiTool);
-       $('#player-Wish-Ender').text(Wish-Ender);
+       $('#player-Wish-Ender').text(WishEnder);
        $('#player-Jötunn').text(Jötunn);
        $('#player-Malfeasance').text(Malfeasance);
        $('#player-PrometheusLens').text(PrometheusLens);

@@ -103,7 +103,7 @@ $(function() {
        $('#player-WhisperoftheWorm').text(WhisperoftheWorm);
        $('#player-LegendofAcrius').text(LegendofAcrius);
        $('#player-TheLastWord').text(TheLastWord);
-       $('#player-MIDAMulti-Tool').text(MIDAMulti-Tool);
+       $('#player-MIDAMulti-Tool').text(MIDAMultiTool);
        $('#player-Wish-Ender').text(Wish-Ender);
        $('#player-Jötunn').text(Jötunn);
        $('#player-Malfeasance').text(Malfeasance);

@@ -15,7 +15,7 @@ $(function() {
                            if (data.ErrorStatus === 'Success') {  
      
      
-test= data.Response.characterActivities.data..currentActivityModeType,
+test= data.Response.characterActivities.data..currentActivityModeType;
      $(#test).text(test);
        console.log(test);
      } else {

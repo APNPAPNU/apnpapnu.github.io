@@ -15,9 +15,8 @@ $(function() {
                            if (data.ErrorStatus === 'Success') {  
      
      
-test= data.Response.characterActivities.data..currentActivityModeType;
+test = data.Response.characterActivities.data.*.currentActivityModeType;
      $(#test).text(test);
-       console.log(test);
      } else {
                                 alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
                               console.log(data);

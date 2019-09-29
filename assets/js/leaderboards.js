@@ -9,7 +9,7 @@ $(function() {
             $.ajax({
                url: "https://www.bungie.net/Platform/Destiny2/Stats/Leaderboards/Clans/699392/?&modes=77&maxtop=100",
              headers: {
-                 "X-API-Key": apiKey
+                 "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
                }, 
                success: function(data) {
                            if (data.ErrorStatus === 'Success') {  

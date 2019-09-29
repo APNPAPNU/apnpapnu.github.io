@@ -8,26 +8,27 @@ $(function() {
                success: function(data) {
                            if (data.ErrorStatus === 'Success') {  
 
-firstPlaceName = data.Response.allPvP.lbSingleGameKills.entries[""0""].player.destinyUserInfo.displayName,
-firstPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[""0""].player.characterClass,
-firstPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[""0""].player.bungieNetUserInfo.iconPath,
-firstPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[""0""].value.basic.displayValue,
-secondPlaceName = data.Response.allPvP.lbSingleGameKills.entries[""1""].player.destinyUserInfo.displayName,
-secondPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[""1""].player.characterClass,
-secondPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[""1""].player.bungieNetUserInfo.iconPath,
-secondPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[""1""].value.basic.displayValue,
-thirdPlaceName = data.Response.allPvP.lbSingleGameKills.entries[""2""].player.destinyUserInfo.displayName,
-thirdPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[""2""].player.characterClass,
-thirdPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[""2""].player.bungieNetUserInfo.iconPath,
-thirdPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[""2""].value.basic.displayValue,
-fourthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[""3""].player.destinyUserInfo.displayName,
-fourthPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[""3""].player.characterClass,
-fourthPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[""3""].player.bungieNetUserInfo.iconPath,
-fourthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[""3""].value.basic.displayValue,
-fifthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[""4""].player.destinyUserInfo.displayName,
-fifthPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[""4""].player.characterClass,
-fifthPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[""4""].player.bungieNetUserInfo.iconPath,
-fifthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[""4""].value.basic.displayValue;
+
+firstPlaceName = data.Response.allPvP.lbSingleGameKills.entries[0].player.destinyUserInfo.displayName,
+firstPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[0].player.characterClass,
+firstPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[0].player.bungieNetUserInfo.iconPath,
+firstPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[0].value.basic.displayValue,
+secondPlaceName = data.Response.allPvP.lbSingleGameKills.entries[1].player.destinyUserInfo.displayName,
+secondPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[1].player.characterClass,
+secondPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[1].player.bungieNetUserInfo.iconPath,
+secondPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[1].value.basic.displayValue,
+thirdPlaceName = data.Response.allPvP.lbSingleGameKills.entries[2].player.destinyUserInfo.displayName,
+thirdPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[2].player.characterClass,
+thirdPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[2].player.bungieNetUserInfo.iconPath,
+thirdPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[2].value.basic.displayValue,
+fourthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[3].player.destinyUserInfo.displayName,
+fourthPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[3].player.characterClass,
+fourthPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[3].player.bungieNetUserInfo.iconPath,
+fourthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[3].value.basic.displayValue,
+fifthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[4].player.destinyUserInfo.displayName,
+fifthPlaceClass = data.Response.allPvP.lbSingleGameKills.entries[4].player.characterClass,
+fifthPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[4].player.bungieNetUserInfo.iconPath,
+fifthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[4].value.basic.displayValue;
 
 $('#player-first-Place-Name').text(firstPlaceName);
 $('#player-first-Place-Class').text(firstPlaceClass);

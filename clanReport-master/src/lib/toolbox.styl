@@ -1,0 +1,12 @@
+$dm-background = #1E2126;
+$dm-background-alt = lighten($dm-background, 4%);
+$dm-text-color = #dedee0;
+$dm-border-color = #6e788b;
+
+darkMode()
+  &:global(.dark-mode)
+  :global(.dark-mode) &
+    {block}
+
+  // @media (prefers-color-scheme: dark)
+  //   {block}

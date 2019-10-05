@@ -1,0 +1,91 @@
+.root
+  content: 'root'
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-column-gap: 50px
+
+  @media screen and (max-width: 1020px)
+    grid-template-columns: repeat(1, 1fr)
+
+.selectPlayer
+  content: 'selectPlayer'
+
+.playerSearch
+  margin-top: 50px
+  width: 500px
+  max-width: 100%
+
+.resultPlayer
+  display: block
+  max-width: 500px
+  color: inherit
+  text-decoration: none
+  padding: 8px 10px
+  margin-top: 4px
+  transition: 150ms ease-in-out
+  background: lighten(#ececec, 60%)
+
+  &:hover
+    background: lighten(#ececec, 10%)
+
+.platformIcon
+  margin-right: 5px
+
+.authLink
+  color: inherit
+  font-weight: 500
+
+.leaderboards
+  grid-column: span 2
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-column-gap: 20px
+  max-width: 700px
+
+  > h2
+    grid-column: span 2
+
+.leaderboard
+  content: 'leaderboard'
+
+  > ol
+    padding: 0
+
+.leaderboardItem
+  padding: 8px 0
+
+  list-style: none
+
+  > div
+    display: inline-block
+
+    > small
+      opacity: .75
+
+  &:before
+    content: attr(data-rank) "."
+    padding-right: 1.5ch
+    display: inline-block
+    vertical-align: top
+
+
+.leaderboardTop
+  grid-column: span 2
+
+  em
+    color: #737373
+
+.leaderboardSelect
+  display: inline-block
+  font-size: 14px
+  margin-left: 10px
+
+.leaderboardPlatformButton
+  background: none
+  appearance: none
+  border: none
+  border-radius: 0
+  font-family: inherit
+  font-size: inherit
+  padding: 0
+  padding: 0 10px

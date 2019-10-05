@@ -1,0 +1,49 @@
+@import '../../lib/toolbox.styl'
+
+$activeColor = #737373
+
+.searchWrapper
+  position: relative
+
+.searchField
+  width: 100%
+  border: none
+  appearance: none
+  background: #ececec
+  font-family: inherit
+  font-size: inherit
+  padding: 8px 10px
+  outline: none
+  transition: 150ms ease-in-out
+  outline: 1px solid rgba($activeColor, 0)
+  outline-offset: 2px
+  border-bottom: 1px solid $activeColor
+
+  &:focus
+    outline-color: $activeColor
+
+  +darkMode()
+    background: lighten($dm-background, 10%)
+    color: white
+
+.loadingBar
+  position: absolute
+  bottom: -2px
+  left: 50%
+  transform: translateX(-50%)
+  height: 2px
+  width: 50%
+  background: black
+  animation: loading 1.5s ease-in-out infinite
+
+@keyframes loading
+  from
+    width: 0%
+    opacity: 1
+
+  to
+    width: 100%
+    opacity: 0
+
+.results
+  margin-top: 15px

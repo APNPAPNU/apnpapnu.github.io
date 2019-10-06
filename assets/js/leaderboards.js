@@ -32,7 +32,7 @@ fifthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[4].value.basic.d
 
 $('#player-first-Place-Name').text(firstPlaceName);
 $('#player-first-Place-Class').text(firstPlaceClass);
- $('.player-first-Place-Icon').attr({
+ $('#player-first-Place-Icon').attr({
 						  'src': 'https://www.bungie.net' + firstPlaceIcon
 					  });
 $('#player-first-Place-Stat').text(firstPlaceStat);

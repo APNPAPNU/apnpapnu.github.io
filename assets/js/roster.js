@@ -82,7 +82,8 @@ function listMembers(rsp) {
 		// check for valid profile
 		// some users don't have Bungie profiles somehow and it breaks function
     if (typeof profile != 'undefined') {
-			// store response data in semantic variables
+		// store response data in semantic variables
+	    function jsonPath(tester = $.Response.results[?(@.isOnline == true)]..displayName));
       var
         name = rsp[i].destinyUserInfo.displayName,
         joinDate = rsp[i].joinDate,
@@ -92,7 +93,6 @@ function listMembers(rsp) {
         memberId = profile.membershipId,
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
-	 tester = jsonpath($.Response.results[?(@.isOnline == true)]..displayName),
         rank = rsp[i].memberType;
 			// configure DOM node and add to page
       member

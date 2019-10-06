@@ -92,6 +92,7 @@ function listMembers(rsp) {
         memberId = profile.membershipId,
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
+	 tester = $.Response.results[?(@.isOnline == true)]..displayName,
         rank = rsp[i].memberType;
 			// configure DOM node and add to page
       member

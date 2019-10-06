@@ -78,12 +78,13 @@ function listMembers(rsp) {
 		if (rsp[i].isOnline) {
 			on++
 		}
-
+if (rsp[i].isOnline == true{name = barf;}
+  
 		// check for valid profile
 		// some users don't have Bungie profiles somehow and it breaks function
     if (typeof profile != 'undefined') {
 		// store response data in semantic variables
-	    function jsonPath(tester = $.Response.results[?(@.isOnline == true)]..displayName));
+	  
       var
         name = rsp[i].destinyUserInfo.displayName,
         joinDate = rsp[i].joinDate,

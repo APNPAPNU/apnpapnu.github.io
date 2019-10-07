@@ -9,27 +9,27 @@ $(function() {
                    if (data.ErrorStatus === 'Success') {  
 
 
-allpvpTotalKillsFirstFirstPlaceName = data.Response.allPvP.lbKills.entries[0].player.destinyUserInfo.displayName,
-allpvpTotalKillsFirstPlaceStat = data.Response.allPvP.lbKills.entries[0].value.basic.displayValue,
-allpvpTotalKillsSecondPlaceName = data.Response.allPvP.lbKills.entries[1].player.destinyUserInfo.displayName,
-allpvpTotalKillsSecondPlaceStat = data.Response.allPvP.lbKills.entries[1].value.basic.displayValue,
-allpvpTotalKillsThirdPlaceName = data.Response.allPvP.lbKills.entries[2].player.destinyUserInfo.displayName,
-allpvpTotalKillsThirdPlaceStat = data.Response.allPvP.lbKills.entries[2].value.basic.displayValue,
-allpvpTotalKillsFourthPlaceName = data.Response.allPvP.lbKills.entries[3].player.destinyUserInfo.displayName,
-allpvpTotalKillsFourthPlaceStat = data.Response.allPvP.lbKills.entries[3].value.basic.displayValue,
-allpvpTotalKillsFifthPlaceName = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.displayName,
-allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue;
-
-$('#player-allpvp-Total-Kills-First-Place-Name').text(allpvpTotalKillsFirstPlaceName);
-$('#player-allpvp-Total-Kills-First-Place-Stat').text(allpvpTotalKillsFirstPlaceStat);
-$('#player-allpvp-Total-Kills-Second-Place-Name').text(allpvpTotalKillsSecondPlaceName);
-$('#player-allpvp-Total-Kills-Second-Place-Stat').text(allpvpTotalKillsSecondPlaceStat);
-$('#player-allpvp-Total-Kills-Third-Place-Name').text(allpvpTotalKillsThirdPlaceName);
-$('#player-allpvp-Total-Kills-Third-Place-Stat').text(allpvpTotalKillsThirdPlaceStat);
-$('#player-allpvp-Total-Kills-Fourth-Place-Name').text(allpvpTotalKillsFourthPlaceName);
-$('#player-allpvp-Total-Kills-Fourth-Place-Stat').text(allpvpTotalKillsFourthPlaceStat);
-$('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsFifthPlaceName);
-$('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsFifthPlaceStat);
+  allpvpTotalKillsFirstPlaceName = data.Response.allPvP.lbKills.entries[0].player.destinyUserInfo.displayName,
+                            allpvpTotalKillsFirstPlaceStat = data.Response.allPvP.lbKills.entries[0].value.basic.displayValue,
+                            allpvpTotalKillsSecondPlaceName = data.Response.allPvP.lbKills.entries[1].player.destinyUserInfo.displayName,
+                            allpvpTotalKillsSecondPlaceStat = data.Response.allPvP.lbKills.entries[1].value.basic.displayValue,
+                            allpvpTotalKillsThirdPlaceName = data.Response.allPvP.lbKills.entries[2].player.destinyUserInfo.displayName,
+                            allpvpTotalKillsThirdPlaceStat = data.Response.allPvP.lbKills.entries[2].value.basic.displayValue,
+                            allpvpTotalKillsFourthPlaceName = data.Response.allPvP.lbKills.entries[3].player.destinyUserInfo.displayName,
+                            allpvpTotalKillsFourthPlaceStat = data.Response.allPvP.lbKills.entries[3].value.basic.displayValue,
+                            allpvpTotalKillsFifthPlaceName = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.displayName,
+                            allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue;
+                            
+                            $('#player-allpvp-Total-Kills-First-Place-Name').text(allpvpTotalKillsFirstPlaceName);
+                            $('#player-allpvp-Total-Kills-First-Place-Stat').text(allpvpTotalKillsFirstPlaceStat);
+                            $('#player-allpvp-Total-Kills-Second-Place-Name').text(allpvpTotalKillsSecondPlaceName);
+                            $('#player-allpvp-Total-Kills-Second-Place-Stat').text(allpvpTotalKillsSecondPlaceStat);
+                            $('#player-allpvp-Total-Kills-Third-Place-Name').text(allpvpTotalKillsThirdPlaceName);
+                            $('#player-allpvp-Total-Kills-Third-Place-Stat').text(allpvpTotalKillsThirdPlaceStat);
+                            $('#player-allpvp-Total-Kills-Fourth-Place-Name').text(allpvpTotalKillsFourthPlaceName);
+                            $('#player-allpvp-Total-Kills-Fourth-Place-Stat').text(allpvpTotalKillsFourthPlaceStat);
+                            $('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsFifthPlaceName);
+                            $('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsFifthPlaceStat);
   
 
 

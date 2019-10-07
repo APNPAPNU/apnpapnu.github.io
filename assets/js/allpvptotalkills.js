@@ -20,16 +20,16 @@ allpvpTotalKillsFourthPlaceStat = data.Response.allPvP.lbKills.entries[3].value.
 allpvpTotalKillsFifthPlaceName = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.displayName,
 allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue;
 
-$('#player-allpvp-Total-Kills-First-Place-Name').text(allpvpTotalKillsfirstPlaceName);
-$('#player-allpvp-Total-Kills-First-Place-Stat').text(allpvpTotalKillsfirstPlaceStat);
-$('#player-allpvp-Total-Kills-Second-Place-Name').text(allpvpTotalKillssecondPlaceName);
-$('#player-allpvp-Total-Kills-Second-Place-Stat').text(allpvpTotalKillssecondPlaceStat);
-$('#player-allpvp-Total-Kills-Third-Place-Name').text(allpvpTotalKillsthirdPlaceName);
-$('#player-allpvp-Total-Kills-Third-Place-Stat').text(allpvpTotalKillsthirdPlaceStat);
-$('#player-allpvp-Total-Kills-Fourth-Place-Name').text(allpvpTotalKillsfourthPlaceName);
-$('#player-allpvp-Total-Kills-Fourth-Place-Stat').text(allpvpTotalKillsfourthPlaceStat);
-$('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsfifthPlaceName);
-$('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsfifthPlaceStat);
+$('#player-allpvp-Total-Kills-First-Place-Name').text(allpvpTotalKillsFirstPlaceName);
+$('#player-allpvp-Total-Kills-First-Place-Stat').text(allpvpTotalKillsFirstPlaceStat);
+$('#player-allpvp-Total-Kills-Second-Place-Name').text(allpvpTotalKillsSecondPlaceName);
+$('#player-allpvp-Total-Kills-Second-Place-Stat').text(allpvpTotalKillsSecondPlaceStat);
+$('#player-allpvp-Total-Kills-Third-Place-Name').text(allpvpTotalKillsThirdPlaceName);
+$('#player-allpvp-Total-Kills-Third-Place-Stat').text(allpvpTotalKillsThirdPlaceStat);
+$('#player-allpvp-Total-Kills-Fourth-Place-Name').text(allpvpTotalKillsFourthPlaceName);
+$('#player-allpvp-Total-Kills-Fourth-Place-Stat').text(allpvpTotalKillsFourthPlaceStat);
+$('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsFifthPlaceName);
+$('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsFifthPlaceStat);
   
 
 

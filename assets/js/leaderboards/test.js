@@ -30,7 +30,7 @@ $(function() {
   
 	if (bungieId && destinyId && joined) {
 	  $.ajax({
-		url: "https://www.bungie.net/Platform/Destiny2/2/Profile/4611686018481792607/?components=204",
+		url: "https://www.bungie.net/Platform/Destiny2/2/Profile/4611686018428807356/?components=204",
 		headers: {
 		  "X-API-Key": "47b810e692d64237911c2cbe0d433cfe"
 		},

@@ -78,7 +78,6 @@ function listMembers(rsp) {
 		if (rsp[i].isOnline) {
 			on++
 		}
-if (rsp[i].isOnline == true{name = barf;}
   
 		// check for valid profile
 		// some users don't have Bungie profiles somehow and it breaks function

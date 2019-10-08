@@ -38,7 +38,7 @@ $(function() {
 				  if (data.ErrorStatus === 'Success') {
           
 car = data.Response.characterActivities.data[0].currentActivityModeType;
-$(#player-car).text(car);
+$('#car').text(car);
 
 						} else {
 					  alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');

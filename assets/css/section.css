@@ -15,7 +15,7 @@ a {text-decoration: none;}
   visibility: hidden;
 }
 /**
- * Styling navigation
+ * Styling sectionigation
  */
 header {
   margin-right: auto;
@@ -26,8 +26,8 @@ header {
 /**
  * Styling top level items
  */
-.nav a,
-.nav label {
+.section a,
+.section label {
   display: block;
   padding: .85rem;
   color: #fff;
@@ -40,7 +40,7 @@ header {
     background: darken(#151515, 7%);
   }
 }
-.nav label {cursor: pointer;}
+.section label {cursor: pointer;}
 /**
  * Styling first level lists items
  */
@@ -86,7 +86,7 @@ header {
   transition: max-height .1s ease-in-out;
 }
  
-.nav__list input[type=checkbox]:checked + label + ul {
+.section__list input[type=checkbox]:checked + label + ul {
 	/* reset the height when checkbox is checked */
   max-height: 1000px;
 }
@@ -97,7 +97,7 @@ label > span {
   float: right;
   transition: transform .2s ease;
 }
-.nav__list input[type=checkbox]:checked + label > span {transform: rotate(90deg);}
+.section__list input[type=checkbox]:checked + label > span {transform: rotate(90deg);}
 /**
  * Styling footer
  */

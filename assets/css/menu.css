@@ -14,14 +14,18 @@
 
 #primary_nav_wrap ul a
 {
+	background-color: #e3d081;
+	border: 2px outset #000000;
+	border-radius: 10px;
+	box-shadow: 2px 2px grey;
 	display:block;
-	color:#333;
+	color:#000;
 	text-decoration:none;
 	font-weight:700;
 	font-size:12px;
 	line-height:32px;
 	padding:0 15px;
-	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+	Georgia', serif;
 }
 
 #primary_nav_wrap ul li

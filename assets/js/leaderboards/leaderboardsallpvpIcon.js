@@ -71,7 +71,7 @@ function listMembers(rsp) {
    
 
     var
-		profile = rsp[i].bungieNetUserInfo,
+		profile = rsp.entries,
 		member = $('<a></a>');
 
 		// tally up online members
@@ -85,15 +85,15 @@ function listMembers(rsp) {
 		// store response data in semantic variables
 	  
       var
-        name = rsp[i].destinyUserInfo.displayName,
-        joinDate = rsp[i].joinDate,
+        name = rsp.destinyUserInfo.displayName,
+        joinDate = rsp.joinDate,
         joined = joinDate.substring(0, joinDate.indexOf('T')),
-        online = rsp[i].isOnline,
+        online = rsp.isOnline,
         icon = profile.iconPath,
         memberId = profile.membershipId,
-        memberType = rsp[i].destinyUserInfo.membershipType,
-        destinyId = rsp[i].destinyUserInfo.membershipId,
-        rank = rsp[i].memberType;
+        memberType = rsp.destinyUserInfo.membershipType,
+        destinyId = rsp.destinyUserInfo.membershipId,
+        rank = rsp.memberType;
 			// configure DOM node and add to page
       member
         .attr({

@@ -19,7 +19,7 @@ $(function() {
                             allpvpTotalKillsFourthPlaceStat = data.Response.allPvP.lbKills.entries[3].value.basic.displayValue,
                             allpvpTotalKillsFifthPlaceName = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.displayName,
                             allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue,
-                            IconTest = data.Response.allPvP.lbSingleGameKills.entries[1].player.bungieNetUserInfo.iconPath,
+                            IconTest = data.Response.allPvP.lbKills.entries[1].player.bungieNetUserInfo.iconPath,
    
                      bungie = https://www.bungie.net/common/destiny2;
                   

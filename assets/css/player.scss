@@ -35,11 +35,14 @@
   width: 128px;
 }
 .playerProfile-content {
-  background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px 0 lightgray;
-  padding: 1.618rem;
-  margin-bottom: 2.618rem;
+ background-color: #1d222d;
+    border-radius: 5px;
+    border: solid;
+    border-color: #e3d081;
+    box-shadow: 0px 0px 2px 1px #000000;
+    padding: 1.618rem;
+    margin-bottom: 2.618rem;
+}
   h4 {
     color: #e3d081;
     font-size: .8rem;

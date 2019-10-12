@@ -19,8 +19,14 @@ $(function() {
                             allpvpTotalKillsFourthPlaceStat = data.Response.allPvP.lbKills.entries[3].value.basic.displayValue,
                             allpvpTotalKillsFifthPlaceName = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.displayName,
                             allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue,
-                            IconTest = data.Response.allPvP.lbKills.entries[1].player.destinyUserInfo.iconPath;
-                  
+                            allpvpTotalKillsFirstPlaceIcon = data.Response.allPvP.lbKills.entries[0].player.destinyUserInfo.iconPath;
+                            allpvpTotalKillsSecondPlaceIcon = data.Response.allPvP.lbKills.entries[1].player.destinyUserInfo.iconPath,
+			    allpvpTotalKillsThirdPlaceIcon = data.Response.allPvP.lbKills.entries[2].player.destinyUserInfo.iconPath,
+			    allpvpTotalKillsFourthPlaceIcon = data.Response.allPvP.lbKills.entries[3].player.destinyUserInfo.iconPath,
+    	 	 	    allpvpTotalKillsFifthPlaceIcon = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.iconPath;
+		    	    
+			    
+			   
                             $('#player-allpvp-Total-Kills-First-Place-Name').text(allpvpTotalKillsFirstPlaceName);
                             $('#player-allpvp-Total-Kills-First-Place-Stat').text(allpvpTotalKillsFirstPlaceStat);
                             $('#player-allpvp-Total-Kills-Second-Place-Name').text(allpvpTotalKillsSecondPlaceName);
@@ -31,8 +37,23 @@ $(function() {
                             $('#player-allpvp-Total-Kills-Fourth-Place-Stat').text(allpvpTotalKillsFourthPlaceStat);
                             $('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsFifthPlaceName);
                             $('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsFifthPlaceStat);
-                               $('.player-icon').attr({
-						  'src': 'https://www.bungie.net' + IconTest
+                               $('.player-allpvp-Total-Kills-Fifth-Place-Icon').attr({
+						  'src': 'https://www.bungie.net' + allpvpTotalKillsFifthPlaceIcon
+					  });
+			   $('.player-allpvp-Total-Kills-Fifth-Place-Icon').attr({
+						  'src': 'https://www.bungie.net' + allpvpTotalKillsFifthPlaceIcon
+					  });
+			   $('.player-allpvp-Total-Kills-Fourth-Place-Icon').attr({
+						  'src': 'https://www.bungie.net' + allpvpTotalKillsFourthPlaceIcon
+					  });
+			   $('.player-allpvp-Total-Kills-Third-Place-Icon').attr({
+						  'src': 'https://www.bungie.net' + allpvpTotalKillsThirdPlaceIcon
+					  });
+			   $('.player-allpvp-Total-Kills-Second-Place-Icon').attr({
+						  'src': 'https://www.bungie.net' + allpvpTotalKillsSecondPlaceIcon
+					  });
+  $('.player-allpvp-Total-Kills-First-Place-Icon').attr({
+						  'src': 'https://www.bungie.net' + allpvpTotalKillsFirstPlaceIcon
 					  });
 
 } else {

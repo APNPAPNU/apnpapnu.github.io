@@ -19,7 +19,7 @@ $(function() {
                             allpvpTotalKillsFourthPlaceStat = data.Response.allPvP.lbKills.entries[3].value.basic.displayValue,
                             allpvpTotalKillsFifthPlaceName = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.displayName,
                             allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue,
-                            IconTest = data.Response.allPvP.lbKills.entries[1].player.bungieNetUserInfo.iconPath;
+                            IconTest = data.Response.allPvP.lbKills.entries[1].player.destinyUserInfo.iconPath;
                   
                             $('#player-allpvp-Total-Kills-First-Place-Name').text(allpvpTotalKillsFirstPlaceName);
                             $('#player-allpvp-Total-Kills-First-Place-Stat').text(allpvpTotalKillsFirstPlaceStat);
@@ -31,24 +31,9 @@ $(function() {
                             $('#player-allpvp-Total-Kills-Fourth-Place-Stat').text(allpvpTotalKillsFourthPlaceStat);
                             $('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsFifthPlaceName);
                             $('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsFifthPlaceStat);
-                             $('#player-IconTest').img(IconTest);
-    member
-        .attr({
-          'class': 'j-row vertical-center-row member',
-          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
-          'title': 'See player profile for ' + name,
-          'data-joined' : joined.replace(/-/g, ''),
-          'data-username': name,
-          'data-online' : 'false',
-          'data-searchable' : name,
-        })
-.html(
-          '<div class="j-col j-col-1 icon"><img src="https://bungie.net/' + IconTest + '"></div>' +
-          '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +
-          '<div class="j-col j-col-3 member-joined" data-label="Joined">' + joined.replace(/-/g, '/') + '</div>' +
-          '<div class="j-col j-col-3 member-status" data-label="Status"><div class="blink_me"><span class="member-online" id="status-' + memberId + '">' + online + '</span></div></div>' +
-          '<div class="j-col j-col-3 member-button"><a class="button3 outline gold full-width">' + 'View Stats' + '</a></div>'
-	  );
+                               $('.player-icon').attr({
+						  'src': 'https://www.bungie.net' + IconTest
+					  });
 
 } else {
                         alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');

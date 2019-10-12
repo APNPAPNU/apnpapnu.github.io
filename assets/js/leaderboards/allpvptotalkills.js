@@ -18,8 +18,8 @@ $(function() {
                             allpvpTotalKillsFourthPlaceName = data.Response.allPvP.lbKills.entries[3].player.destinyUserInfo.displayName,
                             allpvpTotalKillsFourthPlaceStat = data.Response.allPvP.lbKills.entries[3].value.basic.displayValue,
                             allpvpTotalKillsFifthPlaceName = data.Response.allPvP.lbKills.entries[4].player.destinyUserInfo.displayName,
-                            allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue;
-                            
+                            allpvpTotalKillsFifthPlaceStat = data.Response.allPvP.lbKills.entries[4].value.basic.displayValue,
+                            IconTest = data.Response.allPvP.lbSingleGameKills.entries[1].player.bungieNetUserInfo.iconPath;
                             $('#player-allpvp-Total-Kills-First-Place-Name').text(allpvpTotalKillsFirstPlaceName);
                             $('#player-allpvp-Total-Kills-First-Place-Stat').text(allpvpTotalKillsFirstPlaceStat);
                             $('#player-allpvp-Total-Kills-Second-Place-Name').text(allpvpTotalKillsSecondPlaceName);
@@ -30,6 +30,7 @@ $(function() {
                             $('#player-allpvp-Total-Kills-Fourth-Place-Stat').text(allpvpTotalKillsFourthPlaceStat);
                             $('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsFifthPlaceName);
                             $('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsFifthPlaceStat);
+                             $('#player-IconTest').img(Icontest);
   
 
 

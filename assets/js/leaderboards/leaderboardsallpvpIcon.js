@@ -68,7 +68,7 @@ function listMembers(rsp) {
     list.find('.member.online').prependTo(list);
   };
 
-  for (var i = 0; i < rsp.length; i++) {
+   
 
     var
 		profile = rsp[i].bungieNetUserInfo,
@@ -144,4 +144,4 @@ function listMembers(rsp) {
 
 	$('#member-count').text(on + ' / ' + rsp.length + ' Members Online');
 
-}
+

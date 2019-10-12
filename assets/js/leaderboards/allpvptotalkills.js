@@ -32,7 +32,16 @@ $(function() {
                             $('#player-allpvp-Total-Kills-Fifth-Place-Name').text(allpvpTotalKillsFifthPlaceName);
                             $('#player-allpvp-Total-Kills-Fifth-Place-Stat').text(allpvpTotalKillsFifthPlaceStat);
                              $('#player-IconTest').img(IconTest);
-  
+    member
+        .attr({
+          'class': 'j-row vertical-center-row member',
+          'href': '/player/?bungieId=' + memberId + '&destinyId=' + destinyId + '&joined=' + joined + '&rank=' + rank,
+          'title': 'See player profile for ' + name,
+          'data-joined' : joined.replace(/-/g, ''),
+          'data-username': name,
+          'data-online' : 'false',
+          'data-searchable' : name,
+        })
 .html(
           '<div class="j-col j-col-1 icon"><img src="https://bungie.net/' + IconTest + '"></div>' +
           '<div class="j-col j-col-3 member-name"><h3>' + name + '</h3></div>' +

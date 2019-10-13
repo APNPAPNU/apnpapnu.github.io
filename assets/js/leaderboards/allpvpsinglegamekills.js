@@ -9,28 +9,50 @@ $(function() {
                            if (data.ErrorStatus === 'Success') {  
 
 
-firstPlaceName = data.Response.allPvP.lbSingleGameKills.entries[0].player.destinyUserInfo.displayName,
-firstPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[0].value.basic.displayValue,
-secondPlaceName = data.Response.allPvP.lbSingleGameKills.entries[1].player.destinyUserInfo.displayName,
-secondPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[1].value.basic.displayValue,
-thirdPlaceName = data.Response.allPvP.lbSingleGameKills.entries[2].player.destinyUserInfo.displayName,
-thirdPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[2].value.basic.displayValue,
-fourthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[3].player.destinyUserInfo.displayName,
-fourthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[3].value.basic.displayValue,
-fifthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[4].player.destinyUserInfo.displayName,
-fifthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[4].value.basic.displayValue,
-              
-$('#player-first-Place-Name').text(firstPlaceName);
-$('#player-first-Place-Stat').text(firstPlaceStat);
-$('#player-second-Place-Name').text(secondPlaceName);
-$('#player-second-Place-Stat').text(secondPlaceStat);
-$('#player-third-Place-Name').text(thirdPlaceName);
-$('#player-third-Place-Stat').text(thirdPlaceStat);
-$('#player-fourth-Place-Name').text(fourthPlaceName);
-$('#player-fourth-Place-Stat').text(fourthPlaceStat);
-$('#player-fifth-Place-Name').text(fifthPlaceName);
-$('#player-fifth-Place-Stat').text(fifthPlaceStat);
+allpvpSingleGameKillsfirstPlaceName = data.Response.allPvP.lbSingleGameKills.entries[0].player.destinyUserInfo.displayName,
+allpvpSingleGameKillsfirstPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[0].value.basic.displayValue,
+allpvpSingleGameKillssecondPlaceName = data.Response.allPvP.lbSingleGameKills.entries[1].player.destinyUserInfo.displayName,
+allpvpSingleGameKillssecondPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[1].value.basic.displayValue,
+allpvpSingleGameKillsthirdPlaceName = data.Response.allPvP.lbSingleGameKills.entries[2].player.destinyUserInfo.displayName,
+allpvpSingleGameKillsthirdPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[2].value.basic.displayValue,
+allpvpSingleGameKillsfourthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[3].player.destinyUserInfo.displayName,
+allpvpSingleGameKillsfourthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[3].value.basic.displayValue,
+allpvpSingleGameKillsfifthPlaceName = data.Response.allPvP.lbSingleGameKills.entries[4].player.destinyUserInfo.displayName,
+allpvpSingleGameKillsfifthPlaceStat = data.Response.allPvP.lbSingleGameKills.entries[4].value.basic.displayValue;
+                             allpvpSingleGameKillsFirstPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[0].player.destinyUserInfo.iconPath;
+allpvpSingleGameKillsSecondPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[1].player.destinyUserInfo.iconPath,
+allpvpSingleGameKillsThirdPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[2].player.destinyUserInfo.iconPath,
+allpvpSingleGameKillsFourthPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[3].player.destinyUserInfo.iconPath,
+allpvpSingleGameKillsFifthPlaceIcon = data.Response.allPvP.lbSingleGameKills.entries[4].player.destinyUserInfo.iconPath;
+$('.player-allpvp-Single-Game-Kills-Fifth-Place-Icon').attr({
+	'src': 'https://www.bungie.net' + allpvpSingleGameKillsFifthPlaceIcon
+});
+$('.player-allpvp-Single-Game-Kills-Fifth-Place-Icon').attr({
+	'src': 'https://www.bungie.net' + allpvpSingleGameKillsFifthPlaceIcon
+});
+$('.player-allpvp-Single-Game-Kills-Fourth-Place-Icon').attr({
+	'src': 'https://www.bungie.net' + allpvpSingleGameKillsFourthPlaceIcon
+});
+$('.player-allpvp-Single-Game-Kills-Third-Place-Icon').attr({
+	'src': 'https://www.bungie.net' + allpvpSingleGameKillsThirdPlaceIcon
+});
+$('.player-allpvp-Single-Game-Kills-Second-Place-Icon').attr({
+	'src': 'https://www.bungie.net' + allpvpSingleGameKillsSecondPlaceIcon
+});
+$('.player-allpvp-Single-Game-Kills-First-Place-Icon').attr({
+	'src': 'https://www.bungie.net' + allpvpSingleGameKillsFirstPlaceIcon
+});
           
+$('#player-allpvp-Single-Game-Kills-first-Place-Name').text(allpvpSingleGameKillsfirstPlaceName);
+$('#player-allpvp-Single-Game-Kills-first-PlaceS-tat').text(allpvpSingleGameKillsfirstPlaceStat);
+$('#player-allpvp-Single-Game-Kills-second-Place-Name').text(allpvpSingleGameKillssecondPlaceName);
+$('#player-allpvp-Single-Game-Kills-second-Place-Stat').text(allpvpSingleGameKillssecondPlaceStat);
+$('#player-allpvp-Single-Game-Kills-third-Place-Name').text(allpvpSingleGameKillsthirdPlaceName);
+$('#player-allpvp-Single-Game-Kills-third-Place-Stat').text(allpvpSingleGameKillsthirdPlaceStat);
+$('#player-allpvp-Single-Game-Kills-fourth-Place-Name').text(allpvpSingleGameKillsfourthPlaceName);
+$('#player-allpvp-Single-Game-Kills-fourth-Place-Stat').text(allpvpSingleGameKillsfourthPlaceStat);
+$('#player-allpvp-Single-Game-Kills-fifth-Place-Name').text(allpvpSingleGameKillsfifthPlaceName);
+$('#player-allpvp-Single-Game-Kills-fifth-Place-Stat').text(allpvpSingleGameKillsfifthPlaceStat);
      
      
      } else {

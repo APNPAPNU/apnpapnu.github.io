@@ -1,3 +1,139 @@
+#li_633f_0{
+    z-index: 1;
+}
+#li_633f_1{
+    z-index: 1;
+}
+#div_633f_0{
+    border-top: groove;
+    border-left-style: double;
+    border-right: solid;
+    border-bottom: groove;
+    border-radius: .1rem;
+}
+#h3_633f_0{
+}
+#div_633f_1{display: none; border-radius: 3rem; border-style: double; box-shadow: black 2px 2px 3px 1px; background-color: white;}
+#div_633f_2{
+    background-color: black;
+    border-radius: 3rem;
+}
+#ol_633f_0{border-radius: 3rem;border-style: groove;}
+#a_633f_0{
+    border-bottom-style: double;
+    background-color: ghostwhite;
+    font-size: large;
+}
+#img_633f_0{
+    border-radius: .5rem;
+    box-shadow: 2px 2px 3px 0px grey;
+    height: 50px;
+    width: 50px;
+    margin-bottom: -30px;
+    margin-left: -15px;
+}
+#player-allpvp-Total-Kills-First-Place-Name{
+    position: relative;
+    font-family: serif;
+    font-weight: 600;
+}
+#player-allpvp-Total-Kills-First-Place-Stat{
+    font-family: serif;
+    font-weight: 600;
+                                                                                                margin-left: 40px;
+}
+#a_633f_1{
+    border-bottom-style: double;
+    background-color: ghostwhite;
+    font-size: large;
+}
+#img_633f_1{
+    border-radius: .5rem;
+    box-shadow: 2px 2px 3px 0px grey;
+    height: 50px;
+    width: 50px;
+    margin-bottom: -30px;
+    margin-left: -15px;
+}
+#player-allpvp-Total-Kills-Second-Place-Name{
+    position: relative;
+    font-family: serif;
+    font-weight: 600;
+}
+#player-allpvp-Total-Kills-Second-Place-Stat{
+    font-family: serif;
+    font-weight: 600;
+                   margin-left: 40px;
+}
+#a_633f_2{
+    border-bottom-style: double;
+    background-color: ghostwhite;
+    font-size: large;
+}
+#img_633f_2{
+    border-radius: .5rem;
+    box-shadow: 2px 2px 3px 0px grey;
+    height: 50px;
+    width: 50px;
+    margin-bottom: -30px;
+    margin-left: -15px;
+}
+#player-allpvp-Total-Kills-Third-Place-Name{
+    position: relative;
+    font-family: serif;
+    font-weight: 600;
+}
+#player-allpvp-Total-Kills-Third-Place-Stat{
+    font-family: serif;
+    font-weight: 600;
+                                                                                                margin-left: 40px;
+}
+#a_633f_3{
+    border-bottom-style: double;
+    background-color: ghostwhite;
+    font-size: large;
+}
+#img_633f_3{
+    border-radius: .5rem;
+    box-shadow: 2px 2px 3px 0px grey;
+    height: 50px;
+    width: 50px;
+    margin-bottom: -30px;
+    margin-left: -15px;
+}
+#player-allpvp-Total-Kills-Fourth-Place-Name{
+    position: relative;
+    font-family: serif;
+    font-weight: 600;
+}
+#player-allpvp-Total-Kills-Fourth-Place-Stat{
+    font-family: serif;
+    font-weight: 600;
+                                                                                                 margin-left: 40px;
+            }
+#a_633f_4{
+    border-bottom-style: double;
+    background-color: ghostwhite;
+    font-size: large;
+}
+#img_633f_4{
+    border-radius: .5rem;
+    box-shadow: 2px 2px 3px 0px grey;
+    height: 50px;
+    width: 50px;
+    margin-bottom: -30px;
+    margin-left: -15px;
+}
+#player-allpvp-Total-Kills-Fifth-Place-Name{
+    position: relative;
+    font-family: serif;
+    font-weight: 600;
+}
+#player-allpvp-Total-Kills-Fifth-Place-Stat{
+    font-family: serif;
+    font-weight: 600;
+                                                                                                margin-left: 40px;
+}
 .App--root--2J{
 	margin:20px
 }

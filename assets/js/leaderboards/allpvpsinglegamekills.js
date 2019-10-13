@@ -43,16 +43,16 @@ $('.player-allpvp-Single-Game-Kills-First-Place-Icon').attr({
 	'src': 'https://www.bungie.net' + allpvpSingleGameKillsFirstPlaceIcon
 });
           
-$('#player-allpvp-Single-Game-Kills-first-Place-Name').text(allpvpSingleGameKillsfirstPlaceName);
-$('#player-allpvp-Single-Game-Kills-first-PlaceS-tat').text(allpvpSingleGameKillsfirstPlaceStat);
-$('#player-allpvp-Single-Game-Kills-second-Place-Name').text(allpvpSingleGameKillssecondPlaceName);
-$('#player-allpvp-Single-Game-Kills-second-Place-Stat').text(allpvpSingleGameKillssecondPlaceStat);
-$('#player-allpvp-Single-Game-Kills-third-Place-Name').text(allpvpSingleGameKillsthirdPlaceName);
-$('#player-allpvp-Single-Game-Kills-third-Place-Stat').text(allpvpSingleGameKillsthirdPlaceStat);
-$('#player-allpvp-Single-Game-Kills-fourth-Place-Name').text(allpvpSingleGameKillsfourthPlaceName);
-$('#player-allpvp-Single-Game-Kills-fourth-Place-Stat').text(allpvpSingleGameKillsfourthPlaceStat);
-$('#player-allpvp-Single-Game-Kills-fifth-Place-Name').text(allpvpSingleGameKillsfifthPlaceName);
-$('#player-allpvp-Single-Game-Kills-fifth-Place-Stat').text(allpvpSingleGameKillsfifthPlaceStat);
+$('#player-allpvp-Single-Game-Kills-First-Place-Name').text(allpvpSingleGameKillsfirstPlaceName);
+$('#player-allpvp-Single-Game-Kills-First-Place-Stat').text(allpvpSingleGameKillsfirstPlaceStat);
+$('#player-allpvp-Single-Game-Kills-Second-Place-Name').text(allpvpSingleGameKillssecondPlaceName);
+$('#player-allpvp-Single-Game-Kills-Second-Place-Stat').text(allpvpSingleGameKillssecondPlaceStat);
+$('#player-allpvp-Single-Game-Kills-Third-Place-Name').text(allpvpSingleGameKillsthirdPlaceName);
+$('#player-allpvp-Single-Game-Kills-Third-Place-Stat').text(allpvpSingleGameKillsthirdPlaceStat);
+$('#player-allpvp-Single-Game-Kills-Fourth-Place-Name').text(allpvpSingleGameKillsfourthPlaceName);
+$('#player-allpvp-Single-Game-Kills-Fourth-Place-Stat').text(allpvpSingleGameKillsfourthPlaceStat);
+$('#player-allpvp-Single-Game-Kills-Fifth-Place-Name').text(allpvpSingleGameKillsfifthPlaceName);
+$('#player-allpvp-Single-Game-Kills-Fifth-Place-Stat').text(allpvpSingleGameKillsfifthPlaceStat);
      
      
      } else {

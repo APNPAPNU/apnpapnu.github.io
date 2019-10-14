@@ -9,7 +9,6 @@ $(function() {
                    if (data.ErrorStatus === 'Success') {  
 
 
-       
 allpvpTotalDeathsFirstPlaceName = data.Response.allPvP.lbDeaths.entries[0].player.destinyUserInfo.displayName,
 allpvpTotalDeathsFirstPlaceStat = data.Response.allPvP.lbDeaths.entries[0].value.basic.displayValue,
 allpvpTotalDeathsSecondPlaceName = data.Response.allPvP.lbDeaths.entries[1].player.destinyUserInfo.displayName,
@@ -19,7 +18,12 @@ allpvpTotalDeathsThirdPlaceStat = data.Response.allPvP.lbDeaths.entries[2].value
 allpvpTotalDeathsFourthPlaceName = data.Response.allPvP.lbDeaths.entries[3].player.destinyUserInfo.displayName,
 allpvpTotalDeathsFourthPlaceStat = data.Response.allPvP.lbDeaths.entries[3].value.basic.displayValue,
 allpvpTotalDeathsFifthPlaceName = data.Response.allPvP.lbDeaths.entries[4].player.destinyUserInfo.displayName,
-allpvpTotalDeathsFifthPlaceStat = data.Response.allPvP.lbDeaths.entries[4].value.basic.displayValue;
+allpvpTotalDeathsFifthPlaceStat = data.Response.allPvP.lbDeaths.entries[4].value.basic.displayValue,
+allpvpTotalDeathsFirstPlaceIcon = data.Response.allPvP.lbDeaths.entries[0].player.destinyUserInfo.iconPath;
+allpvpTotalDeathsSecondPlaceIcon = data.Response.allPvP.lbDeaths.entries[1].player.destinyUserInfo.iconPath,
+allpvpTotalDeathsThirdPlaceIcon = data.Response.allPvP.lbDeaths.entries[2].player.destinyUserInfo.iconPath,
+allpvpTotalDeathsFourthPlaceIcon = data.Response.allPvP.lbDeaths.entries[3].player.destinyUserInfo.iconPath,
+allpvpTotalDeathsFifthPlaceIcon = data.Response.allPvP.lbDeaths.entries[4].player.destinyUserInfo.iconPath;
 
 $('#player-allpvp-Total-Deaths-First-Place-Name').text(allpvpTotalDeathsFirstPlaceName);
 $('#player-allpvp-Total-Deaths-First-Place-Stat').text(allpvpTotalDeathsFirstPlaceStat);
@@ -31,7 +35,18 @@ $('#player-allpvp-Total-Deaths-Fourth-Place-Name').text(allpvpTotalDeathsFourthP
 $('#player-allpvp-Total-Deaths-Fourth-Place-Stat').text(allpvpTotalDeathsFourthPlaceStat);
 $('#player-allpvp-Total-Deaths-Fifth-Place-Name').text(allpvpTotalDeathsFifthPlaceName);
 $('#player-allpvp-Total-Deaths-Fifth-Place-Stat').text(allpvpTotalDeathsFifthPlaceStat);
-
+$('.player-allpvp-Total-Deaths-Fifth-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpvpTotalDeathsFifthPlaceIcon});
+$('.player-allpvp-Total-Deaths-Fifth-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpvpTotalDeathsFifthPlaceIcon});
+$('.player-allpvp-Total-Deaths-Fourth-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpvpTotalDeathsFourthPlaceIcon});
+$('.player-allpvp-Total-Deaths-Third-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpvpTotalDeathsThirdPlaceIcon});
+$('.player-allpvp-Total-Deaths-Second-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpvpTotalDeathsSecondPlaceIcon});
+$('.player-allpvp-Total-Deaths-First-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpvpTotalDeathsFirstPlaceIcon});
 
 
 } else {

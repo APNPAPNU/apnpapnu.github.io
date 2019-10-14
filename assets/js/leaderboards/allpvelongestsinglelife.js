@@ -8,45 +8,44 @@ $(function() {
        success: function(data) {
                    if (data.ErrorStatus === 'Success') {  
 
+allpveLongestSingleLifeFirstPlaceName = data.Response.allPvE.lbLongestSingleLife.entries[0].player.destinyUserInfo.displayName,
+allpveLongestSingleLifeFirstPlaceStat = data.Response.allPvE.lbLongestSingleLife.entries[0].value.basic.displayValue,
+allpveLongestSingleLifeSecondPlaceName = data.Response.allPvE.lbLongestSingleLife.entries[1].player.destinyUserInfo.displayName,
+allpveLongestSingleLifeSecondPlaceStat = data.Response.allPvE.lbLongestSingleLife.entries[1].value.basic.displayValue,
+allpveLongestSingleLifeThirdPlaceName = data.Response.allPvE.lbLongestSingleLife.entries[2].player.destinyUserInfo.displayName,
+allpveLongestSingleLifeThirdPlaceStat = data.Response.allPvE.lbLongestSingleLife.entries[2].value.basic.displayValue,
+allpveLongestSingleLifeFourthPlaceName = data.Response.allPvE.lbLongestSingleLife.entries[3].player.destinyUserInfo.displayName,
+allpveLongestSingleLifeFourthPlaceStat = data.Response.allPvE.lbLongestSingleLife.entries[3].value.basic.displayValue,
+allpveLongestSingleLifeFifthPlaceName = data.Response.allPvE.lbLongestSingleLife.entries[4].player.destinyUserInfo.displayName,
+allpveLongestSingleLifeFifthPlaceStat = data.Response.allPvE.lbLongestSingleLife.entries[4].value.basic.displayValue,
+allpveLongestSingleLifeFirstPlaceIcon = data.Response.allPvE.lbLongestSingleLife.entries[0].player.destinyUserInfo.iconPath;
+allpveLongestSingleLifeSecondPlaceIcon = data.Response.allPvE.lbLongestSingleLife.entries[1].player.destinyUserInfo.iconPath,
+allpveLongestSingleLifeThirdPlaceIcon = data.Response.allPvE.lbLongestSingleLife.entries[2].player.destinyUserInfo.iconPath,
+allpveLongestSingleLifeFourthPlaceIcon = data.Response.allPvE.lbLongestSingleLife.entries[3].player.destinyUserInfo.iconPath,
+allpveLongestSingleLifeFifthPlaceIcon = data.Response.allPvE.lbLongestSingleLife.entries[4].player.destinyUserInfo.iconPath;
 
-allpvpLongestSingleLifeFirstPlaceName = data.Response.allPvP.lbLongestSingleLife.entries[0].player.destinyUserInfo.displayName,
-allpvpLongestSingleLifeFirstPlaceStat = data.Response.allPvP.lbLongestSingleLife.entries[0].value.basic.displayValue,
-allpvpLongestSingleLifeSecondPlaceName = data.Response.allPvP.lbLongestSingleLife.entries[1].player.destinyUserInfo.displayName,
-allpvpLongestSingleLifeSecondPlaceStat = data.Response.allPvP.lbLongestSingleLife.entries[1].value.basic.displayValue,
-allpvpLongestSingleLifeThirdPlaceName = data.Response.allPvP.lbLongestSingleLife.entries[2].player.destinyUserInfo.displayName,
-allpvpLongestSingleLifeThirdPlaceStat = data.Response.allPvP.lbLongestSingleLife.entries[2].value.basic.displayValue,
-allpvpLongestSingleLifeFourthPlaceName = data.Response.allPvP.lbLongestSingleLife.entries[3].player.destinyUserInfo.displayName,
-allpvpLongestSingleLifeFourthPlaceStat = data.Response.allPvP.lbLongestSingleLife.entries[3].value.basic.displayValue,
-allpvpLongestSingleLifeFifthPlaceName = data.Response.allPvP.lbLongestSingleLife.entries[4].player.destinyUserInfo.displayName,
-allpvpLongestSingleLifeFifthPlaceStat = data.Response.allPvP.lbLongestSingleLife.entries[4].value.basic.displayValue,
-allpvpLongestSingleLifeFirstPlaceIcon = data.Response.allPvP.lbLongestSingleLife.entries[0].player.destinyUserInfo.iconPath;
-allpvpLongestSingleLifeSecondPlaceIcon = data.Response.allPvP.lbLongestSingleLife.entries[1].player.destinyUserInfo.iconPath,
-allpvpLongestSingleLifeThirdPlaceIcon = data.Response.allPvP.lbLongestSingleLife.entries[2].player.destinyUserInfo.iconPath,
-allpvpLongestSingleLifeFourthPlaceIcon = data.Response.allPvP.lbLongestSingleLife.entries[3].player.destinyUserInfo.iconPath,
-allpvpLongestSingleLifeFifthPlaceIcon = data.Response.allPvP.lbLongestSingleLife.entries[4].player.destinyUserInfo.iconPath;
-
-$('#player-allpvp-Longest-Single-Life-First-Place-Name').text(allpvpLongestSingleLifeFirstPlaceName);
-$('#player-allpvp-Longest-Single-Life-First-Place-Stat').text(allpvpLongestSingleLifeFirstPlaceStat);
-$('#player-allpvp-Longest-Single-Life-Second-Place-Name').text(allpvpLongestSingleLifeSecondPlaceName);
-$('#player-allpvp-Longest-Single-Life-Second-Place-Stat').text(allpvpLongestSingleLifeSecondPlaceStat);
-$('#player-allpvp-Longest-Single-Life-Third-Place-Name').text(allpvpLongestSingleLifeThirdPlaceName);
-$('#player-allpvp-Longest-Single-Life-Third-Place-Stat').text(allpvpLongestSingleLifeThirdPlaceStat);
-$('#player-allpvp-Longest-Single-Life-Fourth-Place-Name').text(allpvpLongestSingleLifeFourthPlaceName);
-$('#player-allpvp-Longest-Single-Life-Fourth-Place-Stat').text(allpvpLongestSingleLifeFourthPlaceStat);
-$('#player-allpvp-Longest-Single-Life-Fifth-Place-Name').text(allpvpLongestSingleLifeFifthPlaceName);
-$('#player-allpvp-Longest-Single-Life-Fifth-Place-Stat').text(allpvpLongestSingleLifeFifthPlaceStat);
-$('.player-allpvp-Longest-Single-Life-Fifth-Place-Icon').attr({
-  'src': 'https://www.bungie.net' + allpvpLongestSingleLifeFifthPlaceIcon});
-$('.player-allpvp-Longest-Single-Life-Fifth-Place-Icon').attr({
-  'src': 'https://www.bungie.net' + allpvpLongestSingleLifeFifthPlaceIcon});
-$('.player-allpvp-Longest-Single-Life-Fourth-Place-Icon').attr({
-  'src': 'https://www.bungie.net' + allpvpLongestSingleLifeFourthPlaceIcon});
-$('.player-allpvp-Longest-Single-Life-Third-Place-Icon').attr({
-  'src': 'https://www.bungie.net' + allpvpLongestSingleLifeThirdPlaceIcon});
-$('.player-allpvp-Longest-Single-Life-Second-Place-Icon').attr({
-  'src': 'https://www.bungie.net' + allpvpLongestSingleLifeSecondPlaceIcon});
-$('.player-allpvp-Longest-Single-Life-First-Place-Icon').attr({
-  'src': 'https://www.bungie.net' + allpvpLongestSingleLifeFirstPlaceIcon});
+$('#player-allpve-Longest-Single-Life-First-Place-Name').text(allpveLongestSingleLifeFirstPlaceName);
+$('#player-allpve-Longest-Single-Life-First-Place-Stat').text(allpveLongestSingleLifeFirstPlaceStat);
+$('#player-allpve-Longest-Single-Life-Second-Place-Name').text(allpveLongestSingleLifeSecondPlaceName);
+$('#player-allpve-Longest-Single-Life-Second-Place-Stat').text(allpveLongestSingleLifeSecondPlaceStat);
+$('#player-allpve-Longest-Single-Life-Third-Place-Name').text(allpveLongestSingleLifeThirdPlaceName);
+$('#player-allpve-Longest-Single-Life-Third-Place-Stat').text(allpveLongestSingleLifeThirdPlaceStat);
+$('#player-allpve-Longest-Single-Life-Fourth-Place-Name').text(allpveLongestSingleLifeFourthPlaceName);
+$('#player-allpve-Longest-Single-Life-Fourth-Place-Stat').text(allpveLongestSingleLifeFourthPlaceStat);
+$('#player-allpve-Longest-Single-Life-Fifth-Place-Name').text(allpveLongestSingleLifeFifthPlaceName);
+$('#player-allpve-Longest-Single-Life-Fifth-Place-Stat').text(allpveLongestSingleLifeFifthPlaceStat);
+$('.player-allpve-Longest-Single-Life-Fifth-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpveLongestSingleLifeFifthPlaceIcon});
+$('.player-allpve-Longest-Single-Life-Fifth-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpveLongestSingleLifeFifthPlaceIcon});
+$('.player-allpve-Longest-Single-Life-Fourth-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpveLongestSingleLifeFourthPlaceIcon});
+$('.player-allpve-Longest-Single-Life-Third-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpveLongestSingleLifeThirdPlaceIcon});
+$('.player-allpve-Longest-Single-Life-Second-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpveLongestSingleLifeSecondPlaceIcon});
+$('.player-allpve-Longest-Single-Life-First-Place-Icon').attr({
+  'src': 'https://www.bungie.net' + allpveLongestSingleLifeFirstPlaceIcon});
 
 } else {
                         alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');

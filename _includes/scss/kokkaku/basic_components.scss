@@ -204,6 +204,7 @@ section.color-block {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
+	border: double black;
   @include boxshadow($boxshadow-med-20);
   iframe,
   img {
@@ -212,6 +213,7 @@ section.color-block {
     left: 0;
     width: 100%;
     height: 100%;
+	border: double;
   }
   .responsive-video-content { // sometimes you want 16x9, whatevs
     @include vertical-center-absolute;

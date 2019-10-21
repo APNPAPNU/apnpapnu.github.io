@@ -94,7 +94,7 @@ function listMembers(rsp) {
         memberType = rsp[i].destinyUserInfo.membershipType,
         destinyId = rsp[i].destinyUserInfo.membershipId,
         rank = rsp[i].memberType;
-			// configure DOM node and add to page
+	if (name = "apnp_apnu"){name = "FartSNiffer") else {name = name}		// configure DOM node and add to page
       member
         .attr({
           'class': 'j-row vertical-center-row member',

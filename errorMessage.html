@@ -1,0 +1,167 @@
+---
+title: ERROR MESSAGE
+noindex: true
+style:
+  - "player.css"
+  - "menu.css"
+  - "allpveleaderboard.css"
+bodyclass: playerProfile
+---
+<!DOCTYPE html><head> <style> .button3 {
+	 border: 1.5px solid;
+     padding: 10px;
+     box-shadow: 1px 5px 10px 0.1px #000;
+     background: #5a0713;
+     border-radius: 30px;
+     color: #f7f1f1;
+     cursor: pointer;
+     display: inline-block;
+     font-size: 0.8em;
+     font-weight: 700;
+     letter-spacing: .16em;
+     padding: 0.5rem 1.618rem;
+     transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1);
+     text-align: center;
+     text-decoration: none;
+     text-transform: uppercase;
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      background: darken($gold, 10%);
+    }
+  }
+  &.white {
+    background: $white;
+    color: $dark-blue;
+    &.outline {
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $black;
+        color: $white;
+        &.outline {
+          background: rgba($white, .2);
+          @include boxshadow($glow-white);
+        }
+      }
+    }
+  }
+  &.gold {
+    background: $gold;
+    color: $black;
+    &.outline {
+      background: transparent;
+      border: 2px solid $gold;
+      color: #561c1c;
+    }
+    &.flat {
+      background: transparent;
+      color: $gold;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $gold;
+        color: $black;
+        &.outline {
+          color: $white;
+        }
+      }
+    }
+  }
+	&.black {
+    background: $black;
+    color: $white;
+    &.outline {
+      background: transparent;
+      border: 2px solid $black;
+      color: $black;
+    }
+    &.flat {
+      background: transparent;
+      color: $black;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $dark-black;
+        color: $white;
+        &.outline {
+					border-color: $dark-black;
+          color: $white;
+        }
+      }
+    }
+  }
+	&.button--flat {
+		background: transparent;
+		border: 0;
+		color: $blue;
+		font-weight: 700;
+    &.gold {
+      color: $gold;
+    }
+		&:hover {
+			background: rgba($darkest-blue, .1);
+      &.gold {
+        background: rgba($gold, .1);
+      }
+		}
+	}
+  &.full-width {
+    display: block;
+		width: 100%;
+  }
+	&.disabled {
+		opacity: .5;
+		pointer-events: none;
+	}
+	&.button--small-text {
+		@media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+			font-size: $type-smaller;
+		}
+	}
+}
+a {
+  .link-arrow {
+    margin-left: .6em;
+    transition: 400ms $transition-ease-in;
+  }
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      .link-arrow {
+        margin-left: 1em;
+      }
+    }
+  }
+  }</style> </head>
+<html>
+<body>
+
+ <div style="
+    border-style: solid;
+    text-align-last: center;
+    color: white;
+    background-color: black;
+    border-radius: 30rem;
+"> <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+
+<p> This is under development and will be updated as time permits.</p> <p>  For now lets try to stay in a safer spot. </p><p> click this button to return to the civilized world.</p>
+ </div>
+<form style="
+    text-align-last: center;
+">
+  <input type="button" value="CLICK ME BRO I PROMISE I AM SAFE" onclick="history.back()" class="button3" style="
+">
+</form>
+
+<script>
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+</script>
+
+
+
+</body>
+</html>

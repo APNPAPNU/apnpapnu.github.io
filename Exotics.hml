@@ -1,0 +1,23 @@
+---
+layout: default
+title: Player Profile
+noindex: true
+js:
+  - "Exotics.js"
+style:
+  - "gambit.css"
+bodyclass: playerProfile
+---
+
+
+ 
+          </div>
+        </div>
+      </div>
+     
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

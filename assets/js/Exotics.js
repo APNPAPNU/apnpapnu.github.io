@@ -68,7 +68,7 @@ $(function() {
 3413860063: 'LordofWolves',
 3549153978: 'FightingLion',
 3580904581: 'TractorCannon',
-3628991659: 'VigilanceWing';
+3628991659: 'VigilanceWing',
 }
      // for example, the first weapon referenceId is 3973202132 (Thorn)
 var weaponId = response.weapons[0].referenceId

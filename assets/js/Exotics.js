@@ -14,7 +14,7 @@ $(function() {
                success: function(data) {
                            if (data.ErrorStatus === 'Success') {  
      var names = {
-    347366834: 'AceofSpades',
+347366834: 'AceofSpades',
 460724140: 'TheJadeRabbit',
 814876685: 'TrinityGhoul',
 1345867570: 'SweetBusiness',

@@ -27,13 +27,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.9262767"
-     inkscape:cx="131.39649"
-     inkscape:cy="-28.680066"
+     inkscape:cx="124.3294"
+     inkscape:cy="-7.9146173"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1024"
-     inkscape:window-height="664"
+     inkscape:window-height="705"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,9 +67,9 @@
            x="198.26651"
            y="475.70337"
            style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Georgia;-inkscape-font-specification:'Georgia Italic'" /></flowRegion><flowPara
-         id="flowPara1436"></flowPara></flowRoot>    <text
+         id="flowPara1436" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Georgia;-inkscape-font-specification:'Georgia Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Georgia;-inkscape-font-specification:'Georgia Italic';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
        x="77.705482"
        y="154.88095"
        id="text1440"><tspan
@@ -77,7 +77,7 @@
          id="tspan1438"
          x="77.705482"
          y="154.88095"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;font-family:Georgia;-inkscape-font-specification:'Georgia Italic';stroke-width:0.26458332">Crucible</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;font-family:Georgia;-inkscape-font-specification:'Georgia Italic';stroke-width:0.26458332;fill:#ffffff;">Crucible</tspan></text>
     <image
        width="11.899144"
        height="15.032098"

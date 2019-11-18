@@ -5,6 +5,8 @@
   }
   .hero#player-hero  {
 	position: relative;
+	  border: ridge;
+    border-color: #bfa563;
 	.hero-content {
 	  z-index: 200;
 	}

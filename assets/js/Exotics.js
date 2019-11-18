@@ -9,7 +9,7 @@
            }, 
            success: function(data) {
             let
-            NameT = jsonPath("$.Response..referenceId").toJSONString();
+            NameT = jsonPath("$.Response..referenceId");
                  $('#player-NameT').text(NameT);
                
                 if (data.ErrorStatus === 'Success') {  

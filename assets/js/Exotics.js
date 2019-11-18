@@ -8,7 +8,7 @@ $(function() {
             }, 
             success: function(data) {
              let
-             NameT=JsonPath("$.Response..referenceId")
+             NameT=JsonPath("$.Response..referenceId").toJSONString();
                   $('#player-NameT').text(NameT);
                 
                  if (data.ErrorStatus === 'Success') {  

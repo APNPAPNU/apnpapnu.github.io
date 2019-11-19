@@ -1,5 +1,4 @@
-
- $(function() {
+$(function() {
     
   {
         $.ajax({
@@ -12,18 +11,9 @@
             NameT = jsonPath("$.Response..referenceId");
                  $('#player-NameT').text(NameT);
                
-                if (data.ErrorStatus === 'Success') {  
-
- 
- } else {
-                            alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-                          console.log(data);
-                       }
+               console.log(NameT);
    
            },
-           error: function(data) {
-                       alert('Uh oh, failed to load player stats! Looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-             console.log('Error loading player stats:', data);
-           }
+           
         });
 }});

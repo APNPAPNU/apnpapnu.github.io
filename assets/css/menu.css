@@ -12,6 +12,7 @@
 	float:left;
 	margin:0;
 	padding:0
+		border-bottom: thin;
 }
 
 #primary_nav_wrap ul a

@@ -61,30 +61,7 @@
       <span></span>
       <span></span>
     </div>
-    <nav>
-      <ul>
-	<li class="roiNav-item">
-          <a href="/about/" title="About Destiny 2 PS4 clan BEATS BY CAYDE" class="roiNav-link is-current">About</a>
-        </li>
-        <li class="roiNav-item">
-          <a href="/roster/" title="BEATS BY CAYDE Clan Destiny 2 Roster" class="roiNav-link">Roster</a>
-        </li>
-        <li class="roiNav-item">
-          <a href="/maps/" title="BEATS BY CAYDE Clan Destiny2 PvP maps" class="roiNav-link">Maps</a>
-        </li>
-        <li class="roiNav-item">
-          <a href="/videos/" title="BEATS BY CAYDE Destiny 2 Gameplay Videos" class="roiNav-link">Videos</a>
-        </li>
-	      <li class="roiNav-item">
-          <a href="/resources/" title="BEATS BY CAYDE Destiny 2 Resources Page" class="roiNav-link">Resources</a>
-        </li>
-        <li class="roiNav-item">
-          <a href="/apply/" style="border-radius:0;" class="button" title="Join BEATS BY CAYDE!">Apply</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
+    {% include html/nav.html %}
 
 
 
@@ -116,7 +93,7 @@
 </li></ul></li></ul></nav>
 	
   <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
-    {% include html/nav.html %}
+    
     {{content}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/assets/js/main.js"></script>

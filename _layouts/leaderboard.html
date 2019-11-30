@@ -49,19 +49,12 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/caydeandroid-chrome-192x192 (1).ico">
     <title>Player Profile - Beats By Cayde</title>
 	    </head>
+	 {% include html/nav.html %}	
+	{{content}}
+
   <body class="playerProfile">
-     <section class="roiNav">
-  <div class="j-row vertical-center-row space-between">
-    <a class="roiNav-logo" href="/" title="Back to beatsHomepage">
-      <img src="/assets/img/caydeandroid-chrome-192x192 (2).png" alt="beats" width="26" height="25">
-      <strong>Beats By Cayde
-      </strong>
-    </a>
-    <div class="roiNav-trigger">
-      <span></span>
-      <span></span>
-	  </div>
-    </div>
+   
+
 	<nav id="primary_nav_wrap">
 <ul>
   <li><a href="#">Crucible</a>
@@ -90,7 +83,7 @@
 	
   <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
     
-    {{content}}
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/assets/js/main.js"></script>
     {% if page.js %}

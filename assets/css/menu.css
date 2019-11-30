@@ -16,6 +16,8 @@
 		border-bottom: thin;
 	margin-left: 25%;
     width: 50%;
+	Z-INDEX: 600;
+    OVERFLOW: inherit;
 }
 
 #primary_nav_wrap ul a

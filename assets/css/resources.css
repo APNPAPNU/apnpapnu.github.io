@@ -21,3 +21,41 @@
     z-index: 100;
   }
 }
+
+.collapsible-title {
+    position: relative;
+    padding-bottom: .42em;
+    padding-right: 1.618rem;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+    transition: 500ms cubic-bezier(0.13, 0.78, 0.3, 0.99)
+}
+
+.collapsible-title::before,.collapsible-title::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0.6em;
+    background: #e3d081;
+    position: absolute;
+    top: 50%;
+    right: .618rem;
+    transform: translateY(-50%);
+    transition: 500ms cubic-bezier(0.13, 0.78, 0.3, 0.99)
+}
+
+.collapsible-title::after {
+    transform: translateY(-50%) rotate(90deg)
+}
+
+.collapsible-title.is-expanded {
+    border-bottom: 2px solid gold
+}
+
+.collapsible-title.is-expanded:before {
+    transform: translateY(-50%) rotate(-180deg)
+}
+
+.collapsible-title.is-expanded:after {
+    transform: translateY(-50%) rotate(-180deg)
+}

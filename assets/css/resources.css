@@ -59,3 +59,19 @@
 .collapsible-title.is-expanded:after {
     transform: translateY(-50%) rotate(-180deg)
 }
+.diamond li{
+    margin: 1em 0;    
+}
+.diamond li:before{
+    content: "";
+    transform: rotate(45deg);
+    text-transform: rotate(90deg);
+    width: .5em;
+    height: .5em;
+    padding: .3em;
+    margin-right: 1em;
+    border: .1em solid #b241f4;
+    background: #f4cd41;
+    display: inline-block;
+    
+}

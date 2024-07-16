@@ -1,50 +1,61 @@
-async function fetchRoster() {
-    const apiKey = "47b810e692d64237911c2cbe0d433cfe";
-    const groupId = "699392"; // Replace with the current group ID if needed
+async function fetchRoster(apiKey, groupId) {
+    const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/`;
+    const headers = {
+        "X-API-Key": apiKey
+    };
 
     try {
-        const response = await fetch(`https://www.bungie.net/Platform/GroupV2/${groupId}/Members/`, {
-            headers: {
-                "X-API-Key": apiKey
-            }
-        });
+        const response = await fetch(url, { headers });
+
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
+
         const json = await response.json();
 
         if (json.ErrorStatus === 'Success') {
             return json.Response.results;
         } else {
+            console.error('ErrorStatus:', json.ErrorStatus);
+            console.error('Message:', json.Message);
             alert('Uh oh, looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-            console.log(json);
             return [];
         }
     } catch (error) {
+        console.error('Fetch error:', error);
         alert('Uh oh, looks like Bungie\'s doing server maintenance or having problems. Please check back again soon!');
-        console.log(error);
         return [];
     }
 }
 
-async function fetchProfile() {
-    const apiKey = "47b810e692d64237911c2cbe0d433cfe";
-    const membershipType = "2"; // Replace with the correct membership type
-    const membershipId = "4611686018429000034"; // Replace with the correct membership ID
+async function fetchProfile(apiKey, membershipType, membershipId) {
+    const url = `https://www.bungie.net/Platform/Destiny2/${membershipType}/Profile/${membershipId}/?components=200`;
+    const headers = {
+        "X-API-Key": apiKey
+    };
 
     try {
-        const response = await fetch(`https://www.bungie.net/Platform/Destiny2/${membershipType}/Profile/${membershipId}/?components=200`, {
-            headers: {
-                "X-API-Key": apiKey
-            }
-        });
+        const response = await fetch(url, { headers });
+
+        if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+        }
+
         const res = await response.json();
         console.log('PS4 stats:', res);
     } catch (error) {
-        console.log(error);
+        console.error('Fetch error:', error);
     }
 }
 
 async function init() {
-    const roster = await fetchRoster();
-    await fetchProfile();
+    const apiKey = "47b810e692d64237911c2cbe0d433cfe";
+    const groupId = "699392";  // Replace with the current group ID if needed
+    const membershipType = "2";  // Replace with the correct membership type
+    const membershipId = "4611686018429000034";  // Replace with the correct membership ID
+
+    const roster = await fetchRoster(apiKey, groupId);
+    await fetchProfile(apiKey, membershipType, membershipId);
     listMembers(roster);
 }
 
@@ -66,14 +77,14 @@ function listMembers(rsp) {
     };
 
     for (var i = 0; i < rsp.length; i++) {
-        var profile = rsp[i].bungieNetUserInfo;
         var member = $('<a></a>');
 
         if (rsp[i].isOnline) {
             on++;
         }
 
-        if (typeof profile !== 'undefined') {
+        if ('bungieNetUserInfo' in rsp[i] && 'destinyUserInfo' in rsp[i]) {
+            var profile = rsp[i].bungieNetUserInfo;
             var name = rsp[i].destinyUserInfo.displayName;
             var joinDate = rsp[i].joinDate;
             var joined = joinDate.substring(0, joinDate.indexOf('T'));
@@ -125,10 +136,12 @@ function listMembers(rsp) {
             }
 
             sortMembers('joined');
+        } else {
+            console.log(`Member missing required fields: ${JSON.stringify(rsp[i])}`);
         }
     }
 
-    $('#member-count').text(on + ' / ' + rsp.length + ' Members Online');
+    $('#member-count').text(`${on} / ${rsp.length} Members Online`);
 }
 
 init();

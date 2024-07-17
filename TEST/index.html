@@ -1,39 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destiny 2 PS4 Clan</title>
-    <link rel="stylesheet" href="roster.css">
-    <script defer src="roster.js"></script>
-</head>
-<body>
-    <section class="hero" id="roi-roster-banner">
-        <div class="content hero-content">
-            <h1 class="white">Current Roster</h1>
-            <a class="button3" href="https://beatsbycayde.com/whatDoesItMean/" target="_blank" rel="noopener">What Does It Mean?</a>
+---
+layout: default
+title: Destiny 2 PS4 Clan
+js:
+  - "roster.js"
+style:
+  - "roster.css"
+---
+
+<section class="hero" id="roi-roster-banner">
+  <div class="content hero-content">
+    <h1 class="white">Current Roster</h1>
+    <a class="button3" href="https://beatsbycayde.com/whatDoesItMean/" target="_blank" rel="noopener">What Does It Mean?</a> 
+  </div>
+</section>
+<section class="memberList color-block white">
+  <div class="content">
+    <div class="j-row vertical-center-row memberList-title">
+      <div class="j-col j-col-8">
+        <h4 id="member-count"></h4>
         </div>
-    </section>
-    <section class="memberList color-block white">
-        <div class="content">
-            <div class="j-row vertical-center-row memberList-title">
-                <div class="j-col j-col-8">
-                    <h4 id="member-count"></h4>
-                </div>
-                <div class="j-col j-col-4 memberList-search">
-                    <input type="text" data-scope="member" class="search" placeholder="Search roster">
-                </div>
-            </div>
-            <div class="j-row memberList-header">
-                <div class="j-col j-col-11 push-1 wrap">
-                    <div class="j-col j-col-3"><h4 class="type-small">Username</h4></div>
-                    <div class="j-col j-col-3"><h4 class="type-small">Joined</h4></div>
-                    <div class="j-col j-col-3"><h4 class="type-small">Online</h4></div>
-                    <div class="j-col j-col-3"><h4 class="type-small">Stats</h4></div>
-                </div>
-            </div>
-            <div class="memberList-list" id="member-list"></div>
-        </div>
-    </section>
-</body>
-</html>
+      <div class="j-col j-col-4 memberList-search">
+        <input type="text" data-scope="member" class="search" placeholder="Search roster">
+      </div>
+    </div>
+    <div class="j-row memberList-header">
+      <div class="j-col j-col-11 push-1 wrap">
+        <div class="j-col j-col-3"><h4 class="type-small">Username</h4></div>
+        <div class="j-col j-col-3"><h4 class="type-small">Joined</h4></div>
+        <div class="j-col j-col-3"><h4 class="type-small">Online</h4></div>
+        <div class="j-col j-col-3"><h4 class="type-small">Stats</h4></div>
+      </div>
+    </div>
+    <div class="memberList-list" id="member-list"></div>
+  </div>
+</section>

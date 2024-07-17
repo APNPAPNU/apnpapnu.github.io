@@ -11,13 +11,15 @@ function displayRoster(roster) {
     memberCount.innerText = `Members: ${roster.length}`;
     
     roster.forEach(member => {
-        if (member.bungieNetUserInfo && member.destinyUserInfo) {
+        if (member.destinyUserInfo) {
             const memberElement = document.createElement('div');
-            memberElement.classList.add('j-row', 'memberList-item');
+            memberElement.classList.add('j-row', 'memberList-item', 'member');
+            if (member.memberType === 3) memberElement.classList.add('exalted');
+
             memberElement.innerHTML = `
                 <div class="j-col j-col-3">${member.destinyUserInfo.displayName}</div>
                 <div class="j-col j-col-3">${new Date(member.joinDate).toLocaleString()}</div>
-                <div class="j-col j-col-3">${member.isOnline ? 'Online' : 'Offline'}</div>
+                <div class="j-col j-col-3"><span class="member-online ${member.isOnline ? 'online' : ''}">${member.isOnline ? 'Online' : 'Offline'}</span></div>
                 <div class="j-col j-col-3"><a href="#">View Stats</a></div>
             `;
             memberList.appendChild(memberElement);

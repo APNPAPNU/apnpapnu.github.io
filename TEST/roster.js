@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     
     fetch(url, {
         method: 'GET',
-        headers: {
+        headers: new Headers({
             'X-API-Key': apiKey
-        }
+        })
     })
     .then(response => {
         console.log('Response status:', response.status);

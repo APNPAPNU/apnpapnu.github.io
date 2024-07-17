@@ -1,8 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('roster.json')
-        .then(response => response.json())
-        .then(data => displayRoster(data))
-        .catch(error => console.error('Error fetching roster:', error));
+    const apiKey = "47b810e692d64237911c2cbe0d433cfe";
+    const groupId = "699392";
+    const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/`;
+    
+    fetch(url, {
+        headers: {
+            "X-API-Key": apiKey
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.ErrorStatus === 'Success') {
+            displayRoster(data.Response.results);
+        } else {
+            console.error('Error fetching roster:', data.Message);
+        }
+    })
+    .catch(error => console.error('Error fetching roster:', error));
 });
 
 function displayRoster(roster) {

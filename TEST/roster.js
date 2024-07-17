@@ -4,23 +4,32 @@ document.addEventListener("DOMContentLoaded", function() {
     const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/`;
     
     fetch(url, {
+        method: 'GET',
         headers: {
-            "X-API-Key": apiKey
+            'X-API-Key': apiKey
         }
     })
-    .then(response => response.json())
+    .then(response => {
+        console.log('Response status:', response.status);
+        return response.json();
+    })
     .then(data => {
+        console.log('API Response:', data);
         if (data.ErrorStatus === 'Success') {
             displayRoster(data.Response.results);
         } else {
             console.error('Error fetching roster:', data.Message);
+            alert('Error fetching roster: ' + data.Message);
         }
     })
-    .catch(error => console.error('Error fetching roster:', error));
+    .catch(error => {
+        console.error('Network error:', error);
+        alert('Network error: ' + error.message);
+    });
 });
 
 function displayRoster(roster) {
-    const memberList = document.getElementById('member-list');
+    const memberList = document.querySelector('.memberList-list');
     const memberCount = document.getElementById('member-count');
     memberCount.innerText = `Members: ${roster.length}`;
     

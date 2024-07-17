@@ -27,7 +27,7 @@ def save_roster_to_file(roster, filename):
 
 def main():
     api_key = "47b810e692d64237911c2cbe0d433cfe"
-    group_id = "699392"  # Replace with the current group ID if needed
+    group_id = "699392"
 
     roster = fetch_roster(api_key, group_id)
     if roster:

@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const groupId = "699392";
     const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/`;
 
-    const headers = {
-        'X-API-Key': apiKey
-    };
+    const headers = new Headers();
+    headers.set('X-API-Key', apiKey);
 
     fetch(url, {
         method: 'GET',

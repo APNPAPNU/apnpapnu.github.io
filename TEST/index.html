@@ -13,8 +13,8 @@
         const membershipType = "2";  // Replace with the correct membership type
         const membershipId = "4611686018429000034";  // Replace with the correct membership ID
 
-        async function fetchGroupMember() {
-          const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/${membershipType}/${membershipId}/`;
+        async function fetchGroupMembers() {
+          const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/`;
 
           const options = {
             method: 'GET',
@@ -29,13 +29,36 @@
               throw new Error(`HTTP error! Status: ${response.status}`);
             }
             const data = await response.json();
-            console.log(data);
+            console.log('Group Members:', data);
           } catch (error) {
-            console.error('Error fetching group member:', error);
+            console.error('Error fetching group members:', error);
           }
         }
 
-        fetchGroupMember();
+        async function fetchMembershipDetails() {
+          const url = `https://www.bungie.net/Platform/User/GetMembershipsById/${membershipId}/${membershipType}/`;
+
+          const options = {
+            method: 'GET',
+            headers: {
+              'X-API-Key': apiKey
+            }
+          };
+
+          try {
+            const response = await fetch(url, options);
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const data = await response.json();
+            console.log('Membership Details:', data);
+          } catch (error) {
+            console.error('Error fetching membership details:', error);
+          }
+        }
+
+        fetchGroupMembers();
+        fetchMembershipDetails();
     </script>
 </body>
 </html>

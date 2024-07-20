@@ -17,12 +17,20 @@
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    var data = JSON.parse(xhr.responseText);
-                    console.log('Inventory Item:', data);
+                    try {
+                        var data = JSON.parse(xhr.responseText);
+                        console.log('Inventory Item:', data);
+                    } catch (e) {
+                        console.error('Error parsing JSON:', e);
+                    }
                 } else {
                     console.error('Error fetching data:', xhr.status, xhr.statusText);
                 }
             }
+        };
+
+        xhr.onerror = function() {
+            console.error('Request failed');
         };
 
         xhr.send();

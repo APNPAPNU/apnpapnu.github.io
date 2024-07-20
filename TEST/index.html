@@ -1,36 +1,41 @@
----
-layout: default
-title: Destiny 2 PS4 Clan
-js:
-  - "roster.js"
-style:
-  - "roster.css"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bungie API Request</title>
+</head>
+<body>
+    <h1>Bungie API Request</h1>
+    <script>
+        const apiKey = "47b810e692d64237911c2cbe0d433cfe";
+        const groupId = "699392";  // Replace with the current group ID if needed
+        const membershipType = "2";  // Replace with the correct membership type
+        const membershipId = "4611686018429000034";  // Replace with the correct membership ID
 
-<section class="hero" id="roi-roster-banner">
-  <div class="content hero-content">
-    <h1 class="white">Current Roster</h1>
-    <a class="button3" href="https://beatsbycayde.com/whatDoesItMean/" target="_blank" rel="noopener">What Does It Mean?</a> 
-  </div>
-</section>
-<section class="memberList color-block white">
-  <div class="content">
-    <div class="j-row vertical-center-row memberList-title">
-      <div class="j-col j-col-8">
-        <h4 id="member-count"></h4>
-      </div>
-      <div class="j-col j-col-4 memberList-search">
-        <input type="text" data-scope="member" class="search" placeholder="Search roster">
-      </div>
-    </div>
-    <div class="j-row memberList-header">
-      <div class="j-col j-col-11 push-1 wrap">
-        <div class="j-col j-col-3"><h4 class="type-small">Username</h4></div>
-        <div class="j-col j-col-3"><h4 class="type-small">Joined</h4></div>
-        <div class="j-col j-col-3"><h4 class="type-small">Online</h4></div>
-        <div class="j-col j-col-3"><h4 class="type-small">Stats</h4></div>
-      </div>
-    </div>
-    <div class="memberList-list" id="member-list"></div>
-  </div>
-</section>
+        async function fetchGroupMember() {
+          const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/${membershipType}/${membershipId}/`;
+
+          const options = {
+            method: 'GET',
+            headers: {
+              'X-API-Key': apiKey
+            }
+          };
+
+          try {
+            const response = await fetch(url, options);
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const data = await response.json();
+            console.log(data);
+          } catch (error) {
+            console.error('Error fetching group member:', error);
+          }
+        }
+
+        fetchGroupMember();
+    </script>
+</body>
+</html>

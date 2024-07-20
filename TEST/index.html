@@ -8,57 +8,24 @@
 <body>
     <h1>Bungie API Request</h1>
     <script>
-        const apiKey = "47b810e692d64237911c2cbe0d433cfe";
-        const groupId = "699392";  // Replace with the current group ID if needed
-        const membershipType = "2";  // Replace with the correct membership type
-        const membershipId = "4611686018429000034";  // Replace with the correct membership ID
+        var apiKey = "47b810e692d64237911c2cbe0d433cfe";
 
-        async function fetchGroupMembers() {
-          const url = `https://www.bungie.net/Platform/GroupV2/${groupId}/Members/`;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://www.bungie.net/Platform/Destiny/Manifest/InventoryItem/1274330687/", true);
+        xhr.setRequestHeader("X-API-Key", apiKey);
 
-          const options = {
-            method: 'GET',
-            headers: {
-              'X-API-Key': apiKey
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    console.log('Inventory Item:', data);
+                } else {
+                    console.error('Error fetching data:', xhr.status, xhr.statusText);
+                }
             }
-          };
+        };
 
-          try {
-            const response = await fetch(url, options);
-            if (!response.ok) {
-              throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const data = await response.json();
-            console.log('Group Members:', data);
-          } catch (error) {
-            console.error('Error fetching group members:', error);
-          }
-        }
-
-        async function fetchMembershipDetails() {
-          const url = `https://www.bungie.net/Platform/User/GetMembershipsById/${membershipId}/${membershipType}/`;
-
-          const options = {
-            method: 'GET',
-            headers: {
-              'X-API-Key': apiKey
-            }
-          };
-
-          try {
-            const response = await fetch(url, options);
-            if (!response.ok) {
-              throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const data = await response.json();
-            console.log('Membership Details:', data);
-          } catch (error) {
-            console.error('Error fetching membership details:', error);
-          }
-        }
-
-        fetchGroupMembers();
-        fetchMembershipDetails();
+        xhr.send();
     </script>
 </body>
 </html>
